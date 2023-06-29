@@ -9,7 +9,13 @@
 
         <!-- Tried using version 5+ but requires modification for visual, I stick to 4.6.2 -->
         <!-- All personal information is premade and documented before this capstone -->
-        <!-- I didn't used Google Fonts at the moment. I used default bootstrap fonts, colors for styling https://getbootstrap.com/docs/4.6/content/typography/ -->
+        <!-- bootstrap fonts, colors for styling https://getbootstrap.com/docs/4.6/content/typography/ -->
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./index.css">
 
         <!-- CSS REFERENCE SUGGESTED BY INSTRUCTORS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -50,11 +56,11 @@
 
                     <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
                     <div class="d-none d-xl-block d-lg-block d-md-none d-sm-none">
-                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light" href="#home" >HOME</a>
-                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light" href="#profile" >PROFILE</a>                          
-                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light" href="#services" >SERVICES</a>
-                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light" href="#projects" >PROJECTS</a>
-                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light" href="#contact" >CONTACT</a>
+                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#home" >HOME</a>
+                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#profile" >PROFILE</a>                          
+                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#services" >SERVICES</a>
+                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#projects" >PROJECTS</a>
+                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#contact" >CONTACT</a>
                         
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                         INFO <span class="badge badge-light"><i class="bi bi-megaphone-fill"></i></span>
@@ -80,9 +86,9 @@
                     <div class="col-xl-6 mt-0 mt-md-0"> <!-- col-md-6 -->
                         <div class="px-1 text-justify" > <!-- home-text -->
                             <div data-aos="fade-down">
-                                <p class="text-white mb-2 h5">Hello I'm</p>
+                                <p class="text-white mb-2">Hello I'm</p>
                                 <h1 class="text-primary text-uppercase font-weight-bold mb-2">Michael Dorio</h1>
-                                <h2 class="h4 text-white">Full Stack Web Developer</h2>
+                                <p class="h4 text-white">Full Stack Web Developer</p>
                             </div>
                             <div data-aos="fade-left">
                                 <p class="text-light">
