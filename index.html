@@ -6,8 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
         <!-- Tried using version 5+ but requires modification for visual, I stick to 4.6.2 -->
         <!-- All personal information is premade and documented before this capstone -->
+        <!-- I didn't used Google Fonts at the moment. I used default bootstrap fonts, colors for styling https://getbootstrap.com/docs/4.6/content/typography/ -->
+
+        <!-- CSS REFERENCE SUGGESTED BY INSTRUCTORS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <title>Mike Dorio | Portfolio using Bootstrap</title>
     </head>
 
@@ -16,7 +22,9 @@
         <!-- https://getbootstrap.com/docs/4.6/components/navbar/ -->
         <nav class="navbar navbar-dark bg-dark shadow fixed-top">
             <div class="container-fluid"> <!-- container-lg -->
-               <a class="navbar-brand text-light font-weight-bold " href="#">mdorio</a>
+                <div data-aos="flip-left">
+                    <a class="navbar-brand text-light font-weight-bold " href="#">mdorio</a>
+                </div>
                 <!-- <span class="navbar-brand mb-0 h1">Navbar</span> -->
                 <!-- https://getbootstrap.com/docs/4.6/components/dropdowns/ -->
                 <!-- https://getbootstrap.com/docs/4.6/components/badge/ -->
@@ -32,9 +40,9 @@
                             </button>
                             <ul class="dropdown-menu dropdown-menu-right">
                             <li><a class="dropdown-item" href="#home">Home</a></li>
-                            <li><a class="dropdown-item" href="#about">About</a></li>
+                            <li><a class="dropdown-item" href="#profile">Profile</a></li>
                             <li><a class="dropdown-item" href="#services">Services</a></li>
-                            <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+                            <li><a class="dropdown-item" href="#projects">Projects</a></li>
                             <li><a class="dropdown-item" href="#contact">Contact</a></li>
                             </ul>
                         </div>
@@ -43,9 +51,9 @@
                     <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
                     <div class="d-none d-xl-block d-lg-block d-md-none d-sm-none">
                         <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light" href="#home" >HOME</a>
-                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light" href="#about" >ABOUT</a>                          
+                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light" href="#profile" >PROFILE</a>                          
                         <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light" href="#services" >SERVICES</a>
-                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light" href="#portfolio" >PORTFOLIO</a>
+                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light" href="#projects" >PROJECTS</a>
                         <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light" href="#contact" >CONTACT</a>
                         
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -56,39 +64,49 @@
         </nav>
         <!-- NAVBAR ENDS-->
 
-        <!-- HOME SECTION START -->
+        <!-- HOME SECTION START -MY LANDING PAGE -->
         <section id="home" class="home bg-dark">
-            <div class="container-fluid"> <!-- container-lg min-vw-70-->
-                <div class="row min-vh-100 align-items-center py-5">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <div class="col-md-6 mt-0 mt-md-0 order-md-first"> <!-- col-md-6 -->
-                                <div class="home-img text-center" >
-                                    <img style="width:65%;" class="rounded-circle" src="https://m-dorio.github.io/pubrepo/images/Home.png" alt="none">
-                                </div>
+            <div class="container"> <!-- container-lg min-vw-70-->
+                <div class="row min-vh-100 align-items-center align-content-center py-5">
+
+                    <div class="col-xl-6 mt-0 mt-md-0 order-md-first"> <!-- col-md-6 -->
+                        <div class="home-img text-center" >
+                            <div data-aos="zoom-in">
+                                <img width="65%" class="rounded-circle" src="https://m-dorio.github.io/pubrepo/images/Home.png" alt="none">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 mt-0 mt-md-0"> <!-- col-md-6 -->
+                        <div class="px-1 text-justify" > <!-- home-text -->
+                            <div data-aos="fade-down">
+                                <p class="text-white mb-2 h5">Hello I'm</p>
+                                <h1 class="text-primary text-uppercase font-weight-bold mb-2">Michael Dorio</h1>
+                                <h2 class="h4 text-white">Full Stack Web Developer</h2>
+                            </div>
+                            <div data-aos="fade-left">
+                                <p class="text-light">
+                                    I am tech-savvy and enjoy gaming, web designing, and creating prototype games in in my free time.
+                                    I am always looking for new ways to learn, grow, and express myself.
+                                    Passion for technology and a desire to continually learn and develop new skills.
+                                    Currently interested in exploring other skills like, coding, cloud computing, and virtual environments.
+                                    Humble with a good sense of humor, proactive, open-minded, and with the courage to challenge the existing and be innovative.
+                                </p>
                             </div>
 
-                            <div class="col-md-6 mt-0 mt-md-0"> <!-- col-md-6 -->
-                                <div class="p-3"> <!-- home-text -->
-                                    <p class="text-white mb-2 h5">Hello I'm</p>
-                                    <h1 class="text-primary text-uppercase font-weight-bold mb-2">Michael Angelo Dorio</h1>
-                                    <h2 class="h4 text-white">A Full-stack Web Developer</h2>
-                                    
-                                    <p class="text-light">Humble with a good sense of humor, proactive, open-minded, and with the courage to challenge the existing and be innovative.
-                                        I am always looking for new ways to learn, grow, and express myself. Passion for technology and a desire to continually learn and develop new skills.
-                                    </p>
+                                <!--BUTTON LINK CHECK MY PROJ -->                
+                            <div data-aos="fade-up">
+                                <p>
+                                    <a class="btn btn-primary btn-lg text-white shadow font-weight-bold px-3" role="button" href="#projects">Check my projects</a>
+                                </p>
 
-                                    <p> <!--BUTTON LINK CHECK MY PROJ -->
-                                        <a class="btn btn-primary btn-lg text-white shadow font-weight-bold px-3" role="button" href="#portfolio">Check my projects</a>
-                                    </p>
-                                        <!-- CONVERTED BUTTON TO LINK -->
-                                    <span class="text-white d-block">
-                                        <a role="button" class="btn btn-outline-primary" href="#"><i class="bi bi-discord"></i></a>
-                                        <a role="button" class="btn btn-outline-primary" href="#"><i class="bi bi-facebook"></i></a>
-                                        <a role="button" class="btn btn-outline-primary" href="https://m-dorio.github.io/pubrepo/"><i class="bi bi-github"></i></a>
-                                        <a role="button" class="btn btn-outline-primary" href="#"><i class="bi bi-linkedin"></i></a>
-                                    </span>
-                                </div>
+                                <!-- CONVERTED BUTTON TO LINK -->
+                                <span class="text-white d-block">
+                                    <a role="button" class="btn btn-outline-primary" target="_blank" href="https://www.facebook.com/muteninjaturtle"><i class="bi bi-facebook"></i></a>
+                                    <a role="button" class="btn btn-outline-primary" target="_blank" href="https://gitlab.com/michaelangelodorio"><i class="fa-brands fa-gitlab"></i></a>
+                                    <a role="button" class="btn btn-outline-primary" target="_blank" href="https://github.com/m-dorio/"><i class="bi bi-github"></i></a>
+                                    <a role="button" class="btn btn-outline-primary" target="_blank" href="https://www.linkedin.com/in/mike-dorio-17510182/"><i class="bi bi-linkedin"></i></a>
+                                </span>
                             </div>
 
                         </div>
@@ -96,23 +114,36 @@
                 </div>
             </div>
         </section>
-
         <!-- HOME SECTION ENDS -->
 
         <!-- ABOUT ME SECTION -->
-
         <!-- https://getbootstrap.com/docs/4.0/utilities/display/ -->
-        <section id="about" class="bg-secondary">
+        <section id="profile" class="bg-secondary">
             <div class="container">
  
                 <div class="row pt-5">
                     <div class="col-lg-4 col-md-3"></div>
                     <div class="col-lg-4 col-md-6 pt-2">
-                        <p class="text-primary h4 text-center border border-primary rounded-pill bg-white">ABOUT ME</p>
+                        <p class="text-primary h4 text-center border border-primary rounded-pill bg-white">PROFILE CARD</p>
                         <!-- <p class="h5 text-left text-white">Pick a color:</p>  -->
                     </div>
                     <div class="col-lg-4 col-md-3"></div>
                 </div>
+
+                 <!-- COLOR PICKER FOR ABOUT ME CARD START-->
+                 <div class="row">
+                    <div class="col py-3">
+                        <div class="align-content-center align-items-center">
+                            <div class="d-inline p-2 text-white">CHOOSE A COLOR: </div>
+                            <div class="nav nav-pills" id="nav-tab" role="group">
+                                <button class="btn btn-primary active" id="nav-blue-tab" data-toggle="tab" data-target="#nav-blue" type="button" role="tab" aria-controls="nav-blue" aria-selected="true">BLUE</button>
+                                <button class="btn btn-light" id="nav-white-tab" data-toggle="tab" data-target="#nav-white" type="button" role="tab" aria-controls="nav-white" aria-selected="false">WHITE</button>
+                                <button class="btn btn-dark" id="nav-black-tab" data-toggle="tab" data-target="#nav-black" type="button" role="tab" aria-controls="nav-black" aria-selected="false">BLACK</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- COLOR PICKER FOR ABOUT ME CARD ENDS-->
 
                 <!-- NAV CONTENT FOR ABOUT ME START-->
                 <div class="row min-vh-50 align-top">
@@ -123,11 +154,26 @@
                                 <div class="row align-content-between">
                                     <div class="col">
                                         <div class="container">
+                                            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                                             <div class="row min-vh-70 border border-white rounded-pill m-4 bg-primary shadow rounded-pill align-content-top align-items-center px-2">
                                                 <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12 col-12 order-2 order-lg-1 order-md-2 order-sm-2 py-5">
                                                     <h3 class="text-white text-center">Frontend Developer</h3>
-                                                        <p class="text-center text-light"> I am tech-savvy and enjoy gaming, web designing (HTML, CSS, and JavaScript), and creating prototype games (C#) in my free time. I am always looking for new ways to learn, grow, and express myself.Passion for technology and a desire to continually learn and develop new skills: Currently interested in exploring other skills like, coding, cloud computing, and virtual environments.
+                                                        <div class="mx-1 px-1">
+                                                            <p class="text-center text-light">
+                                                                Humble with a good sense of humor, proactive, open-minded,
+                                                                and with the courage to challenge the existing and be innovative.
+                                                                I used the below tools to make this project.
+                                                            </p>
+                                                        </div>
+
+                                                        <p class="text-center">
+                                                            <img src="images/logo-bootstrap.png" width="80px" alt="">
+                                                            <img src="images/logo-html5.png" width="80px" alt="">
+                                                            <img src="images/logo-sublime-text-3.png" width="80px" alt="">
+                                                            <img src="images/logo-gitlab-ci-cd.png" width="80px" alt="">
+                                                            <img src="images/logo-git.png" width="80px" alt="">
                                                         </p>
+    
                                                         <p class="text-center">
                                                             <span class="h5 text-white">Expertise:</span>
                                                             <span class="h5 text-warning">
@@ -141,12 +187,11 @@
                                                 <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12 col-12 order-1 order-lg-2 order-md-1 order-sm-1 p-3">
                                                     <!-- <h5 class="card-title text-center">Frontend Developer</h5> -->
                                                     <p class="card-text">                                
-                                                        <img class="rounded-circle img-fluid img-thumbnail" src="https://m-dorio.github.io/pubrepo/images/Avatar.png">
+                                                        <img width="100%" class="rounded-circle img-fluid img-thumbnail" src="https://m-dorio.github.io/pubrepo/images/Avatar.png">
                                                     </p>
                                                  </div>
-
-                
                                             </div>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -160,8 +205,22 @@
                                             <div class="row min-vh-50 border border-primary rounded-pill m-4 bg-white shadow rounded-pill align-content-center align-items-center px-2">
                                                 <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12 col-12 order-2 order-lg-2 order-md-2 order-sm-2 py-5">        
                                                     <h3 class="text-primary text-center">Frontend Developer</h3>
-                                                    <p class="text-center text-dark"> I am tech-savvy and enjoy gaming, web designing (HTML, CSS, and JavaScript), and creating prototype games (C#) in my free time. I am always looking for new ways to learn, grow, and express myself.Passion for technology and a desire to continually learn and develop new skills: Currently interested in exploring other skills like, coding, cloud computing, and virtual environments.
+                                                    <div class="mx-1 px-1">
+                                                        <p class="text-center text-dark">
+                                                            Humble with a good sense of humor, proactive, open-minded,
+                                                            and with the courage to challenge the existing and be innovative.
+                                                            I used the below tools to make this project.
+                                                        </p>
+                                                    </div>
+
+                                                    <p class="text-center">
+                                                        <img src="images/logo-bootstrap.png" width="80px" alt="">
+                                                        <img src="images/logo-html5.png" width="80px" alt="">
+                                                        <img src="images/logo-sublime-text-3.png" width="80px" alt="">
+                                                        <img src="images/logo-gitlab-ci-cd.png" width="80px" alt="">
+                                                        <img src="images/logo-git.png" width="80px" alt="">
                                                     </p>
+
                                                     <p class="text-center">
                                                         <span class="h5 text-primary">Expertise:</span>
                                                         <span class="h5 text-warning">
@@ -192,8 +251,22 @@
                                             <div class="row min-vh-50 border border-light rounded-pill m-4 bg-dark shadow rounded-pill align-content-center align-items-center px-2">
                                                 <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12 col-12 order-2 order-lg-1 order-md-2 order-sm-2 py-5">
                                                     <h3 class="text-primary text-center">Frontend Developer</h3>
-                                                    <p class="text-center text-white"> I am tech-savvy and enjoy gaming, web designing (HTML, CSS, and JavaScript), and creating prototype games (C#) in my free time. I am always looking for new ways to learn, grow, and express myself.Passion for technology and a desire to continually learn and develop new skills: Currently interested in exploring other skills like, coding, cloud computing, and virtual environments.
-                                                    </p>
+                                                     <div class="mx-1 px-1">
+                                                            <p class="text-center text-light">
+                                                                Humble with a good sense of humor, proactive, open-minded,
+                                                                and with the courage to challenge the existing and be innovative.
+                                                                I used the below tools to make this project.
+                                                            </p>
+                                                        </div>
+
+                                                        <p class="text-center">
+                                                            <img src="images/logo-bootstrap.png" width="80px" alt="">
+                                                            <img src="images/logo-html5.png" width="80px" alt="">
+                                                            <img src="images/logo-sublime-text-3.png" width="80px" alt="">
+                                                            <img src="images/logo-gitlab-ci-cd.png" width="80px" alt="">
+                                                            <img src="images/logo-git.png" width="80px" alt="">
+                                                        </p>
+
                                                     <p class="text-center">
                                                         <span class="h5 text-white">Expertise:</span>
                                                         <span class="h5 text-warning">
@@ -220,27 +293,35 @@
                     </div>
                 </div>
 
-                <!-- NAV SECTION FOR ABOUT ME START-->
+                <!-- TOOLS SECTION START-->
                 <div class="row">
-                    <div class="col py-3">
+                    <div class="col py">
                         <div class="align-content-center align-items-center">
-                            <div class="nav nav-pills btn-group" id="nav-tab" role="group">
-                                <div class="d-inline p-2 bg-dark text-white">CLICK A COLOR: </div>
-                                <button class="btn btn-primary active" id="nav-blue-tab" data-toggle="tab" data-target="#nav-blue" type="button" role="tab" aria-controls="nav-blue" aria-selected="true">BLUE</button>
-                                <button class="btn btn-light" id="nav-white-tab" data-toggle="tab" data-target="#nav-white" type="button" role="tab" aria-controls="nav-white" aria-selected="false">WHITE</button>
-                                <button class="btn btn-dark" id="nav-black-tab" data-toggle="tab" data-target="#nav-black" type="button" role="tab" aria-controls="nav-black" aria-selected="false">BLACK</button>
-                              </div>
+                            <div class="d-inline p-2 text-white">MY TOOLS: </div>
+                            <div class="nav nav-pills" id="nav-tab" role="group">
+                                <div data-aos="fade-up" data-aos-duration="500">
+                                <img src="images/logo-css3.png" width="80px" alt="">
+                                <img src="images/logo-javascript.png" width="80px" alt="">
+                                <img src="images/logo-github.png" width="80px" alt="">
+                                <img src="images/logo-photoshop.png" width="80px" alt="">
+                                <img src="images/logo-bootstrap.png" width="80px" alt="">
+                                <img src="images/logo-html5.png" width="80px" alt="">
+                                <img src="images/logo-sublime-text-3.png" width="80px" alt="">
+                                <img src="images/logo-gitlab-ci-cd.png" width="80px" alt="">
+                                <img src="images/logo-git.png" width="80px" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- NAV SECTION FOR ABOUT ME ENDS-->
+                <!-- TOOLS SECTION END-->
+
 
                 <div class="row py-5">
                     <div class="col-lg-4 col-md-3"></div>
                 </div>
             </div>
-        </section>       
-                            
+        </section>                           
         <!-- ABOUT ME SECTION ENDS -->
 
 
@@ -261,11 +342,15 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 py-3">
                         <div class="card mx-1 pt-3">
                             <!-- <img src="..." class="card-img-top" alt="..."> -->
-                            <p class="text-center"><i class="h1 bi bi-code-square"></i></p>
+                            <div data-aos="flip-up">
+                                <p class="text-center"><i class="h1 bi bi-code-square"></i></p>
+                            </div>
                             <div class="card-body bg-secondary text-light">
                             <h5 class="card-title text-center">Web Development</h5>
-                            <p class="card-text text-justify ">Front-End Development: This involves working on the client-side of a website, focusing on the user interface and user experience. Front-end developers use languages such as HTML (Hypertext Markup Language), CSS (Cascading Style Sheets), and JavaScript to create the visual and interactive elements of a website..</p>
-                            <a href="#portfolio" class="btn btn-primary shadow">See More...</a>
+                            <p class="card-text text-justify ">Full Stack Web Developer, working on the client-side of a website, focusing on the user interface and user experience. As a Full Stack Web Developer I use languages such as HTML5 (Hypertext Markup Language), CSS (Cascading Style Sheets), and JavaScript to create the visual and interactive elements of a website..</p>
+                                <div data-aos="flip-down" data-aos-duration="1500">
+                                    <a href="#projects" class="btn btn-primary shadow">Go to Projects</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -273,11 +358,15 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 py-3">             
                         <div class="card mx-1 pt-3 ">
                            <!-- <img src="..." class="card-img-top" alt="..."> -->
-                           <p class="text-center"><i class="h1 bi bi-controller "></i></i></p>
+                            <div data-aos="flip-up">
+                                <p class="text-center"><i class="h1 bi bi-controller "></i></p>
+                            </div>
                             <div class="card-body bg-secondary text-light ">
                             <h5 class="card-title text-center">Game Development</h5>
                             <p class="card-text text-justify">To create, design, and develop video games. Game developers are involved in every aspect of the game development process, from conceptualizing and planning to coding, testing, and releasing the final product. Their primary goal is to create an engaging and enjoyable gaming experience for players.</p>
-                            <a href="#services" class="btn btn-primary shadow">See More...</a>
+                                <!-- <div data-aos="flip-down" data-aos-duration="1500">
+                                    <a href="#services" class="btn btn-primary shadow">See More...</a>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -285,11 +374,15 @@
                     <div class="col-lg-4 col-md-12 col-sm-12 py-3">
                         <div class="card mx-1 pt-3">
                            <!-- <img src="..." class="card-img-top" alt="..."> -->
-                           <p class="text-center"><i class="h1 bi bi-wrench-adjustable-circle"></i></p>
+                            <div data-aos="flip-up">
+                                <p class="text-center"><i class="h1 bi bi-wrench-adjustable-circle"></i></p>
+                            </div>
                             <div class="card-body bg-secondary text-light">
                             <h5 class="card-title text-center">Technical Support Engineer</h5>
                             <p class="card-text text-justify"> Being a Technical Support Engineer in a cybersecurity company, we provide technical support assistance. Investigate, data gathering, replicate/reproduce customer issues if possible, and document the steps. Troubleshoot customers' servers, and virtual/physical environment.</p>
-                            <a href="#services" class="btn btn-primary shadow">See More...</a>
+                                <div data-aos="flip-down" data-aos-duration="1500">
+                                    <a href="https://www.linkedin.com/in/mike-dorio-17510182/" class="btn btn-primary shadow" target="_blank">Go to LinkedIn</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -301,13 +394,13 @@
         </section>
         <!-- CARD SECTION ENDS -->
         
-        <!-- PORTFOLIO SECTION START -->
-        <section id="portfolio" class="bg-secondary">
+        <!-- PROJECT SECTION START -->
+        <section id="projects" class="bg-secondary">
             <div class="container">
                 <div class="row py-5">
                     <div class="col-lg-4 col-md-3"></div>
                     <div  class="col-lg-4 col-md-6 pt-2">
-                        <p class="text-primary h4 text-center border border-primary rounded-pill bg-white">PORTFOLIO</p>
+                        <p class="text-primary h4 text-center border border-primary rounded-pill bg-white">PROJECTS</p>
                     </div>
                     <div class="col-lg-4 col-md-3"></div>
                 </div>
@@ -372,7 +465,7 @@
             </div>
         </section>
        
-        <!-- PORTFOLIO SECTION ENDS -->    
+        <!-- PROJECT SECTION ENDS -->    
 
         <!-- CONTACT FORM STARTS -->
         <section id="contact" class="bg-dark">
@@ -390,70 +483,78 @@
                     <div class="col">
                         <div class="col-lg-4 col-md-3"></div>
                         <div class="col offset-xl-4 col-xl-4 offset-lg-3 col-lg-6 offset-md-1 col-md-10 offset-sm-1 col-sm-10 p-2">
-                            <form id="form-col">
-                                <div class="form-group text-light font-weight-bold mt-3">
-                                    <label for="name">Name:</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                                    </div>
-                                
-                                <div class="form-group text-light font-weight-bold">
-                                    <label for="email">Email address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                                </div>
-                                
-                                <div class="form-group text-light font-weight-bold">
-                                    <label for="contactNumber">Contact Number:</label>
-                                    <input type="number" class="form-control" id="contactNumber" placeholder="+63 900 000 0000">
-                                    </div>
-                                
-                                <div class="form-group text-light font-weight-bold">
-                                    <label for="concernSelect">Service Inquiry:</label>
-                                    <select class="form-control" id="concernSelect">
-                                    <option value="quotation">Services Offered</option>
-                                    <option value="concern2">Service 1</option>
-                                    <option value="concern3">Service 2</option>
-                                    <option value="concern4">Service 3</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="form-group text-light font-weight-bold">
-                                    <label for="message">Message:</label>
-                                    <textarea class="form-control" id="message" rows="3" placeholder=""></textarea>
-                                </div>
-                                
-                                    <button type="button" class="btn btn-primary mb-3 font-weight-bold" data-toggle="modal" data-target="#modalDiv">Send Message</button>
-    
-                                <!-- Modal Start -->
-                                    <div class="modal fade" id="modalDiv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="myModalLabel">Thank you for contacting us!</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <p>Message Successfully Sent</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                                            </div>
-                                            </div>
+                            <div class=" border border-light p-3" data-aos="flip-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                                <form id="form-col">
+                                    <div class="form-group text-light font-weight-bold mt-3">
+                                        <label for="name">Name:</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
                                         </div>
+                                    
+                                    <div class="form-group text-light font-weight-bold">
+                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
                                     </div>
-                                <!-- Modal End -->                        
-                            </form>
+                                    
+                                    <div class="form-group text-light font-weight-bold">
+                                        <label for="contactNumber">Contact Number:</label>
+                                        <input type="number" class="form-control" id="contactNumber" placeholder="+63 900 000 0000">
+                                        </div>
+                                    
+                                    <div class="form-group text-light font-weight-bold">
+                                        <label for="concernSelect">Service Inquiry:</label>
+                                        <select class="form-control" id="concernSelect">
+                                        <option value="quotation">Services Offered</option>
+                                        <option value="concern2">Web Development</option>
+                                        <option value="concern3">Game Development</option>
+                                        <option value="concern4">Technical Support</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group text-light font-weight-bold">
+                                        <label for="message">Message:</label>
+                                        <textarea class="form-control" id="message" rows="3" placeholder=""></textarea>
+                                    </div>
+                                    
+                                        <button type="button" class="btn btn-primary mb-3 font-weight-bold" data-toggle="modal" data-target="#modalDiv">Send Message</button>
+                                        
+                                        <span class="text-white d-block">
+                                           <p>You can also reach me at:</p>
+                                            <a role="button" class="btn btn-outline-primary" target="_blank" href="https://www.facebook.com/muteninjaturtle"><i class="bi bi-facebook"></i></a>
+                                            <a role="button" class="btn btn-outline-primary" target="_blank" href="https://gitlab.com/michaelangelodorio"><i class="fa-brands fa-gitlab"></i></a>
+                                            <a role="button" class="btn btn-outline-primary" target="_blank" href="https://github.com/m-dorio/"><i class="bi bi-github"></i></a>
+                                            <a role="button" class="btn btn-outline-primary" target="_blank" href="https://www.linkedin.com/in/mike-dorio-17510182/"><i class="bi bi-linkedin"></i></a>
+                                        </span>              
+                                </form>
+                            </div>
                         </div>
                         <div class="col-lg-4 col-md-3"></div>
                     </div>
+
+                     <!-- Modal Start -->
+                     <div class="modal fade" id="modalDiv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="myModalLabel">Thank you for contacting me!</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Message Successfully Sent</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Modal End -->    
                     
                 </div>
             </div>
         </section>
-
         <!-- CONTACT FORM ENDS -->
-
         
         <!-- NOTIFICATION WITH MODAL START-->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -466,15 +567,12 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    Hello There!
-                    <br />
-                    Nothing to see here, this is just a placeholder.<br />
-                    Mike learned bootstrap ver 4.6.2 during the bootcamp training and built this portfolio.<br />
+                    <span>Hello There!</span>                 
+                    <p>Mike learned bootstrap ver 4.6.2 during the bootcamp training, and built this portfolio.</p>
                     Kindly visit: <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">getbootstrap.com</a>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
-                
                 </div>
               </div>
             </div>
@@ -483,10 +581,10 @@
 
           <!-- FOOTER SECTION START -->
           <footer class="d-flex justify-content-between p-2 bg-dark text-white">
-            <div class="mx-5">
+            <div class="mx-2">
                 Copyright &copy; 2023 by mdorio.| All rights Reserved.
             </div>        
-            <div class="mx-5 d-inline-flex h1">
+            <div class="mx-2 d-inline-flex h1">
                 <a href="#home">
                     <i class="bi bi-arrow-up-circle-fill"></i>
                 </a>
@@ -496,6 +594,18 @@
 
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+        <!--FROM  https://michalsnik.github.io/aos/ -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1500
+			});
+		</script>
+
+        <!-- ADDITIONAL ICONS NOT INCLUDED IN BOOTSRAP -->
+        <script src="https://kit.fontawesome.com/6845f956f4.js" crossorigin="anonymous"></script>
  
     </body>
 </html>
