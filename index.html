@@ -9,10 +9,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-        <!-- Tried using version 5+ but requires modification for visual, I stick to 4.6.2
-        All personal information is premade and documented before this capstone
-        bootstrap fonts, colors for styling https://getbootstrap.com/docs/4.6/content/typography/ -->
-        
         <!-- Google Font Added -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +16,6 @@
         <!-- EXTERNAL CSS Added based on Google API font family-->
         <link rel="stylesheet" href="./index.css">
 
-        <!-- CSS REFERENCE SUGGESTED BY INSTRUCTORS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <title>Mike Dorio | Portfolio</title>
@@ -528,7 +523,7 @@
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-lg-4 col-md-3"></div>
-                            <div class="col-lg-4 col-md-6 pt-2">
+                            <div class="col-lg-4 col-md-6 py-2">
                                 <div data-aos="flip-up">
                                     <p class="text-white h4 text-center border border-primary rounded-pill bg-dark">CONTACT ME</p>
                                 </div>
@@ -536,58 +531,52 @@
                         <div class="col-lg-4 col-md-3"></div>
                     </div>
     
-                    <div class="row min-vh-100 align-content-center">
+                    <div class="row min-vh-100 align-top">
                         
-                        <div class="col">
-                            <div class="col-lg-4 col-md-3"></div>
-                            <div class="col offset-xl-4 col-xl-4 offset-lg-3 col-lg-6 offset-md-1 col-md-10 offset-sm-1 col-sm-10 p-2">
+                        <div class="col pt-5">
+                            <div class="col-lg-2 col-md-2"></div>
+                            <div class="col offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 offset-md-1 col-md-10 offset-sm-1 col-sm-10 p-2">
                                 <div class="bg-dark border border-light p-3" data-aos="flip-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
-                                    <form id="form-col" action="mailto:michaelangelo.dorio@gmail.com" method="post" enctype="text/plain">
+                                    <div class="text-white d-block">
+                                        <p>You can reach me at:</p>
+                                         <a role="button" class="btn btn-outline-primary" target="_blank" href="https://www.facebook.com/muteninjaturtle"><i class="bi bi-facebook"></i></a>
+                                         <a role="button" class="btn btn-outline-primary" target="_blank" href="https://gitlab.com/michaelangelodorio"><i class="fa-brands fa-gitlab"></i></a>
+                                         <a role="button" class="btn btn-outline-primary" target="_blank" href="https://github.com/m-dorio/"><i class="bi bi-github"></i></a>
+                                         <a role="button" class="btn btn-outline-primary" target="_blank" href="https://www.linkedin.com/in/mike-dorio-17510182/"><i class="bi bi-linkedin"></i></a>
+                                     </div>   
+
+                                    <form id="form-col" action="https://formsubmit.co/michaelangelo.dorio@gmail.com" method="POST">
                                         <div class="form-group text-light font-weight-bold mt-3">
-                                            <label for="name">Name:</label>
-                                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                                            <p>Or send an email:</p>
+                                            <div class="form-group text-light font-weight-bold">
+                                                <label for="email">Email address</label>
+                                                <input class="form-control" type="email" name="email" placeholder="Your Email Address" required>
                                             </div>
-                                        
-                                        <div class="form-group text-light font-weight-bold">
-                                            <label for="email">Email address</label>
-                                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-                                        </div>
-                                        
-                                        <div class="form-group text-light font-weight-bold">
-                                            <label for="contactNumber">Contact Number:</label>
-                                            <input type="number" class="form-control" id="contactNumber" placeholder="+63 900 000 0000">
+                                          
+                                            <div class="form-group text-light font-weight-bold">
+                                                <label for="contactNumber">Contact Number&nbsp:</label><span class="text-info">&nbsp[optional]</span>
+                                                <input type="number" class="form-control" id="contactNumber" placeholder="+63 900 000 0000">
                                             </div>
-                                        
-                                        <div class="form-group text-light font-weight-bold">
-                                            <label for="concernSelect">Service Inquiry:</label>
-                                            <select class="form-control" id="concernSelect">
-                                            <option value="quotation">Services Offered</option>
-                                            <option value="concern2">Web Development</option>
-                                            <option value="concern3">Game Development</option>
-                                            <option value="concern4">Technical Support</option>
-                                            </select>
+                                            <div class="form-group text-light font-weight-bold">
+                                                <input class="form-control"  type="hidden" name="_subject" value="You have a new email!">
+                                                <input class="form-control" type="hidden" name="_template" value="table">
+                                                <input class="form-control"  type="hidden" name="_next" value="https://m-dorio.github.io/webportfolio/thankyou.html">
+                                                <input class="form-control" type="hidden" name="_captcha" value="false">
+                                                <label for="message">Message:</label>
+                                                <textarea class="form-control" type="text" name="message" id="message" rows="3" placeholder="Write your message here" required></textarea>
+                                            </div>
+                              
                                         </div>
-                                        
-                                        <div class="form-group text-light font-weight-bold">
-                                            <label for="message">Message:</label>
-                                            <textarea class="form-control" id="message" rows="3" placeholder="" required></textarea>
-                                        </div>
-                                        
-                                            <!-- data-toggle="modal" data-target="#modalDiv" -->
-                                            <button type="submit" class="btn btn-primary mb-3 font-weight-bold">Send Message</button>
+
+                                            <button class="btn btn-primary mb-3 font-weight-bold" type="submit">Send</button>
                                             <button type="reset" class="btn btn-secondary mb-3 font-weight-bold">Reset Form</button>
-                                            
-                                            <div class="text-white d-block">
-                                               <p>You can also reach me at:</p>
-                                                <a role="button" class="btn btn-outline-primary" target="_blank" href="https://www.facebook.com/muteninjaturtle"><i class="bi bi-facebook"></i></a>
-                                                <a role="button" class="btn btn-outline-primary" target="_blank" href="https://gitlab.com/michaelangelodorio"><i class="fa-brands fa-gitlab"></i></a>
-                                                <a role="button" class="btn btn-outline-primary" target="_blank" href="https://github.com/m-dorio/"><i class="bi bi-github"></i></a>
-                                                <a role="button" class="btn btn-outline-primary" target="_blank" href="https://www.linkedin.com/in/mike-dorio-17510182/"><i class="bi bi-linkedin"></i></a>
-                                            </div>              
-                                    </form>
+                                         
+                                   </form>
+
+
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-3"></div>
+                            <div class="col-lg-2 col-md-2"></div>
                         </div>
     
                         <!-- Modal Start -->
@@ -609,8 +598,10 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Modal End --> 
+
                     </div>
-                    <!-- Modal End -->    
+                
                 
                     <!-- NOTIFICATION WITH MODAL START-->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -667,6 +658,7 @@
 				duration: 2500
 			});
 		</script>
+
 
         <!-- ADDITIONAL ICONS NOT INCLUDED IN BOOTSRAP -->
         <script src="https://kit.fontawesome.com/6845f956f4.js" crossorigin="anonymous"></script>
