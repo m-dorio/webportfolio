@@ -1,685 +1,511 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- BOOTSTRAP CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-        <!-- Google Font Added -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
-        <!-- EXTERNAL CSS Added based on Google API font family-->
-        <link rel="stylesheet" href="./index.css">
+                <!-- BOOTSTRAP CSS v5 -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <!-- Google Font Added -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Roboto:wght@300;700;900&family=Titillium+Web:wght@600;900&display=swap" rel="stylesheet">
 
-        <title>Mike Dorio | Portfolio</title>
-    </head>
+            <!-- EXTERNAL CSS Added & Google API font family-->
+            <link rel="stylesheet" href="./css/toggle.css">
+            <link rel="stylesheet" href="./css/style.css">
+            <link rel="stylesheet" href="./css/index.css">
 
-    <body class="bg-secondary">
-        <!-- NAVBAR START-->
-        <!-- https://getbootstrap.com/docs/4.6/components/navbar/ -->
-        <nav class="navbar navbar-dark bg-dark shadow fixed-top">
-            <div class="container-fluid"> <!-- container-lg -->
-                <div data-aos="flip-left">
-                    <a class="navbar-brand text-light font-weight-bold " href="#">mdorio</a>
-                </div>
-                <!-- <span class="navbar-brand mb-0 h1">Navbar</span> -->
-                <!-- https://getbootstrap.com/docs/4.6/components/dropdowns/ -->
-                <!-- https://getbootstrap.com/docs/4.6/components/badge/ -->
-                <!-- <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"> Notifications <span class="badge badge-light"><i class="bi bi-megaphone-fill"></i></span>
-                </button> -->
-                    <div class="d-xl-none d-lg-none d-md-block d-sm-block">
-                      <div class="dropdown">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            INFO <span class="badge badge-light"><i class="bi bi-megaphone-fill"></i></span>
-                        </button>                
-                            <button class="btn btn-secondary px-3" type="button" data-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-list"></i><!-- https://icons.getbootstrap.com/ -->
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-right border border-light bg-secondary text-center">
-                            <li><a class="dropdown-item text-light py-2" href="#landing">Home</a></li>
-                            <li><a class="dropdown-item text-light py-2" href="#profile">Profile</a></li>
-                            <li><a class="dropdown-item text-light py-2" href="#services">Services</a></li>
-                            <li><a class="dropdown-item text-light py-2" href="#projects">Projects</a></li>
-                            <li><a class="dropdown-item text-light py-2" href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
-                    <div class="d-none d-xl-block d-lg-block d-md-none d-sm-none">
-                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#landing" >HOME</a>
-                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#profile" >PROFILE</a>                          
-                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#services" >SERVICES</a>
-                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#projects" >PROJECTS</a>
-                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#contact" >CONTACT</a>
-                        
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        INFO <span class="badge badge-light"><i class="bi bi-megaphone-fill"></i></span>
-                        </button> 
-                    </div>
-            </div>
-        </nav>
-        <!-- NAVBAR ENDS-->
-
-        <!-- HOME SECTION START -MY LANDING PAGE -->
-        <section id="landing" class="home bg-dark content-bg-image">
-            <div class="container-fluid bg-opacity">
-                <div class="container"> <!-- container-lg min-vw-70-->
-                    <div class="row min-vh-100 align-items-center align-content-center py-5 ">
-    
-                        <div class="col-xl-6 mt-0 mt-md-0 order-md-first"> <!-- col-md-6 -->
-                            <div class="home-img text-center" >
-                                <div class="float-img" data-aos="zoom-in">
-                                    <img width="65%" class="rounded-circle" src="https://m-dorio.github.io/pubrepo/images/Home.png" alt="none">
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col-xl-6 mt-0 mt-md-0"> <!-- col-md-6 -->
-                            <div class="px-1 text-justify" > <!-- home-text -->
-                                <div data-aos="fade-down">
-                                    <p class="text-white mb-2">Hello I'm</p>
-                                    <h1 class="text-primary text-uppercase font-weight-bold mb-2">Michael Dorio</h1>
-                                    <p class="h4 text-white">Full Stack Web Developer</p>
-                                </div>
-                                    <div data-aos="fade-left">
-                                        <p class="h6 text-white">
-                                        I am tech-savvy and enjoy gaming, web designing, and creating prototype games in in my free time. I am always looking for new ways to learn, grow, and express myself.</p>
-                                    </div>
-                                    <div class="py-1" data-aos="fade-left">
-                                    <h6 class="text-white">Humble with a good sense of humor, proactive, open-minded, and with the courage to challenge the existing and be innovative. </h6>
-                            </div>
-    
-                                    <!--BUTTON LINK CHECK MY PROJ -->                
-                                <div data-aos="fade-up">
-                                    <p>
-                                        <a class="btn btn-primary btn-lg text-white shadow font-weight-bold px-4" role="button" href="#projects">My projects</a>
-                                    </p>
-    
-                                    <!-- CONVERTED BUTTON TO LINK -->
-                                    <span class="text-white d-block">
-                                        <a role="button" class="btn btn-outline-primary" target="_blank" href="https://www.facebook.com/muteninjaturtle"><i class="bi bi-facebook"></i></a>
-                                        <a role="button" class="btn btn-outline-primary" target="_blank" href="https://gitlab.com/michaelangelodorio"><i class="fa-brands fa-gitlab"></i></a>
-                                        <a role="button" class="btn btn-outline-primary" target="_blank" href="https://github.com/m-dorio/"><i class="bi bi-github"></i></a>
-                                        <a role="button" class="btn btn-outline-primary" target="_blank" href="https://www.linkedin.com/in/michael-angelo-dorio-17510182/"><i class="bi bi-linkedin"></i></a>
-                                    </span>
-                                </div>
-    
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-
-            </div>
-            
-        </section>
-        <!-- HOME SECTION ENDS -->
-
-        <!-- ABOUT ME SECTION -->
-        <!-- https://getbootstrap.com/docs/4.0/utilities/display/ -->
-        <section id="profile" class="bg-secondary">
-            <div class="container-fluid bg-opacity">
-
-                <div class="container">
-                    <div class="row min-vh-100 align-top">
-                        <div>
-                            <div class="row pt-5">
-                                <div class="col-lg-4 col-md-3"></div>
-                                <div class="col-lg-4 col-md-6 pt-2">
-                                    <div data-aos="flip-up">
-                                        <p class="text-white h4 text-center border border-primary rounded-pill bg-dark">PROFILE CARD</p>
-                                    </div>
-                                    <!-- <p class="h5 text-left text-white">Pick a color:</p>  -->
-                                </div>
-                                <div class="col-lg-4 col-md-3"></div>
-                            </div>
-            
-                             <!-- COLOR PICKER FOR ABOUT ME CARD START-->
-                             <div class="row">
-                                <div class="col py-3">
-                                    <div class="align-content-center align-items-center">
-                                        <div class="d-inline p-2 text-white">CHOOSE A COLOR: </div>
-                                        <div class="nav nav-pills" id="nav-tab" role="group">
-                                            <button class="btn btn-primary active" id="nav-blue-tab" data-toggle="tab" data-target="#nav-blue" type="button" role="tab" aria-controls="nav-blue" aria-selected="true">BLUE</button>
-                                            <button class="btn btn-light" id="nav-white-tab" data-toggle="tab" data-target="#nav-white" type="button" role="tab" aria-controls="nav-white" aria-selected="false">WHITE</button>
-                                            <button class="btn btn-dark" id="nav-black-tab" data-toggle="tab" data-target="#nav-black" type="button" role="tab" aria-controls="nav-black" aria-selected="false">BLACK</button>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                             <!-- COLOR PICKER FOR ABOUT ME CARD ENDS-->
-            
-                            <!-- NAV CONTENT FOR ABOUT ME START-->
-                            <div class="row align-top">
-                                <div class="col pt-0">
-                                    <div class="tab-content" id="nav-tabContent">
-                                        <div class="tab-pane fade show active" id="nav-blue" role="tabpanel" aria-labelledby="nav-blue-tab">
-                                            <!-- CONTENT HERE BLUE-->
-                                            <div class="row align-content-between">
-                                                <div class="col">
-                                                    <div class="container">
-                                                        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                                                        <div class="row min-vh-70 border border-white rounded-pill m-4 bg-primary shadow rounded-pill align-content-top align-items-center px-2">
-                                                            <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12 col-12 order-2 order-lg-1 order-md-2 order-sm-2 py-5">
-                                                                <h3 class="text-white text-center">Frontend Developer</h3>
-                                                                    <div class="mx-1 px-1">
-                                                                        <p class="text-center text-light">
-                                                                            I used the below tools to make this project.
-                                                                        </p>
-                                                                    </div>
-            
-                                                                    <p class="text-center rotate-img">
-                                                                        <img src="./images/logo-bootstrap.png" width="80" alt="">
-                                                                        <img src="./images/logo-html5.png" width="80" alt="">
-                                                                        <img src="./images/logo-sublime-text-3.png" width="80" alt="">
-                                                                        <img src="./images/logo-gitlab-ci-cd.png" width="80" alt="">
-                                                                        <img src="./images/logo-git.png" width="80" alt="">
-                                                                    </p>
-                
-                                                                    <p class="text-center">
-                                                                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#contact" >CONTACT</a>
-                                                                        <p class="d-none">
-                                                                            <span class="h5 text-white">Rate my card:</span>
-                                                                            <span class="h5 text-warning">
-                                                                            <i class="bi bi-star-fill"></i>
-                                                                            <i class="bi bi-star-fill"></i>
-                                                                            <i class="bi bi-star-fill"></i>
-                                                                            <i class="bi bi-star-half"></i>
-                                                                            <i class="bi bi-star"></i>
-                                                                        </span>
-                                                                        </p>
-                                                                    </p>
-                                                            </div>
-                            
-                                                            <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12 col-12 order-1 order-lg-2 order-md-1 order-sm-1 p-3">
-                                                                <!-- <h5 class="card-title text-center">Frontend Developer</h5> -->
-                                                                <p class="card-text">                                
-                                                                    <img width="100%" class="rounded-circle img-fluid img-thumbnail" src="https://m-dorio.github.io/pubrepo/images/Avatar.png">
-                                                                </p>
-                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                    
-                                        <div class="tab-pane fade" id="nav-white" role="tabpanel" aria-labelledby="nav-white-tab">
-                                            <!-- CONTENT HERE WHITE-->
-                                            <div class="row align-content-between">
-                                                <div class="col">
-                                                    <div class="container">
-                                                        <div class="row min-vh-50 border border-primary rounded-pill m-4 bg-white shadow rounded-pill align-content-center align-items-center px-2">
-                                                            <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12 col-12 order-2 order-lg-2 order-md-2 order-sm-2 py-5">        
-                                                                <h3 class="text-primary text-center">Frontend Developer</h3>
-                                                                <div class="mx-1 px-1">
-                                                                    <p class="text-center text-dark">
-                                                                        I used the below tools to make this project.
-                                                                    </p>
-                                                                </div>
-            
-                                                                <p class="text-center rotate-img">
-                                                                    <img src="./images/logo-bootstrap.png" width="80" alt="">
-                                                                    <img src="./images/logo-html5.png" width="80" alt="">
-                                                                    <img src="./images/logo-sublime-text-3.png" width="80" alt="">
-                                                                    <img src="./images/logo-gitlab-ci-cd.png" width="80" alt="">
-                                                                    <img src="./images/logo-git.png" width="80" alt="">
-                                                                </p>
-            
-                                                                <p class="text-center">
-                                                                    <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-dark text-dark custom-menu" href="#contact" >CONTACT</a>
-                                                                    <p class="d-none">
-                                                                        <span class="h5 text-white">Rate my card:</span>
-                                                                        <span class="h5 text-warning">
-                                                                        <i class="bi bi-star-fill"></i>
-                                                                        <i class="bi bi-star-fill"></i>
-                                                                        <i class="bi bi-star-fill"></i>
-                                                                        <i class="bi bi-star-half"></i>
-                                                                        <i class="bi bi-star"></i>
-                                                                    </span>
-                                                                    </p>
-                                                                </p>
-
-                                                            </div>
-                            
-                                                            <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12 col-12 order-1 order-lg-1 order-md-1 order-sm-1 p-3">
-                                                                <p class="card-text">                                
-                                                                    <img class="rounded-circle img-fluid img-thumbnail" src="https://m-dorio.github.io/pubrepo/images/Avatar.png">
-                                                                </p>
-                                                             </div>
-                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                    
-                                        <div class="tab-pane fade" id="nav-black" role="tabpanel" aria-labelledby="nav-black-tab">
-                                            <!-- CONTENT HERE BLACK-->
-                                            <div class="row align-content-between">
-                                                <div class="col">
-                                                    <div class="container">
-                                                        <div class="row min-vh-50 border border-light rounded-pill m-4 bg-dark shadow rounded-pill align-content-center align-items-center px-2">
-                                                            <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12 col-12 order-2 order-lg-1 order-md-2 order-sm-2 py-5">
-                                                                <h3 class="text-white text-center">Frontend Developer</h3>
-                                                                 <div class="mx-1 px-1">
-                                                                        <p class="text-center text-light">
-                                                                            I used the below tools to make this project.
-                                                                        </p>
-                                                                    </div>
-            
-                                                                    <p class="text-center rotate-img">
-                                                                        <img src="./images/logo-bootstrap.png" width="80" alt="">
-                                                                        <img src="./images/logo-html5.png" width="80" alt="">
-                                                                        <img src="./images/logo-sublime-text-3.png" width="80" alt="">
-                                                                        <img src="./images/logo-gitlab-ci-cd.png" width="80" alt="">
-                                                                        <img src="./images/logo-git.png" width="80" alt="">
-                                                                    </p>
-            
-                                                                <p class="text-center">
-                                                                        <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#contact" >CONTACT</a>
-                                                                        <p class="d-none">
-                                                                            <span class="h5 text-white">Rate my card:</span>
-                                                                            <span class="h5 text-warning">
-                                                                            <i class="bi bi-star-fill"></i>
-                                                                            <i class="bi bi-star-fill"></i>
-                                                                            <i class="bi bi-star-fill"></i>
-                                                                            <i class="bi bi-star-half"></i>
-                                                                            <i class="bi bi-star"></i>
-                                                                        </span>
-                                                                        </p>
-                                                                    </p>
-                                                                    
-                                                            </div>
-                            
-                                                            <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12 col-12 order-1 order-lg-2 order-md-1 order-sm-1 p-3">
-                                                            
-                                                                <p class="card-text">                                
-                                                                    <img class="rounded-circle img-fluid img-thumbnail" src="https://m-dorio.github.io/pubrepo/images/Avatar.png">
-                                                                </p>
-                                                             </div>
-                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-            
-                            <!-- TOOLS SECTION START-->
-                            <div class="row">
-                                <div class="col py">
-                                    <div class="align-content-center align-items-center">
-                                        <div class="d-inline p-2 text-white">MY TOOLS: </div>
-                                        <div class="nav nav-pills" id="nav-tab" role="group">
-                                            <div class="rotate-img" data-aos="fade-up" data-aos-duration="500">
-                                            <img src="./images/logo-css3.png" width="80" alt="">
-                                            <img src="./images/logo-javascript.png" width="80" alt="">
-                                            <img src="./images/logo-github.png" width="80" alt="">
-                                            <img src="./images/logo-photoshop.png" width="80" alt="">
-                                            <img src="./images/logo-bootstrap.png" width="80" alt="">
-                                            <img src="./images/logo-html5.png" width="80" alt="">
-                                            <img src="./images/logo-sublime-text-3.png" width="80" alt="">
-                                            <img src="./images/logo-gitlab-ci-cd.png" width="80" alt="">
-                                            <img src="./images/logo-git.png" width="80" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TOOLS SECTION END-->
-            
-            
-                            <div class="row py-5">
-                                <div class="col-lg-4 col-md-3"></div>
-                            </div>
-                        </div>
-                        
-                    </div>
-    
-                </div>
-                
-            </div>
-
-            
-        </section>                           
-        <!-- ABOUT ME SECTION ENDS -->
-
-
-        <!-- CARD SECTION STARTS -->
-        <section id="services" class="bg-dark">
-            <div class="container">
-
-                <div class="row py-5">
-                    <div class="col-lg-4 col-md-3"></div>
-                        <div class="col-lg-4 col-md-6 pt-2">
-                            <div data-aos="flip-up">
-                                <p class="text-white h4 text-center border border-primary rounded-pill bg-dark">SERVICES</p>
-                            </div>
-                        </div>
-                    <div class="col-lg-4 col-md-3"></div>
-                </div>
-
-                <div class="row min-vh-100 p-0 pb-3">
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 py-3">
-                        <div data-aos="flip-left">
-                            <div class="card mx-1 pt-3">
-                                <!-- <img src="..." class="card-img-top" alt="..."> -->
-                                <div data-aos="flip-up">
-                                    <p class="text-center"><i class="h1 bi bi-code-square"></i></p>
-                                </div>
-                                <div class="card-body bg-secondary text-light">
-                                <h5 class="card-title text-center">Web Development</h5>
-                                <p class="card-text text-justify ">Full Stack Web Developer, working on the client-side of a website, focusing on the user interface and user experience. As a Full Stack Web Developer, I use languages such as HTML5 (Hypertext Markup Language), CSS (Cascading Style Sheets), and JavaScript to create the visual and interactive elements of a website.</p>
-                                    <div data-aos="flip-down" data-aos-duration="1500">
-                                        <a href="#projects" class="btn btn-primary shadow">Go to Projects</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-sm-12 py-3">  
-                        <div data-aos="flip-up">
-                            <div class="card mx-1 pt-3 ">
-                                <!-- <img src="..." class="card-img-top" alt="..."> -->
-                                 <div data-aos="flip-up">
-                                     <p class="text-center"><i class="h1 bi bi-controller "></i></p>
-                                 </div>
-                                 <div class="card-body bg-secondary text-light ">
-                                 <h5 class="card-title text-center">Game Development</h5>
-                                 <p class="card-text text-justify">
-                                    I play games to get an idea of how the game was designed, and how it works, and to analyze the game mechanics. To build from scratch, re-create/prototype a feature or new trend, debug, enhance it, and play it. I learned animation with sprites, and do 3D Models using Blender3D in the process. I'm a fan of YouTubers like Brackey's, Dani, CodeMonkey, and Sebastian Lague.</p>
-                                     <div data-aos="flip-down" data-aos-duration="1500">
-                                         <a href="https://m-dorio.github.io/pubrepo/#portfolio" target="_blank" class="btn btn-primary shadow">Screenshots</a>
-                                     </div>
-                                 </div>
-                             </div>
-                        </div>           
-                       
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-12 col-sm-12 py-3">
-                        <div data-aos="flip-right">
-                            <div class="card mx-1 pt-3">
-                                <!-- <img src="..." class="card-img-top" alt="..."> -->
-                                 <div data-aos="flip-up">
-                                     <p class="text-center"><i class="h1 bi bi-wrench-adjustable-circle"></i></p>
-                                 </div>
-                                 <div class="card-body bg-secondary text-light">
-                                 <h5 class="card-title text-center">Technical Support Engineer</h5>
-                                 <p class="card-text text-justify">A Technical Support Engineer in cybersecurity. I do an investigation, data gathering, replicate/reproduce customer issues if possible, and document the steps I have committed. Assist and troubleshoot customers' servers in virtual/physical environments.</p>
-                                     <div data-aos="flip-down" data-aos-duration="1500">
-                                         <a href="https://www.linkedin.com/in/michael-angelo-dorio-17510182/" class="btn btn-primary shadow" target="_blank">Go to LinkedIn</a>
-                                     </div>
-                                 </div>
-                             </div>
-                        </div>
-                        
-                    </div>
-
-                </div>
-
-                
-            </div>
-        </section>
-        <!-- CARD SECTION ENDS -->
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         
-        <!-- PROJECT SECTION START -->
-        <section id="projects" class="bg-secondary">
-            <div class="container-fluid bg-opacity">
+            <title>Mike Dorio | Portfolio</title>
+        </head>
 
-                <div class="container">
+        <body translate="no">
+            <!-- HEADER SECTION START -->
+            <header class="container-fluid d-flex custom-color-1 align-content-center align-items-center fixed-top">
+                <div id="logo" class="align-content-center align-items-center">
+                    <h3 class="ms-4">
+                        <a href="#">
+                        <span class=" c-gold">d°R</span>
+                        <span class=" c-joker-blue">i°m</span>
+                        </a>
+                    </h3>
+                </div>            
+                <div class="wrapper d-xl-none d-lg-none d-md-none d-sm-block d-block mx-2">
+                    
+                    <input type="checkbox" id="menuToggler" class="input-toggler">
+                        <label for="menuToggler" class="menu-toggler">
+                        <span class="menu-toggler__line"></span>
+                        <span class="menu-toggler__line"></span>
+                        <span class="menu-toggler__line"></span>
+                        </label>
+                    <aside class="sidebar leaf-radius">
+                        <ul id="menu-icon" class="menu text-center">
+                        <li class="menu__item"><a class="menu__link" href="#home">HOME</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#about">&#916;BOUT</a></li>     
+                        <li class="menu__item"><a class="menu__link" href="#skills">SKILLS</a></li>     
+                        <li class="menu__item"><a class="menu__link" href="#experience">EXPERIENCE</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#projects">PROJECTS</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#contact">CONT&#916;CT</a></li>
+                        </ul>
+                    </aside>
+                </div>
+        
+                <div class="ms-auto d-none d-xl-block d-lg-block d-md-block d-sm-none">
+                    <div data-aos="fade-down">
+                        <nav class="my-navbar">
+                            <a href="#home" class="buttonx px-md-2 px-lg-2 active">HOME</a>
+                            <a href="#about" class="buttonx px-md-2 px-lg-2 ">&#916;BOUT</a> 
+                            <a href="#skills" class="buttonx px-md-2 px-lg-2 ">SKILLS</a>                          
+                            <a href="#experience" class="buttonx px-md-2 px-lg-2 ">EXPERIENCE</a>
+                            <a href="#projects" class="buttonx px-md-2 px-lg-2 ">PROJECTS</a>
+                            <a href="#contact" class="buttonx px-md-2 px-lg-2 ">CONT&#916;CT</a>
+                        </nav> 
+                    </div>
+                </div>
+
+            </header>
+            <!-- HEADER SECTION ENDS -->
+
+            <!-- HOME SECTION START -->
+            <section id="home" class="section-content mt-5">
+                <div class="container-fluid py-5">
+                    <h1 class="d-none">&nbsp;</h1>
                     <div class="row py-5">
-                        <div class="col-lg-4 col-md-3"></div>
-                            <div class="col-lg-4 col-md-6 pt-2 ">
-                                <div data-aos="flip-up">
-                                    <p class="text-white h4 text-center border border-primary rounded-pill bg-dark">PROJECTS</p>
-                                </div>
+                        <!-- <div class="col-10 col-sm-10 col-md-8 col-lg-8 col-xl-3 col-xxl-3 m-3 py-4 align-self-stretch p-3">         -->
+                        <div class="align-self-center offset-md-0 offset-lg-1 offset-sm-0 col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 pt-5 d-flex justify-content-sm-center justify-content-end order-lg-0 order-md-1 order-sm-1 order-1">
+                            <div data-aos="fade-down">
+                                <p class="mytitle xlfont-xsmid text-center d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block text-white mx-5">Hello there I'm</p>
+                                <p class="mytitle xlfont-xxsmid text-center d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none text-white mx-5">Hello there I'm</p>
+                                <p class="myname xlfont-max d-none d-sm-none d-md-none d-lg-block c-gold text-uppercase text-center my-2">&#8592;Mich&#916;el Dorio&#8594;</p>
+                                <p class="myname xlfont-smid c-gold d-sm-block d-md-block  d-lg-none text-uppercase text-center my-2">&#8592;Mich&#916;el Dorio&#8594;</p>
+                                <p class="mytitle xlfont-smid d-none d-sm-none d-sm-none d-lg-block  text-center text-white my-2">Full Stack Web Developer</p>
+                                <p class="mytitle xlfont-xsmid d-block d-sm-block d-sm-block d-lg-none text-center text-white my-2">Full Stack Web Developer</p>
                             </div>
-                        <div class="col-lg-4 col-md-3"></div>
-                    </div>
-    
-                    <div class="row min-vh-100 align-content-center pb-5 ">
-                        <div class="col offset-xl-2 col-xl-8 offset-lg-1 col-lg-10 offset-md-0 col-md-12 offset-sm-0 col-sm-12">
-                                <!-- CAROUSEL START-->
-                                <div data-aos="zoom-in-up">
-                                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                                        
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                                        </ol>
-                    
-                                        <div class="carousel-inner">
-                    
-                                            <div class="carousel-item active">
-                                                <img src="https://api.pikwy.com/web/649c0e08f4a03c7bac515f0b.jpg" class="img-fluid rounded mx-auto d-block" alt="...">
-                                                <div class="carousel-caption d-none d-md-block">
-                                                    <h1>Futuristic</h1>
-                                                    <p>Sample portfolio, color pallete inspired by "Tron".</p>
-                                                    <a class="btn btn-primary btn-lg text-white shadow font-weight-bold px-3" target="_blank" href="https://m-dorio.github.io/pubrepo/">Live demo</a>
-                                                </div>
-                                            </div>
-                    
-                                            <div class="carousel-item">
-                                                <img src="./images/screenshots/nnfarm.jpeg" class="img-fluid rounded mx-auto d-block" alt="...">
-                                                <div class="carousel-caption d-none d-md-block">
-                                                    <h1>A Nature's Farm</h1>
-                                                    <p>Resorts page, green and glass.</p>
-                                                    <a class="btn btn-primary btn-lg text-white shadow font-weight-bold px-3" target="_blank" href="https://m-dorio.github.io/nyorasfarm/">Live demo</a>
-                                                </div>
-                                            </div>
-
-                                            <div class="carousel-item">
-                                                <img src="https://api.pikwy.com/web/649c0e7d28413e4246116e1c.jpg" class="img-fluid rounded mx-auto d-block" alt="...">
-                                                <div class="carousel-caption d-none d-md-block">
-                                                    <span class="h1">Static Page</span>
-                                                    <p class="text-white">Just a static page in using gradient background color.</p>
-                                                    <a class="btn btn-primary btn-lg text-white shadow font-weight-bold px-3" target="_blank" href="https://m-dorio.github.io/portfolio_01/">Live demo</a>
-                                                </div>
-                                            </div>
-                            
-                                            <div class="carousel-item">
-                                                <img src="https://api.pikwy.com/web/649c0e63eaa8bd4ed3496f71.jpg" class="img-fluid rounded mx-auto d-block" alt="...">
-                                                <div class="carousel-caption d-none d-md-block">
-                                                    <span class="h1 text-dark">Sample Project</span>
-                                                    <p class="text-dark">This is a sample shop project.</p>
-                                                    <a class="btn btn-primary btn-lg text-white shadow font-weight-bold px-3" target="_blank" href="https://m-dorio.github.io/pillowshop/">Live demo</a>
-                                                
-                                                </div>
-                                            </div>
-                                        </div>
-                    
-                                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Previous</span>
-                                        </button>
-                    
-                                        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Next</span>
-                                        </button>
-                                    </div>  
-                                </div>
-                                <!-- CAROUSEL ENDS-->      
                         </div>
-                    </div>
-                </div>
 
-            </div>
-           
-        </section>
-       
-        <!-- PROJECT SECTION ENDS -->    
-
-        <!-- CONTACT FORM STARTS -->
-        <section id="contact" class="bg-secondary">
-            <div class="container-fluid">
-
-                <div class="container py-5">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-3"></div>
-                            <div class="col-lg-4 col-md-6 py-2">
-                                <div data-aos="flip-up">
-                                    <p class="text-white h4 text-center border border-primary rounded-pill bg-dark">CONTACT ME</p>
-                                </div>
-                            </div>
-                        <div class="col-lg-4 col-md-3"></div>
-                    </div>
-    
-                    <div class="row min-vh-100 align-top">
-                        
-                        <div class="col pt-5">
-                            <div class="col-lg-2 col-md-2"></div>
-                            <div class="col offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 offset-md-1 col-md-10 offset-sm-1 col-sm-10 p-2">
-                                <div class="bg-dark border border-light p-3" data-aos="flip-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                        <div class="align-self-center col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 pt-5 d-flex justify-content-sm-center justify-content-start order-lg-1 order-md-0 order-sm-0 order-0">
+                            <div id="home-image" data-aos="zoom-in">
+                                <div class="col-md-6 ">
                                     
-                                    <div class="text-white align-content-center">
-                                        <p>You can reach me at: &nbsp
-                                         <a role="button" class="btn btn-outline-light" target="_blank" href="https://www.facebook.com/muteninjaturtle"><i class="bi bi-facebook"></i></a>
-                                         <a role="button" class="btn btn-outline-light" target="_blank" href="https://gitlab.com/michaelangelodorio"><i class="fa-brands fa-gitlab"></i></a>
-                                         <a role="button" class="btn btn-outline-light" target="_blank" href="https://github.com/m-dorio/"><i class="bi bi-github"></i></a>
-                                         <a role="button" class="btn btn-outline-light" target="_blank" href="https://www.linkedin.com/in/michael-angelo-dorio-17510182/"><i class="bi bi-linkedin"></i></a>
-                                        </p>
-
-                                         <p>Or Email me:</p>
-                                    </div>   
-
-                                    <form id="form-col" action="https://formsubmit.co/670d3901f0cce250278dea3ca5f66b47" method="POST">
-                                        <div class="form-group text-light font-weight-bold mt-3">                 
-
-                                            <div class="form-group text-light font-weight-bold">
-                                                <label for="fullname">Full Name</label>
-                                                <input class="form-control" type="text" name="fullname" placeholder="Please enter your full name" required>
-                                            </div>
-
-                                            <div class="form-group text-light font-weight-bold">
-                                                <label for="email">Email address</label>
-                                                <input class="form-control" type="email" name="email" placeholder="Email address" required>
-                                            </div>
-                                          
-                                            <div class="form-group text-light font-weight-bold">
-                                                <label for="contactNumber">Contact Number&nbsp:</label><span class="text-info">&nbsp[optional]</span>
-                                                <input type="number" class="form-control" id="contactNumber" placeholder="Mobile/Tel number">
-                                            </div>
-                                            <div class="form-group text-light font-weight-bold">
-                                                <input class="form-control"  type="hidden" name="_subject" value="You have a new email!">
-                                                <input class="form-control" type="hidden" name="_template" value="table">
-                                                <input class="form-control"  type="hidden" name="_next" value="https://m-dorio.github.io/webportfolio/thankyou.html">
-                                                <!-- <input class="form-control" type="hidden" name="_captcha" value="false"> -->
-                                                <label for="message">Message:</label>
-                                                <textarea class="form-control" type="text" name="message" id="message" rows="3" placeholder="Write your message here" required></textarea>
-                                            </div>
-                              
-                                        </div>
-
-                                            <button class="btn btn-primary mb-3 font-weight-bold" type="submit">Send</button>
-                                            <button type="reset" class="btn btn-danger mb-3 font-weight-bold">Reset Form</button>
-                                         
-                                   </form>
-
-
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-2"></div>
-                        </div>
-    
-                        <!-- Modal Start -->
-                        <div class="modal fade" id="modalDiv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="myModalLabel">Thank you for contacting me!</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Message Successfully Sent</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                                    </div>
+                                    <p class="text-center align-content-center">
+                                        <img width="480" class="p-1 rounded-circle" src="./images/home-image-r.png" alt="none">
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Modal End --> 
-
-                    </div>
-                
-                
-                    <!-- NOTIFICATION WITH MODAL START-->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header bg-primary">
-                                <h5 class="modal-title text-light" id="exampleModalLabel">Notification!</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                </div>
-                                <div class="modal-body">
-                                    <span>Hello There!</span>  
-                                    <p>Mike learned bootstrap ver 4.6.2 during the bootcamp training, June 2023 and built this portfolio.</p>
-                                    Kindly visit: <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">getbootstrap.com</a>                
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
-                                </div>
-                            </div>
+                    
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-1 col-xl-1 col-xxl-1 p-5 order-md-2 order-sm-2 order-2 align-self-center">
+                            <p class="text-sm-center text-md-center text-center">
+                            <a class="text-glow btn" target="_blank" href="https://www.facebook.com/muteninjaturtle"><i class="display-3 fab fa-facebook fa-lg"></i></a>
+                            <a class="text-glow btn" target="_blank" href="https://gitlab.com/michaelangelodorio"><i class="display-3 fab fa-beat-fade fa-gitlab fa-lg"></i></a>
+                            <a class="text-glow btn" target="_blank" href="https://github.com/m-dorio/"><i class="display-3 fa-brands fa-github fa-bounce fa-lg"></i></a>
+                            <a class="text-glow btn" target="_blank" href="https://www.linkedin.com/in/michael-angelo-dorio-17510182/"><i class="display-3 fab fa-linkedin fa-lg"></i></a> 
+                            </p>                       
                         </div>
                     </div>
-                    <!-- NOTIFICATION WITH MODAL ENDS-->    
-
+                    <div class="row">
+                        <div class="d-flex justify-content-center text-center">
+                            <a class="buttonx button-z" href="#projects"><span></span><span></span><span></span><span></span>My projects</a>
+                        </div>
+                    </div>
+                    <!-- <div class="row py-5">
+                        <div class="d-flex align-items-center justify-content-center text-center">
+                            <a href="#about"><span class="xlfont-max c-gold text-uppercase">&#8595;</span></a>                       
+                        </div>
+                    </div> -->
                 </div>
+            </section>
+            <!-- HOME SECTION START -->
 
-            </div>
-            
-        </section>
-        <!-- CONTACT FORM ENDS -->
+            <!-- ABOUT SECTION START -->
+            <section id="about" class="section-content">
+                <div class="container-fluid py-5">
+                    <h1 class="d-none">&nbsp;</h1>
+                    <div class="row justify-content-between align-content-center align-items-center py-5 ">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <div data-aos="slide-right" data-aos-duration="500">
+                                <p class="xlfont-smid text-white display-3">&#916;BOUT</p>
+                            </div>
+                            <div class="container blur-content-dark">
+                                <div class="row d-flex justify-content-center align-content-center align-items-center">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-5 m-3 py-4 align-self-stretch">
+                                        <div class="p-4">    
+                                            <p class="text-center">
+                                            
+                                            <!-- <span class="c-gold xlfont-max">&#8594;</span> -->
+                                                <img height="150" class="rounded-4" src="./images/about-image0.jpg" alt="...">
+                                                <img height="150" class="rounded-4" src="./images/about-image3.jpg" alt="...">
+                
+                                            </p>
+                                            <p class="text-white"><span class="c-gold xlfont-xxsmid text-center">I'm </span> a tech-savvy and enjoy gaming, web designing, and creating prototype games in in my free time. I am always looking for new ways to learn, grow, and express myself.</p>
+                                            <p class="text-white description">
+                                            Humble with a good sense of humor, proactive, open-minded, and with the courage to challenge the existing and be innovative.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-6 m-3 py-4 align-self-stretch">
+                                        <div class="p-4">  
+                                        <p class="c-gold xlfont-smid text-center">What else I do?</p>
+                                        <p class="description text-white">I play games to get an idea of how the game was designed. To know how it works, to analyze the game mechanics, to build it with Unity3d, from scratch or to prototype it, to add a new feature or new trend, to debug, enhance it, and play it, many times.
+                                        <p><span class="c-gold xlfont-xxsmid text-center">It became a passion...</span></p>
+                                        <p class="description text-white">I have to learn the animation part, doing it with sprites, or with make 3d Models using Blender3d in the process. I know it's not easy to code, however, I am willing to learn and want to experience it professionally.
+                                        I'm a fan of YouTubers like Brackey's, Dani, CodeMonkey, and Sebastian Lague.</p>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="d-flex align-items-center justify-content-center text-center py-5">
+                            <a href="#skills"><span class="xlfont-max c-gold text-uppercase">&#8595;</span></a>                       
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ABOUT SECTION END -->
+
+            <!-- SKILLS SECTION START -->
+            <section class="section-content" id="skills">
+                <div class="container-fluid py-5">
+                    <h1 class="d-none">&nbsp;</h1>
+                    <div class="row justify-content-between align-content-center align-items-center py-5">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <div data-aos="slide-right" data-aos-duration="500">
+                                <p class="xlfont-smid text-white display-3">SKILLS</p>
+                            </div>
+                            <div class="container">
+                                <div class="row d-flex justify-content-center align-content-center align-items-center">
+                                    <div class="container blur-content-dark col-10 col-sm-10 col-md-8 col-lg-7 col-xl-3 col-xxl-3 m-2 py-4 align-self-stretch p-3">                
+                                        <div data-aos="fade-up" data-aos-duration="600">
+                                            <p class="c-gold xlfont-xxsmid">FRONTEND DEVELOPER</p>  
+                                            <ul class="description text-white">
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>JavaScript</li>
+                                                <li>Git, Gitlab, and GitHub</li>
+                                                <li>Bootstrap</li>
+                                                <li>Jira</li>
+                                                <li>Salesforce</li>
+                                                <li>Photoshop</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                               
+                                    <div class="blur-content-dark col-10 col-sm-10 col-md-8 col-lg-7 col-xl-5 col-xxl-4 m-2 py-5 align-self-stretch p-3"> 
+                                        <div data-aos="fade-up" data-aos-duration="1000">                        
+                                        <p class="c-gold xlfont-xxsmid">REPOSITORY</p>
+                                        <p class="c-light description ">
+                                            <span class="c-gold">My Git: </span>
+                                            <a href="https://github.com/m-dorio" target="_blank" rel="noopener noreferrer">github.com/m-dorio</a>
+                                        </p>
+                                            <ul>
+                                                <li><a href="https://m-dorio.github.io/portfolio_01/" target="_blank" rel="noopener noreferrer">Portfolio #1</a></li>
+                                                <li><a href="https://m-dorio.github.io/pubrepo/" target="_blank" rel="noopener noreferrer">Portfolio #2</a></li>
+                                                <li><a href="https://m-dorio.github.io/bootstrap-mdorio/" target="_blank" rel="noopener noreferrer">Portfolio #3 - Bootcamp activity</a></li>
+                                                <li><a href="https://m-dorio.github.io/dreamshop/" target="_blank" rel="noopener noreferrer">Online Shopping store - "dreamshop"</a> </li>
+                                                <li><a href="https://m-dorio.github.io/pillowshop/" target="_blank" rel="noopener noreferrer">Revised Online Shopping store - "pillowshop"</a></li>
+                                                <li><a href="https://m-dorio.github.io/webportfolio/" target="_blank" rel="noopener noreferrer">Portfolio update for mobile - Bootcamp campstone</a></li>
+                                                <li><a href="https://m-dorio.github.io/nyorasfarm/" target="_blank" rel="noopener noreferrer">Nyora's Farm</a></li>
+                                                <li><a href="https://m-dorio.github.io/figma-output/" target="_blank" rel="noopener noreferrer">Designed in Figma - Bootcamp activity</a></li>
+                                            </ul> 
+                                            <h1><a class="buttonx" href="#projects" >Check my projects</a></h1>
+                                        </div>
+                                    </div>
+                               
+                                    <div class="blur-content-dark col-10 col-sm-10 col-md-8 col-lg-7 col-xl-8 col-xxl-3 m-2 py-4 align-self-stretch p-3">              
+                                        <div data-aos="fade-up" data-aos-duration="600">
+                                            <p class="c-gold xlfont-xxsmid">OTHER SKILLS</p>
+                                            <div data-aos="fade-up" data-aos-duration="800">
+                                                <ul class="description text-white">
+                                                    <li>Troubleshooting skills</li>
+                                                    <li>Customer Satisfaction </li>
+                                                    <li>Communication skills</li>
+                                                    <li>Technical proficiency</li>
+                                                    <li>Documentation</li>
+                                                    <li>Problem-solving skills</li>
+                                                    <li>Customer service orientation</li>
+                                                    <li>Time management</li>
+                                                    <li>Organizational skills</li>
+                                                    <li>Professionalism and Ethical Conduct</li>
+                                                    <li>Critical Thinking</li>
+                                                    <li>Creativity</li>
+                                                    <li>Attention to detail.</li>
+                                                    <li>Patience</li>
+                                                </ul> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="d-flex align-items-center justify-content-center text-center py-5">
+                            <a href="#skills"><span class="xlfont-max c-gold text-uppercase">&#8595;</span></a>                       
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- TOOLS SECTION END -->
+
+            <!-- EXPERIENCE SECTION END -->
+            <section class="section-content" id="experience">
+                <div class="container-fluid py-5">
+                    <h1 class="d-none">&nbsp;</h1>
+                    <div class="row justify-content-between align-content-center align-items-center py-5">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <div data-aos="slide-right" data-aos-duration="500">
+                                <p class="xlfont-smid text-white display-3">EXPERIENCE</p>
+                            </div>
+                            <div class="container">
+                                <div class="row d-flex justify-content-center align-content-center align-items-center">
+                                    <div class="blur-content-dark col-12 col-sm-12 col-md-12 col-lg-10 col-xl-8 m-3 py-4 align-self-stretch p-5">
+                                        <div data-aos="slide-up" data-aos-duration="600">
+                                            <p class="c-gold text-center xlfont-xxsmid py-3">&#8594; Technical Support Engineer</p>
+                                            <p class="text-white text-center xlfont-min">RSA Security LLC</p>
+                                            <p class="text-white text-center h5">December 2017 to March 2023</p>
+                                            <p class="description text-white px-5">
+                                                Supporting Security information and event management (SIEM) RSA Netwitness XDR (Logs and Networks), with a Workflow Manager role.</p>
+                                            <p class="description text-white px-5">
+                                                Experience in working with Developers, Content Teams from India. I took tickets related to programming or scripting, which sometimes requires research and testing before we recommend the tool.
+                                                </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="blur-content-dark col-12 col-sm-12 col-md-12 col-lg-10 col-xl-8 m-3 py-4 align-self-stretch  p-5">
+                                        <div data-aos="slide-up" data-aos-duration="600">
+                                            <p class="c-gold text-center xlfont-xxsmid py-3">&#8594; Bid Desk Analyst</p>
+                                            <p class="text-white text-center xlfont-min">Strategic Networks Inc.</p>
+                                            <p class="text-white text-center h5">December 2014 to December 2017</p>
+                                                <p class="description text-white px-5">Working with Sales/Support/Managers and providing customer support for EMC and Dell in APJ.  Back-office roles, data entry, finalizing the document Basis of Estimate (BOE).</p> 
+                                                <p class="description text-white px-5">My manager gave me a task to work with the content team to do data entry, add the logic/conditions, to enhance our web-based request form.</p> 
+                                        </div> 
+                                    </div>
+
+                                    <div class="blur-content-dark col-12 col-sm-12 col-md-12 col-lg-10 col-xl-8 m-3 py-4 align-self-stretch  p-5">
+                                        <div data-aos="slide-up" data-aos-duration="1000">
+                                            <p class="c-gold text-center xlfont-xxsmid py-3">&#8594; Business Process Associate</p>
+                                            <p class="text-white text-center xlfont-min">AMDATEX Las Piñas Services Inc.</p>
+                                            <p class="text-white text-center h5">October 2010 to February 2013</p>
+                                                <p class="text-white px-5">Data Entry.
+                                                    Encoding, Coding for the application, and processing.
+                                                    </p> 
+                                                <p class="text-white px-5">Proofreading, examining documents (Mortgage/ Commercial/ Residential/ Non-Commercial Services), and being kept to detail before finalizing.</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="d-flex align-items-center justify-content-center text-center">
+                            <a href="#projects"><span class="xlfont-max c-gold text-uppercase">&#8595;</span></a>                       
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- EXPERIENCE SECTION END -->
+
+            <!-- WORKS SECTION START -->
+            <section class="section-content" id="projects">
+                <div class="container-fluid py-5">
+                    <h1 class="d-none">&nbsp;</h1>
+                    <div class="row d-flex justify-content-around align-content-center align-items-center py-5">
+                        <div data-aos="slide-right" data-aos-duration="500">
+                            <p class="xlfont-smid text-white display-3">PROJECTS</p>
+                        </div>
+                        
+                        <div class="row p-5">
+                            <div class="container">
+                                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-3">
+                                    <div class="my-5" data-aos="flip-up" data-aos-duration="1000">
+                                        <div class="card h-100 w-100 blur-content-dark">
+                                            <img src="./images/screenshots/proj-4.jpg" class="card-img-top p-3" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Online Shop</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <small class="c-gold">Last updated 3 mins ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="my-5" data-aos="flip-up" data-aos-duration="1000">
+                                        <div class="card h-100 w-100 blur-content-dark">
+                                            <img src="./images/screenshots/proj-3.jpg" class="card-img-top p-3" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Portfolio #1</h5>
+                                                <p class="card-text">Linear Background</p>
+                                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <small class="c-gold">Last updated 3 mins ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                
+                                    <div class="my-5" data-aos="flip-up" data-aos-duration="1000">
+                                        <div class="card h-100 w-100 blur-content-dark">
+                                            <img src="./images/screenshots/proj-2.jpg" class="card-img-top p-3" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Portfolio #2 - Tron pallete Inspired</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <small class="c-gold">Last updated 3 mins ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                
+                                    <div class="my-5" data-aos="flip-up" data-aos-duration="1000">
+                                        <div class="card h-100 w-100 blur-content-dark">
+                                            <img src="./images/screenshots/proj-1.jpg" class="card-img-top p-3" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Resort webpage</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <small class="c-gold">Last updated 3 mins ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                
+                                    <div class="my-5" data-aos="flip-up" data-aos-duration="1000">
+                                        <div class="card h-100 w-100 blur-content-dark">
+                                            <img src="./images/screenshots/proj-5.jpg" class="card-img-top p-3" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Online Shop</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <small class="c-gold">Last updated 3 mins ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    
+                                    <div class="my-5" data-aos="flip-up" data-aos-duration="1000">
+                                        <div class="card h-100 w-100 blur-content-dark">
+                                            <img src="./images/screenshots/proj-6.jpg" class="card-img-top p-3" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Portfolio #3 - Capstone</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <small class="c-gold">Last updated 3 mins ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="d-flex align-items-center justify-content-center text-center">
+                            <a href="#contact"><span class="xlfont-max c-gold text-uppercase">&#8595;</span></a>                       
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- WORKS SECTION END -->
+
+            <!-- CONTACT SECTION START -->
+            <section class="section-content" id="contact">
+                <div class="container-fluid py-5">
+                    <h1 class="d-none">&nbsp;</h1>
+                    <div class="row justify-content-between align-content-center align-items-center py-5">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <div data-aos="slide-right" data-aos-duration="500">
+                                <p class="xlfont-smid text-white display-3">CONT&#916;CT</p>
+                            </div>
+                            <div class="container">
+                                <div class="row d-flex justify-content-center align-content-center align-items-center">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 py-4">
+                                        <div class="blur-content-dark border border-light p-3" data-aos="flip-right" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+                                            <form id="form-col" action="https://formsubmit.co/670d3901f0cce250278dea3ca5f66b47" method="POST">
+                                                <div class="form-group text-black font-weight-bold mt-3">                 
+                
+                                                    <div class="form-group text-white font-weight-bold">
+                                                        <label>Full Name</label>
+                                                        <input class="form-control" type="text" name="fullname" placeholder="Please enter your full name" required>
+                                                    </div>
+                
+                                                    <div class="form-group text-white font-weight-bold">
+                                                        <label>Email address</label>
+                                                        <input class="form-control" type="email" name="email" placeholder="Email address" required>
+                                                    </div>
+                                                
+                                                    <div class="form-group text-white font-weight-bold">
+                                                        <label>Contact Number &nbsp;</label><span class="text-white">&nbsp; [optional]</span>
+                                                        <input type="number" class="form-control" id="contactNumber" placeholder="Mobile/Tel number">
+                                                    </div>
+                                                    <div class="form-group text-white font-weight-bold">
+                                                        <input class="form-control"  type="hidden" name="_subject" value="You have a new email!">
+                                                        <input class="form-control" type="hidden" name="_template" value="table">
+                                                        <input class="form-control"  type="hidden" name="_next" value="m-dorio.github.io/webportfolio/thankyou.html">
+                                                        <!-- <input class="form-control" type="hidden" name="_captcha" value="false"> -->
+                                                        <label>Mes  sage:</label>
+                                                        <textarea class="form-control" name="message" id="message" rows="3" placeholder="Write your message here" required></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="pt-3">
+                                                <button class="btn btn-success mb-3 font-weight-bold" type="submit">Send</button>
+                                                <button type="reset" class="btn btn-danger mb-3 font-weight-bold">Reset Form</button>
+                                                </div>
+                                            </form>
+                                        </div>  
+                                    </div>
+                                    
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 py-4 ">
+                                        <div class="h4 text-white text-center ">
+                                            <a class="text-glow btn blur-content" target="_blank" href="https://www.facebook.com/muteninjaturtle"><i class="display-3 bi bi-facebook"></i></a>
+                                            <a class="text-glow btn blur-content" target="_blank" href="https://gitlab.com/michaelangelodorio"><i class="display-3 bi bi-git"></i></a>
+                                            <a class="text-glow btn blur-content" target="_blank" href="https://github.com/m-dorio/"><i class="display-3 bi bi-github"></i></a>
+                                            <a class="text-glow btn blur-content" target="_blank" href="https://www.linkedin.com/in/michael-angelo-dorio-17510182/"><i class="display-3 bi bi-linkedin"></i></a>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- CONTACT SECTION END -->
+
+            <!-- FOOTER SECTION START -->
+            <footer class="d-flex align-items-center justify-content-center custom-color-1 text-white">
+                <div class="mx-2">
+                    Copyright &copy; 2023 by mdorio. | All rights Reserved.
+                </div>        
+                <div class="mx-2 align-self-center">
+                    <a href="#home">
+                        <p class="xlfont-mid c-gold text-uppercase">&#8593;</p>
+                        <!-- <i class="bi bi-arrow-up-circle-fill"></i> -->
+                    </a>
+                </div>  
+            </footer>
+            <!-- FOOTER SECTION ENDS -->
         
-
-          <!-- FOOTER SECTION START -->
-          <footer class="d-flex justify-content-between p-2 bg-dark text-white">
-            <div class="mx-2">
-                Copyright &copy; 2023 by mdorio. | All rights Reserved.
-            </div>        
-            <div class="mx-2 d-inline-flex h1">
-                <a href="#landing">
-                    <i class="bi bi-arrow-up-circle-fill"></i>
-                </a>
-            </div>  
-        </footer>
-         <!-- FOOTER SECTION ENDS -->
-
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
-        <!--FROM  https://michalsnik.github.io/aos/ -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-			AOS.init({
-				easing: 'ease-out-back',
-				duration: 2500
-			});
-		</script>
-
-
-        <!-- ADDITIONAL ICONS NOT INCLUDED IN BOOTSRAP -->
-        <script src="https://kit.fontawesome.com/6845f956f4.js" crossorigin="anonymous"></script>
- 
-    </body>
-</html>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+            <!--FROM  https://michalsnik.github.io/aos/ -->
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script src="https://kit.fontawesome.com/6845f956f4.js" crossorigin="anonymous"></script>
+            <script src="./js/script.js"></script> <!-- Must be in the last line after the typed -->
+            <script src="./js/aos.js"></script>
+        </body>
+    </html>
