@@ -547,7 +547,7 @@ max-width: 100vmax;
 
 .carousel-inner img{
     width: 800px;
-    height: 600px;
+    height: 300px;
     overflow: hidden;
 }
 
