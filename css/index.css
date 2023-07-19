@@ -363,12 +363,54 @@ max-width: 100vmax;
     50% { border-color: orange }
   }
 
+  @media(max-width: 2560px){
+    #typewritter{
+      height: 40px;
+    }
+  }
+  @media(max-width: 1024px){
+    #typewritter{
+      height: 40px;
+    }
+  }
+
+  @media(max-width: 768px){
+    #typewritter{
+      height: 60px;
+    }
+  }
+
+  @media(max-width: 640px){
+    #typewritter{
+      height: 40px;
+    }
+  }
+  
+  @media(max-width: 425px){
+    #typewritter{
+      height: 120px;
+    }
+  }
+
+  @media(max-width: 375px){
+    #typewritter{
+      height: 140px;
+    }
+  }
+
+  @media(max-width: 320px){
+    #typewritter{
+      height: 160px;
+    }
+  }
+
 .typewriting-text{
     /* border: 2px solid #ffffff; */
+
     color: var(--cp-8);
     font-family: monospace;
     overflow: hidden; 
-    font-size: 20px;
+    font-size: 16px;
     background-color: var(--cp-2);
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: wrap; /* Keeps the content on a single line */

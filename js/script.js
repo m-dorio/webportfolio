@@ -53,11 +53,8 @@ window.onscroll = () => {
 
 const typed = new Typed('.typewriting-text', {
     strings: [
-    '“Believe you can and you\'re halfway there.”',
-    '- Theodore Roosevelt',
-    '“Be brave to stand for what you believe in,',
-    'even if you stand alone.”',
-     '- Roy T. Bennett, The Light in the Heart',
+    // '“Believe you can and you\'re halfway there.” - Theodore Roosevelt',
+    '“Be brave to stand for what you believe in, even if you stand alone.” - Roy T. Bennett, The Light in the Heart.',
 ],
     typeSpeed: 50,
     backSpeed: 25,
