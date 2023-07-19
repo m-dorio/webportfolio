@@ -20,6 +20,7 @@
     --Montserratt: 'Montserrat', sans-serif;
     --Roboto: 'Roboto', sans-serif;
     --Titillium: 'Titillium Web', sans-serif !important;
+    overflow-x: hidden;
 }
 /* https://coolors.co/palette/353535-3c6e71-ffffff-d9d9d9-284b63
     #353535
@@ -42,6 +43,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Titillium Web', sans-serif !important;
     */
+    overflow-x: hidden;
 }
 
 
@@ -117,6 +119,14 @@ header{
   z-index: 3;
 }
 
+.contact-icons-sm i{
+  font-size: 9vh;
+}
+.contact-icons-md i{
+  font-size: 12vh;
+}
+
+
 .xlfont-max{
   font-size: 100px;
   font-weight: 800;
@@ -145,6 +155,11 @@ header{
 .xlfont-min{
   font-size: 18px;
   font-weight: 600;
+}
+
+.xlfont-min400{
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .xlfont-smin{
@@ -185,7 +200,7 @@ ul li :any-link:hover{
     text-decoration: none !important;
 }
 
-#home, #experience, #about, #skills, #projects, #contact{
+#landing, #experience, #about, #tools, #projects, #contact{
   width: 100%;
   height: 100%;
   position: relative;
@@ -199,23 +214,24 @@ ul li :any-link:hover{
   background-position: center center;
 }
 
-/* #home {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background:
-  linear-gradient(127deg, rgba(0, 4, 255, 0.5), rgba(0,255,0,0) 50.71%),
-  linear-gradient(217deg, rgba(255, 230, 0, 0.5), rgba(255,0,0,0) 50.71%),
-  linear-gradient(336deg, rgba(0, 123, 255, 0.5), rgba(0,0,255,0) 50.71%),
-  url(../images/about-image5.jpg);
-  background-attachment: scroll !important;
-  background-size: cover;
-  background-blend-mode: multiply;
-  background-position: center center;
-} */
+
+#tools div img {width: 70px; margin: 15px 15px;}
+#tools div {margin: auto;}
+
 
 .description{
-  line-height: 2.5rem;
+  line-height: 2.2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.xarrows{
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.content-header{
+text-align: left;
+text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .section-content{
@@ -224,14 +240,29 @@ font-size: medium;
 /* background: linear-gradient(#132c4a, #000); */
 background-color: var(--cp-darker);
 background-attachment: fixed;
-
-min-height: 100vh;
+/* min-height: 100vh; */
 max-width: 100vmax;
 } 
 
-/* #projects .bodyc .card{
-  margin: 40px 40px;
-} */
+.blur-content-half-bg-dark {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 0px solid rgba(255, 255, 255, 0.4);
+}
+
+.blur-content-dark-bg-img {background:
+  linear-gradient(127deg, rgba(255, 196, 0,0.5), rgba(0, 0, 0, 0) 20.71%),
+  linear-gradient(217deg, rgba(3, 0, 163, 0.5), rgba(0, 0, 0, 0) 50.71%),
+  linear-gradient(336deg, rgba(0, 113, 233, 0.5), rgba(0, 0, 0, 0) 50.71%),
+  url(../images/about-image1-gray.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+}
 
 .blur-content-dark {
   background: rgba(16, 16, 16, 0.6);
@@ -244,6 +275,7 @@ max-width: 100vmax;
 }
 
 .blur-content {
+
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -270,6 +302,34 @@ max-width: 100vmax;
     /* filter: blur(8px); */
     /* -webkit-filter: blur(8px); */
     border: 0px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.text-glow {
+  margin: 3px !important;
+  padding: 5px 5px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  border-radius: 14px;
+  z-index: 1;
+
+}
+
+
+.text-glow:hover{
+  margin: 3px !important;
+  padding: 5px 5px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  background-color: #ffb41e;
+  border-radius: 14px;
+  z-index: 1;
+  cursor: crosshair;
 }
 
 .rotator{
@@ -430,8 +490,12 @@ max-width: 100vmax;
     height: 22px;
     background-color:var(--cp-4);
 }
+.carousel-control-prev, .carousel-control-next{
+    background-color:rgba(0, 0, 0, 0.05);
+}
+
 .carousel-control-prev:hover, .carousel-control-next:hover{
-    background-color:rgba(0, 0, 0, 0.1);
+  background-color:rgba(0, 0, 0, 0.2);
 }
 
 .carousel-inner{
@@ -440,8 +504,8 @@ max-width: 100vmax;
 }
 
 .carousel-inner img{
-    width: 1024px;
-    height: 400px;
+    width: 800px;
+    height: 600px;
     overflow: hidden;
 }
 

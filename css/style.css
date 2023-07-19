@@ -435,31 +435,6 @@ Animation keyframes
   background-color: var(--cp-3);
 }
 
-.text-glow {
-  margin: auto !important;
-  padding: 5px 5px;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: 1px solid #ffffff;
-  background-color: transparent;
-  border-radius: 14px;
-  z-index: 1;
-}
-
-
-.text-glow:hover{
-  margin: auto !important;
-  padding: 5px 5px;
-  color: #000000;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: 1px solid #ffffff;
-  background-color: #ffb41e;
-  border-radius: 14px;
-  z-index: 1;
-
-}
 
 .text-spin:hover{
   animation: spin 1s cubic-bezier(0.39, 0.575, 0.565, 1);

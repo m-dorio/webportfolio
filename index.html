@@ -36,7 +36,7 @@
                         </a>
                     </h3>
                 </div>            
-                <div class="wrapper d-xl-none d-lg-none d-md-none d-sm-block d-block mx-2">
+                <div class="wrapper d-xxl-none d-xl-none d-lg-none d-md-block d-sm-block d-block mx-2">
                     
                     <input type="checkbox" id="menuToggler" class="input-toggler">
                         <label for="menuToggler" class="menu-toggler">
@@ -46,9 +46,9 @@
                         </label>
                     <aside class="sidebar leaf-radius">
                         <ul id="menu-icon" class="menu text-center">
-                        <li class="menu__item"><a class="menu__link" href="#home">HOME</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#landing">HOME</a></li>
                         <li class="menu__item"><a class="menu__link" href="#about">&#916;BOUT</a></li>     
-                        <li class="menu__item"><a class="menu__link" href="#skills">SKILLS</a></li>     
+                        <li class="menu__item"><a class="menu__link" href="#tools">SKILLS</a></li>     
                         <li class="menu__item"><a class="menu__link" href="#experience">EXPERIENCE</a></li>
                         <li class="menu__item"><a class="menu__link" href="#projects">PROJECTS</a></li>
                         <li class="menu__item"><a class="menu__link" href="#contact">CONT&#916;CT</a></li>
@@ -56,12 +56,12 @@
                     </aside>
                 </div>
         
-                <div class="ms-auto d-none d-xl-block d-lg-block d-md-block d-sm-none">
+                <div class="ms-auto d-none d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none">
                     <div data-aos="fade-down">
                         <nav class="my-navbar">
-                            <a href="#home" class="buttonx px-md-2 px-lg-2 active">HOME</a>
+                            <a href="#landing" class="buttonx px-md-2 px-lg-2 active">HOME</a>
                             <a href="#about" class="buttonx px-md-2 px-lg-2 ">&#916;BOUT</a> 
-                            <a href="#skills" class="buttonx px-md-2 px-lg-2 ">SKILLS</a>                          
+                            <a href="#tools" class="buttonx px-md-2 px-lg-2 ">TOOLS/SKILLS</a>                          
                             <a href="#experience" class="buttonx px-md-2 px-lg-2 ">EXPERIENCE</a>
                             <a href="#projects" class="buttonx px-md-2 px-lg-2 ">PROJECTS</a>
                             <a href="#contact" class="buttonx px-md-2 px-lg-2 ">CONT&#916;CT</a>
@@ -73,7 +73,7 @@
             <!-- HEADER SECTION ENDS -->
 
             <!-- HOME SECTION START -->
-            <section id="home" class="section-content mt-5">
+            <section id="landing" class="section-content mt-5">
                 <div class="container-fluid py-5">
                     <h1 class="d-none">&nbsp;</h1>
                     <div class="row py-5">
@@ -89,36 +89,38 @@
                             </div>
                         </div>
 
-                        <div class="align-self-center col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 pt-5 d-flex justify-content-sm-center justify-content-start order-lg-1 order-md-0 order-sm-0 order-0">
+                        <div class="align-self-center col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 pt-5 d-flex justify-content-center justify-content-sm-center justify-content-start order-lg-1 order-md-0 order-sm-0 order-0">
                             <div id="home-image" data-aos="zoom-in">
-                                <div class="col-md-6 ">
+                                <div class="col-md-6"> 
+                                    <p class="d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none text-center align-content-center">
+                                        <img width="320" class="p-1 rounded-circle" src="./images/home-image-r.png" alt="none">
+                                    </p>
                                     
-                                    <p class="text-center align-content-center">
+                                    <p class="d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block text-center align-content-center">
                                         <img width="480" class="p-1 rounded-circle" src="./images/home-image-r.png" alt="none">
                                     </p>
+                                   
                                 </div>
                             </div>
                         </div>
                     
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-1 col-xl-1 col-xxl-1 p-5 order-md-2 order-sm-2 order-2 align-self-center">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-1 col-xxl-1 p-5 order-md-2 order-sm-2 order-2 align-self-center">
+                            <div data-aos="slide-left" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
                             <p class="text-sm-center text-md-center text-center">
                             <a class="text-glow btn" target="_blank" href="https://www.facebook.com/muteninjaturtle"><i class="display-3 fab fa-facebook fa-lg"></i></a>
                             <a class="text-glow btn" target="_blank" href="https://gitlab.com/michaelangelodorio"><i class="display-3 fab fa-beat-fade fa-gitlab fa-lg"></i></a>
                             <a class="text-glow btn" target="_blank" href="https://github.com/m-dorio/"><i class="display-3 fa-brands fa-github fa-bounce fa-lg"></i></a>
-                            <a class="text-glow btn" target="_blank" href="https://www.linkedin.com/in/michael-angelo-dorio-17510182/"><i class="display-3 fab fa-linkedin fa-lg"></i></a> 
-                            </p>                       
+                            <a class="text-glow btn" target="_blank" href="https://www.linkedin.com/in/michael-angelo-dorio-17510182/"><i class="display-3 fa-brands fa-linkedin-in fa-lg"></i></a> 
+                            </p>     
+                            </div>                  
                         </div>
                     </div>
                     <div class="row">
                         <div class="d-flex justify-content-center text-center">
-                            <a class="buttonx button-z" href="#projects"><span></span><span></span><span></span><span></span>My projects</a>
+                                <a class="buttonx button-z" href="#projects"><span></span><span></span><span></span><span></span>My projects</a>
                         </div>
                     </div>
-                    <!-- <div class="row py-5">
-                        <div class="d-flex align-items-center justify-content-center text-center">
-                            <a href="#about"><span class="xlfont-max c-gold text-uppercase">&#8595;</span></a>                       
-                        </div>
-                    </div> -->
+
                 </div>
             </section>
             <!-- HOME SECTION START -->
@@ -127,43 +129,63 @@
             <section id="about" class="section-content">
                 <div class="container-fluid py-5">
                     <h1 class="d-none">&nbsp;</h1>
-                    <div class="row justify-content-between align-content-center align-items-center py-5 ">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="row justify-content-between align-content-center align-items-center py-5">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
                             <div data-aos="slide-right" data-aos-duration="500">
-                                <p class="xlfont-smid text-white display-3">&#916;BOUT</p>
+                                <p class="content-header xlfont-smid text-white display-3">&#916;BOUT</p>
                             </div>
-                            <div class="container blur-content-dark">
-                                <div class="row d-flex justify-content-center align-content-center align-items-center">
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-5 m-3 py-4 align-self-stretch">
-                                        <div class="p-4">    
-                                            <p class="text-center">
-                                            
-                                            <!-- <span class="c-gold xlfont-max">&#8594;</span> -->
-                                                <img height="150" class="rounded-4" src="./images/about-image0.jpg" alt="...">
-                                                <img height="150" class="rounded-4" src="./images/about-image3.jpg" alt="...">
-                
-                                            </p>
-                                            <p class="text-white"><span class="c-gold xlfont-xxsmid text-center">I'm </span>tech-savvy and enjoy gaming, web designing, and creating prototype games in my free time. I am always looking for new ways to learn, grow, and express myself.</p>
-                                            <p class="text-white description">
+                            <div class="container-fluid">
+                                <div class="row d-flex justify-content-center align-content-center align-items-center pt-5">
+                                    <div class="col-11 col-sm-11 col-md-11 col-lg-10 col-xl-8 m-3 align-self-stretch pt-5">
+                                        <div class="p-4 blur-content-dark">    
+                                            <p class="text-white xlfont-min400 description">
+                                                <span class="c-gold xlfont-xxsmid text-center">I'm </span>tech-savvy and enjoy gaming, web designing, and creating prototype games in my free time. I am always looking for new ways to learn, grow, and express myself.
                                             Humble with a good sense of humor, proactive, open-minded, and with the courage to challenge the existing and be innovative.</p>
+                                        </div>   
+                                    </div>
+                                    
+                                    <div class="col-11 col-sm-11 col-md-11 col-lg-10 col-xl-8 align-self-stretch">
+                                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">
+                                            
+                                            <div class="my-1" data-aos="flip-up" data-aos-duration="1000">
+                                                <div class="card h-100 w-100 blur-content-half-bg-dark">
+                                                    <img height="300px" class="p-3" src="./images/about-image3.jpg" alt="...">
+                                                    <div class="card-body">
+                                                        <!-- <h5 class="card-title">It became a passion...</h5> -->
+                                                        <p class="c-gold xlfont-xxsmid text-center">What else I do?</p>
+                                                        <p class="description text-white">I play games to get an idea of how the game was designed. To know how it works, to analyze the game mechanics, to build it with Unity3d, from scratch or to prototype it, to add a new feature or new trend, to debug, enhance it, and play it, many times.</p>
+                                                    </div>
+                                                    <div class="card-footer blur-content-dark">
+                                                        <small class="c-gold">A Raspberry pi4B, NAS + streaming server</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="my-1" data-aos="flip-up" data-aos-duration="1000">
+                                                <div class="card h-100 w-100 blur-content-half-bg-dark">
+                                                    <img height="300px" class="p-3" src="./images/gdev/image01.png" alt="...">
+                                                    <div class="card-body">
+                                                        <!-- <h5 class="card-title">It became a passion...</h5> -->
+                                                        <p class="c-gold xlfont-xxsmid text-center">It became a passion...</p>
+                                                        <p class="description text-white">I have to learn the animation part, doing it with sprites, or with make 3d Models using Blender3d in the process. I know it's not easy to code, however, I am willing to learn and want to experience it professionally.
+                                                        I'm a fan of YouTubers like Brackey's, Dani, CodeMonkey, and Sebastian Lague.</p>
+                                                    </div>
+                                                    <div class="card-footer blur-content-dark">
+                                                        <small class="c-gold">A tower defense game</small>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-6 m-3 py-4 align-self-stretch">
-                                        <div class="p-4">  
-                                        <p class="c-gold xlfont-smid text-center">What else I do?</p>
-                                        <p class="description text-white">I play games to get an idea of how the game was designed. To know how it works, to analyze the game mechanics, to build it with Unity3d, from scratch or to prototype it, to add a new feature or new trend, to debug, enhance it, and play it, many times.
-                                        <p><span class="c-gold xlfont-xxsmid text-center">It became a passion...</span></p>
-                                        <p class="description text-white">I have to learn the animation part, doing it with sprites, or with make 3d Models using Blender3d in the process. I know it's not easy to code, however, I am willing to learn and want to experience it professionally.
-                                        I'm a fan of YouTubers like Brackey's, Dani, CodeMonkey, and Sebastian Lague.</p>  
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row py-5">
+                        <div data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
                         <div class="d-flex align-items-center justify-content-center text-center py-5">
-                            <a href="#skills"><span class="xlfont-max c-gold text-uppercase">&#8595;</span></a>                       
+                            <a href="#tools"><span class="xarrows xlfont-max c-gold text-uppercase">&#8595;</span></a> 
+                        </div>                     
                         </div>
                     </div>
                 </div>
@@ -171,35 +193,44 @@
             <!-- ABOUT SECTION END -->
 
             <!-- SKILLS SECTION START -->
-            <section class="section-content" id="skills">
+            <section class="section-content" id="tools">
                 <div class="container-fluid py-5">
                     <h1 class="d-none">&nbsp;</h1>
                     <div class="row justify-content-between align-content-center align-items-center py-5">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <div data-aos="slide-right" data-aos-duration="500">
-                                <p class="xlfont-smid text-white display-3">SKILLS</p>
+                                <p class="content-header xlfont-smid text-white display-3">TOOLS/SKILLS</p>
                             </div>
-                            <div class="container">
+                            <div class="container-fluid">
                                 <div class="row d-flex justify-content-center align-content-center align-items-center">
-                                    <div class="container blur-content-dark col-10 col-sm-10 col-md-8 col-lg-7 col-xl-3 col-xxl-3 m-2 py-4 align-self-stretch p-3">                
+                                    <div class="container blur-content-dark col-11 col-sm-11 col-md-10 col-lg-10 col-xl-9 col-xxl-3 m-2 py-4 order-md-2 align-self-stretch p-3">                
                                         <div data-aos="fade-up" data-aos-duration="600">
-                                            <p class="c-gold xlfont-xxsmid">FRONTEND DEVELOPER</p>  
-                                            <ul class="description text-white">
-                                                <li>HTML</li>
-                                                <li>CSS</li>
-                                                <li>JavaScript</li>
-                                                <li>Git, Gitlab, and GitHub</li>
-                                                <li>Bootstrap</li>
-                                                <li>Jira</li>
-                                                <li>Salesforce</li>
-                                                <li>Photoshop</li>
-                                            </ul>
+                                            <p class="c-gold xlfont-xxsmid text-center">FRONTEND DEVELOPER</p>  
+                                            <div class="text-center">
+                                                <p>
+                                                <img class="text-glow" src="./images/logo-html5.png" alt="html">
+                                                <img class="text-glow" src="./images/logo-css3.png" alt="css">
+                                                <img class="text-glow" src="./images/logo-javascript.png" alt="js">
+                                                <img class="text-glow" src="./images/logo-bootstrap.png" alt="Bootstrap">
+                                              
+                                                <img class="text-glow" src="./images/logo-git.png" alt="Gir">
+                                                <img class="text-glow" src="./images/logo-gitlab.png" alt="Gitlab">
+                                                <img class="text-glow" src="./images/logo-github.png" alt="Github">
+                                              
+                                                <img class="text-glow" src="./images/logo-jira.png" alt="Jira">
+                                                <img class="text-glow" src="./images/logo-salesforce.png" alt="Salesforce">
+                                             
+                                                <img class="text-glow" src="./images/logo-photoshop.png" alt="Photoshop">
+                                                <img class="text-glow" src="./images/logo-sublime-text-3.png" alt="sublime">
+                                                <img class="text-glow" src="./images/logo-vscode.png" alt="vscode">
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                
-                                    <div class="blur-content-dark col-10 col-sm-10 col-md-8 col-lg-7 col-xl-5 col-xxl-4 m-2 py-5 align-self-stretch p-3"> 
+                                    <div class="container blur-content-dark col-11 col-sm-11 col-md-5 col-lg-5 col-xl-5 col-xxl-4 m-2 py-4 order-md-0 align-self-stretch p-3"> 
                                         <div data-aos="fade-up" data-aos-duration="1000">                        
-                                        <p class="c-gold xlfont-xxsmid">REPOSITORY</p>
+                                        <p class="c-gold xlfont-xxsmid text-center">REPOSITORY</p>
                                         <p class="c-light description ">
                                             <span class="c-gold">My Git: </span>
                                             <a href="https://github.com/m-dorio" target="_blank" rel="noopener noreferrer">github.com/m-dorio</a>
@@ -218,9 +249,9 @@
                                         </div>
                                     </div>
                                
-                                    <div class="blur-content-dark col-10 col-sm-10 col-md-8 col-lg-7 col-xl-8 col-xxl-3 m-2 py-4 align-self-stretch p-3">              
+                                    <div class="container blur-content-dark col-11 col-sm-11 col-md-5 col-lg-5 col-xl-4 col-xxl-3 m-2 py-4 align-self-stretch order-md-1 p-3">              
                                         <div data-aos="fade-up" data-aos-duration="600">
-                                            <p class="c-gold xlfont-xxsmid">OTHER SKILLS</p>
+                                            <p class="c-gold xlfont-xxsmid text-center">OTHER SKILLS</p>
                                             <div data-aos="fade-up" data-aos-duration="800">
                                                 <ul class="description text-white">
                                                     <li>Troubleshooting skills</li>
@@ -247,8 +278,10 @@
                         </div>
                     </div>
                     <div class="row py-5">
+                        <div data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
                         <div class="d-flex align-items-center justify-content-center text-center py-5">
-                            <a href="#experience"><span class="xlfont-max c-gold text-uppercase">&#8595;</span></a>                       
+                            <a href="#experience"><span class="xarrows xlfont-max c-gold text-uppercase">&#8595;</span></a>                       
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -262,42 +295,40 @@
                     <div class="row justify-content-between align-content-center align-items-center py-5">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <div data-aos="slide-right" data-aos-duration="500">
-                                <p class="xlfont-smid text-white display-3">EXPERIENCE</p>
+                                <p class="content-header xlfont-smid text-white display-3">EXPERIENCE</p>
                             </div>
-                            <div class="container">
+                            <div class="container-fluid">
                                 <div class="row d-flex justify-content-center align-content-center align-items-center">
-                                    <div class="blur-content-dark col-12 col-sm-12 col-md-12 col-lg-10 col-xl-8 m-3 py-4 align-self-stretch p-5">
-                                        <div data-aos="slide-up" data-aos-duration="600">
-                                            <p class="c-gold text-center xlfont-xxsmid py-3">&#8594; Technical Support Engineer</p>
+                                    <div class="blur-content-dark col-12 col-sm-12 col-md-8 col-lg-5 col-xl-5 col-xxl-4 m-3 py-4 align-self-stretch p-2">
+                                        <div  class="px-5" data-aos="slide-up" data-aos-duration="600">
+                                            <p class="c-gold text-center xlfont-xxsmid py-3">Technical Support Engineer</p>
                                             <p class="text-white text-center xlfont-min">RSA Security LLC</p>
-                                            <p class="text-white text-center h5">December 2017 to March 2023</p>
-                                            <p class="description text-white px-5">
+                                            <p class="text-white text-center h4">&#8594; December 2017 to March 2023</p>
+                                            <p class="description text-white">
                                                 Supporting Security information and event management (SIEM) RSA Netwitness XDR (Logs and Networks), with a Workflow Manager role.</p>
-                                            <p class="description text-white px-5">
+                                            <p class="description text-white">
                                                 Experience in working with Developers, Content Teams from India. I took tickets related to programming or scripting, which sometimes requires research and testing before we recommend the tool.
                                                 </p>
                                         </div>
                                     </div>
 
-                                    <div class="blur-content-dark col-12 col-sm-12 col-md-12 col-lg-10 col-xl-8 m-3 py-4 align-self-stretch  p-5">
-                                        <div data-aos="slide-up" data-aos-duration="600">
-                                            <p class="c-gold text-center xlfont-xxsmid py-3">&#8594; Bid Desk Analyst</p>
+                                    <div class="blur-content-dark col-12 col-sm-12 col-md-8 col-lg-5 col-xl-5 col-xxl-4 m-3 py-4 align-self-stretch p-2">
+                                        <div class="px-5" data-aos="slide-up" data-aos-duration="800">
+                                            <p class="c-gold text-center xlfont-xxsmid py-3">Bid Desk Analyst</p>
                                             <p class="text-white text-center xlfont-min">Strategic Networks Inc.</p>
-                                            <p class="text-white text-center h5">December 2014 to December 2017</p>
-                                                <p class="description text-white px-5">Working with Sales/Support/Managers and providing customer support for EMC and Dell in APJ.  Back-office roles, data entry, finalizing the document Basis of Estimate (BOE).</p> 
-                                                <p class="description text-white px-5">My manager gave me a task to work with the content team to do data entry, add the logic/conditions, to enhance our web-based request form.</p> 
+                                            <p class="text-white text-center h4">&#8594; December 2014 to December 2017</p>
+                                            <p class="text-white description">Working with Sales/Support/Managers and providing customer support for EMC and Dell in APJ.  Back-office roles, data entry, finalizing the document Basis of Estimate (BOE).</p> 
+                                                <p class="text-white description"> My manager gave me a task to work with the content team to do data entry, add the logic/conditions, to enhance our web-based request form.</p> 
                                         </div> 
                                     </div>
 
-                                    <div class="blur-content-dark col-12 col-sm-12 col-md-12 col-lg-10 col-xl-8 m-3 py-4 align-self-stretch  p-5">
-                                        <div data-aos="slide-up" data-aos-duration="1000">
-                                            <p class="c-gold text-center xlfont-xxsmid py-3">&#8594; Business Process Associate</p>
+                                    <div class="blur-content-dark col-12 col-sm-12 col-md-8 col-lg-6 col-xl-8 col-xxl-3 m-3 py-4 align-self-stretch p-2">
+                                        <div class="px-5" data-aos="slide-up" data-aos-duration="1000">
+                                            <p class="c-gold text-center xlfont-xxsmid py-3">Business Process Associate</p>
                                             <p class="text-white text-center xlfont-min">AMDATEX Las Piñas Services Inc.</p>
-                                            <p class="text-white text-center h5">October 2010 to February 2013</p>
-                                                <p class="text-white px-5">Data Entry.
-                                                    Encoding, Coding for the application, and processing.
-                                                    </p> 
-                                                <p class="text-white px-5">Proofreading, examining documents (Mortgage/ Commercial/ Residential/ Non-Commercial Services), and being kept to detail before finalizing.</p> 
+                                            <p class="text-white text-center h4">&#8594; October 2010 to February 2013</p>
+                                            <p class="text-white description"> Data Entry / Encoding, Coding for the application, and processing.
+                                        Proofreading, examining documents (Mortgage/ Commercial/ Residential/ Non-Commercial Services), and being kept to detail before finalizing.</p> 
                                         </div>
                                     </div>
                                 </div>
@@ -305,8 +336,10 @@
                         </div>
                     </div>
                     <div class="row py-5">
+                        <div data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
                         <div class="d-flex align-items-center justify-content-center text-center">
-                            <a href="#projects"><span class="xlfont-max c-gold text-uppercase">&#8595;</span></a>                       
+                            <a href="#projects"><span class="xarrows xlfont-max c-gold text-uppercase">&#8595;</span></a>                       
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -319,15 +352,17 @@
                     <h1 class="d-none">&nbsp;</h1>
                     <div class="row d-flex justify-content-around align-content-center align-items-center py-5">
                         <div data-aos="slide-right" data-aos-duration="500">
-                            <p class="xlfont-smid text-white display-3">PROJECTS</p>
+                            <p class="content-header xlfont-smid text-white display-3">PROJECTS</p>
                         </div>
                         
                         <div class="row p-5">
-                            <div class="container">
+                            <div class="container-fluid">
                                 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-3">
                                     <div class="my-5" data-aos="flip-up" data-aos-duration="1000">
                                         <div class="card h-100 w-100 blur-content-dark">
-                                            <img src="./images/screenshots/proj-4.jpg" class="card-img-top p-3" alt="...">
+                                            <a href="https://m-dorio.github.io/pillowshop/" target="_blank" rel="noopener noreferrer">
+                                                <img src="./images/screenshots/proj-4.jpg" class="card-img-top p-3" alt="...">
+                                            </a>
                                             <div class="card-body">
                                                 <h5 class="card-title">Online Shop</h5>
                                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -340,7 +375,7 @@
                                 
                                     <div class="my-5" data-aos="flip-up" data-aos-duration="1000">
                                         <div class="card h-100 w-100 blur-content-dark">
-                                            <img src="./images/screenshots/proj-3.jpg" class="card-img-top p-3" alt="...">
+                                            <a href="https://m-dorio.github.io/portfolio_01/" target="_blank" rel="noopener noreferrer"><img src="./images/screenshots/proj-3.jpg" class="card-img-top p-3" alt="..."></a>
                                             <div class="card-body">
                                                 <h5 class="card-title">Portfolio #1</h5>
                                                 <p class="card-text">Linear Background</p>
@@ -355,7 +390,7 @@
                                 
                                     <div class="my-5" data-aos="flip-up" data-aos-duration="1000">
                                         <div class="card h-100 w-100 blur-content-dark">
-                                            <img src="./images/screenshots/proj-2.jpg" class="card-img-top p-3" alt="...">
+                                            <a href="https://m-dorio.github.io/pubrepo/" target="_blank" rel="noopener noreferrer"><img src="./images/screenshots/proj-2.jpg" class="card-img-top p-3" alt="..."></a>
                                             <div class="card-body">
                                                 <h5 class="card-title">Portfolio #2 - Tron pallete Inspired</h5>
                                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -369,7 +404,8 @@
                                 
                                     <div class="my-5" data-aos="flip-up" data-aos-duration="1000">
                                         <div class="card h-100 w-100 blur-content-dark">
-                                            <img src="./images/screenshots/proj-1.jpg" class="card-img-top p-3" alt="...">
+                                            <a href="https://m-dorio.github.io/nyorasfarm/" target="_blank" rel="noopener noreferrer"><img src="./images/screenshots/proj-1.jpg" class="card-img-top p-3" alt="..."></a>
+                                            
                                             <div class="card-body">
                                                 <h5 class="card-title">Resort webpage</h5>
                                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -380,10 +416,9 @@
                                         </div>
                                     </div>
                                 
-                                
                                     <div class="my-5" data-aos="flip-up" data-aos-duration="1000">
                                         <div class="card h-100 w-100 blur-content-dark">
-                                            <img src="./images/screenshots/proj-5.jpg" class="card-img-top p-3" alt="...">
+                                            <a href="https://m-dorio.github.io/dreamshop/" target="_blank" rel="noopener noreferrer"><img src="./images/screenshots/proj-5.jpg" class="card-img-top p-3" alt="..."></a> 
                                             <div class="card-body">
                                                 <h5 class="card-title">Online Shop</h5>
                                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -394,10 +429,11 @@
                                         </div>
                                     </div>
                                 
-                                    
                                     <div class="my-5" data-aos="flip-up" data-aos-duration="1000">
                                         <div class="card h-100 w-100 blur-content-dark">
-                                            <img src="./images/screenshots/proj-6.jpg" class="card-img-top p-3" alt="...">
+                                            <a href="https://m-dorio.github.io/bootstrap-mdorio/" target="_blank" rel="noopener noreferrer"><img src="./images/screenshots/proj-6.jpg" class="card-img-top p-3" alt="..."></a>
+
+                                            <
                                             <div class="card-body">
                                                 <h5 class="card-title">Portfolio #3 - Capstone</h5>
                                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -412,8 +448,10 @@
                         </div>
                     </div>
                     <div class="row py-5">
+                        <div data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
                         <div class="d-flex align-items-center justify-content-center text-center">
-                            <a href="#contact"><span class="xlfont-max c-gold text-uppercase">&#8595;</span></a>                       
+                            <a href="#contact"><span class="xarrows xlfont-max c-gold text-uppercase">&#8595;</span></a>                       
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -422,61 +460,73 @@
 
             <!-- CONTACT SECTION START -->
             <section class="section-content" id="contact">
-                <div class="container-fluid py-5">
+                <div class="container-fluid py-5  vh-100 ">
                     <h1 class="d-none">&nbsp;</h1>
                     <div class="row justify-content-between align-content-center align-items-center py-5">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                            <div data-aos="slide-right" data-aos-duration="500">
-                                <p class="xlfont-smid text-white display-3">CONT&#916;CT</p>
+                            <div data-aos="slide-right" data-aos-duration="1000">
+                                <p class="content-header xlfont-smid text-white display-3">CONT&#916;CT</p>
                             </div>
-                            <div class="container">
-                                <div class="row d-flex justify-content-center align-content-center align-items-center">
-                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 py-4">
-                                        <div class="blur-content-dark border border-light p-3" data-aos="flip-right" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-                                            <form id="form-col" action="https://formsubmit.co/670d3901f0cce250278dea3ca5f66b47" method="POST">
-                                                <div class="form-group text-black font-weight-bold mt-3">                 
-                
-                                                    <div class="form-group text-white font-weight-bold">
-                                                        <label>Full Name</label>
-                                                        <input class="form-control" type="text" name="fullname" placeholder="Please enter your full name" required>
+                            <div class="container-fluid">
+                                <div class="row d-flex justify-content-center align-items-center">
+                                    <div class="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-3 col-xxl-3">                 
+                                        <div data-aos="flip-right" data-aos-easing="linear" data-aos-duration="1000">
+                                            <div class="blur-content-dark m-2 py-4 p-3">
+                                                <form id="form-col" action="https://formsubmit.co/670d3901f0cce250278dea3ca5f66b47" method="POST">
+                                                    <div class="form-group text-black font-weight-bold mt-3">                 
+                    
+                                                        <div class="form-group text-white font-weight-bold">
+                                                            <label>Full Name</label>
+                                                            <input class="form-control" type="text" name="fullname" placeholder="Please enter your full name" required>
+                                                        </div>
+                    
+                                                        <div class="form-group text-white font-weight-bold">
+                                                            <label>Email address</label>
+                                                            <input class="form-control" type="email" name="email" placeholder="Email address" required>
+                                                        </div>
+                                                    
+                                                        <div class="form-group text-white font-weight-bold">
+                                                            <label>Contact Number &nbsp;</label><span class="text-white">&nbsp; [optional]</span>
+                                                            <input type="number" class="form-control" id="contactNumber" placeholder="Mobile/Tel number">
+                                                        </div>
+                                                        <div class="form-group text-white font-weight-bold">
+                                                            <input class="form-control"  type="hidden" name="_subject" value="You have a new email!">
+                                                            <input class="form-control" type="hidden" name="_template" value="table">
+                                                            <input class="form-control"  type="hidden" name="_next" value="https://m-dorio.github.io/webportfolio/thankyou.html">
+                                                            <!-- <input class="form-control" type="hidden" name="_captcha" value="false"> -->
+                                                            <label>Mes  sage:</label>
+                                                            <textarea class="form-control" name="message" id="message" rows="3" placeholder="Write your message here" required></textarea>
+                                                        </div>
                                                     </div>
-                
-                                                    <div class="form-group text-white font-weight-bold">
-                                                        <label>Email address</label>
-                                                        <input class="form-control" type="email" name="email" placeholder="Email address" required>
+                                                    <div class="pt-3">
+                                                    <button class="btn btn-success mb-3 font-weight-bold" type="submit">Send</button>
+                                                    <button type="reset" class="btn btn-danger mb-3 font-weight-bold">Reset Form</button>
                                                     </div>
-                                                
-                                                    <div class="form-group text-white font-weight-bold">
-                                                        <label>Contact Number &nbsp;</label><span class="text-white">&nbsp; [optional]</span>
-                                                        <input type="number" class="form-control" id="contactNumber" placeholder="Mobile/Tel number">
-                                                    </div>
-                                                    <div class="form-group text-white font-weight-bold">
-                                                        <input class="form-control"  type="hidden" name="_subject" value="You have a new email!">
-                                                        <input class="form-control" type="hidden" name="_template" value="table">
-                                                        <input class="form-control"  type="hidden" name="_next" value="https://m-dorio.github.io/webportfolio/thankyou.html">
-                                                        <!-- <input class="form-control" type="hidden" name="_captcha" value="false"> -->
-                                                        <label>Mes  sage:</label>
-                                                        <textarea class="form-control" name="message" id="message" rows="3" placeholder="Write your message here" required></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="pt-3">
-                                                <button class="btn btn-success mb-3 font-weight-bold" type="submit">Send</button>
-                                                <button type="reset" class="btn btn-danger mb-3 font-weight-bold">Reset Form</button>
-                                                </div>
-                                            </form>
-                                        </div>  
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                     
-                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 py-4 ">
-                                        <div class="h4 text-white text-center ">
-                                            <a class="text-glow btn blur-content" target="_blank" href="https://www.facebook.com/muteninjaturtle"><i class="display-3 bi bi-facebook"></i></a>
-                                            <a class="text-glow btn blur-content" target="_blank" href="https://gitlab.com/michaelangelodorio"><i class="display-3 bi bi-git"></i></a>
-                                            <a class="text-glow btn blur-content" target="_blank" href="https://github.com/m-dorio/"><i class="display-3 bi bi-github"></i></a>
-                                            <a class="text-glow btn blur-content" target="_blank" href="https://www.linkedin.com/in/michael-angelo-dorio-17510182/"><i class="display-3 bi bi-linkedin"></i></a>
-                                        </div> 
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 py-4 ">
+                                        <div data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1000">
+                                            <div class="h4 text-white text-center contact-icons-sm d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none">
+                                                <a class="text-glow btn blur-content" target="_blank" href="https://www.facebook.com/muteninjaturtle"><i class="display-3 bi bi-facebook"></i></a>
+                                                <a class="text-glow btn blur-content" target="_blank" href="https://gitlab.com/michaelangelodorio"><i class="display-3 bi bi-git"></i></a>
+                                                <a class="text-glow btn blur-content" target="_blank" href="https://github.com/m-dorio/"><i class="display-3 bi bi-github"></i></a>
+                                                <a class="text-glow btn blur-content" target="_blank" href="https://www.linkedin.com/in/michael-angelo-dorio-17510182/"><i class="display-3 bi bi-linkedin"></i></a>
+                                            </div>
+                                            <div class="h4 text-white text-center contact-icons-md d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                                                <a class="text-glow btn blur-content" target="_blank" href="https://www.facebook.com/muteninjaturtle"><i class="display-3 bi bi-facebook"></i></a>
+                                                <a class="text-glow btn blur-content" target="_blank" href="https://gitlab.com/michaelangelodorio"><i class="display-3 bi bi-git"></i></a>
+                                                <a class="text-glow btn blur-content" target="_blank" href="https://github.com/m-dorio/"><i class="display-3 bi bi-github"></i></a>
+                                                <a class="text-glow btn blur-content" target="_blank" href="https://www.linkedin.com/in/michael-angelo-dorio-17510182/"><i class="display-3 bi bi-linkedin"></i></a>
+                                            </div>
+                                        </div>
                                     </div>
+                                    
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -489,7 +539,7 @@
                     Copyright &copy; 2023 by mdorio. | All rights Reserved.
                 </div>        
                 <div class="mx-2 align-self-center">
-                    <a href="#home">
+                    <a href="#landing">
                         <p class="xlfont-mid c-gold text-uppercase">&#8593;</p>
                         <!-- <i class="bi bi-arrow-up-circle-fill"></i> -->
                     </a>
