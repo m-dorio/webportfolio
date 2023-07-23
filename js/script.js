@@ -3,7 +3,7 @@ let myNavbar = document.querySelector('.my-navbar');
 
 menuIcon.onclick = () => {
        
-    menuIcon.classList.toggle('bi bi-list');
+    // menuIcon.classList.toggle('bi bi-list');
     myNavbar.classList.toggle('active');
 };
 

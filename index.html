@@ -27,38 +27,38 @@
 
         <body translate="no" class="dark_theme">
             <!-- HEADER SECTION START -->
-            <header class="container-fluid d-flex custom-color-1 align-content-center align-items-center fixed-top">
-                <div id="logo" class="align-content-center align-items-center">
+            <header class="container-fluid d-flex custom-color-1 justify-content-between align-items-center fixed-top">
+                <div id="logo" class="">
                     <h3 class="ms-4">
                         <a href="#">
                         <span class=" c-gold">d°R</span>
                         <span class=" c-joker-blue">i°m</span>
                         </a>
                     </h3>
-                </div>            
-                <div class="wrapper d-xxl-none d-xl-none d-lg-none d-md-block d-sm-block d-block mx-2">
+                </div> 
+          
+                <div class="wrapper d-xxl-none d-xl-none d-lg-none d-md-block d-sm-block d-block mx-2 order-1">
+                    <main>
+                        <input type="checkbox" id="menuToggler" class="input-toggler" data-nav-toggle-btn>
+                            <label for="menuToggler" class="menu-toggler">
+                            <span class="menu-toggler__line"></span>
+                            <span class="menu-toggler__line"></span>
+                            <span class="menu-toggler__line"></span>
+                            </label>
                     
-                    <input type="checkbox" id="menuToggler" class="main input-toggler" data-nav-toggle-btn>
-                        <label for="menuToggler" class="menu-toggler">
-                        <span class="menu-toggler__line"></span>
-                        <span class="menu-toggler__line"></span>
-                        <span class="menu-toggler__line"></span>
-                        </label>
-                    <aside class="sidebar leaf-radius">
-                        <ul id="menu-icon" class="menu text-center">
-                            <button class="theme-btn active" aria-label="Change Theme" title="Change Theme" data-theme-btn>
-                                <span class="icon bi bi-bug-fill"></span>
-                              </button>
-                        <li class="menu__item"><a class="menu__link" href="#landing">HOME</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#about">&#916;BOUT</a></li>     
-                        <li class="menu__item"><a class="menu__link" href="#tools">SKILLS</a></li>     
-                        <li class="menu__item"><a class="menu__link" href="#experience">EXPERIENCE</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#projects">PROJECTS</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#contact">CONT&#916;CT</a></li>
-                        </ul>
-                    </aside>
+                        <aside class="sidebar leaf-radius">
+                            <ul id="menu-icon" class="menu text-center">
+                            <li class="menu__item"><a class="menu__link" href="#landing">HOME</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#about">&#916;BOUT</a></li>     
+                            <li class="menu__item"><a class="menu__link" href="#tools">SKILLS</a></li>     
+                            <li class="menu__item"><a class="menu__link" href="#experience">EXPERIENCE</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#projects">PROJECTS</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#contact">CONT&#916;CT</a></li>
+                            </ul>
+                        </aside>
+                    </main>
                 </div>
-        
+                
                 <div class="ms-auto d-none d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none">
                     <div data-aos="fade-down">
                         <nav class="my-navbar" data-navbar>
@@ -68,13 +68,14 @@
                             <a href="#experience" class="buttonx px-md-2 px-lg-2 ">EXPERIENCE</a>
                             <a href="#projects" class="buttonx px-md-2 px-lg-2 ">PROJECTS</a>
                             <a href="#contact" class="buttonx px-md-2 px-lg-2 ">CONT&#916;CT</a>
-                            <button class="theme-btn active" aria-label="Change Theme" title="Change Theme" data-theme-btn>
-                                <span class="icon bi bi-bug-fill"></span>
-                              </button>
                         </nav> 
                     </div>
+                </div>  
+                <div class="align-content-center">
+                    <button class=" order-0 theme-btn active" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+                        <span class="icon bi bi-bug-fill"></span>
+                    </button>
                 </div>
-
             </header>
             <!-- HEADER SECTION ENDS -->
 

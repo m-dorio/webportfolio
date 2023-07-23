@@ -93,7 +93,7 @@
 
 .theme-btn {
   padding: 4px;
-  width: 68px;
+  width: 60px;
   background: var(--bg-secondary);
   border-radius: 100px;
   transition: var(--transition-1);
@@ -103,7 +103,7 @@
 
 .theme-btn .icon {
   position: relative;
-  left: -20px;
+  left: -15px;
   width: 20px;
   height: 20px;
   border-radius: 50px;
@@ -112,7 +112,7 @@
 }
 
 .theme-btn.active .icon {
-  left: 20px;
+  left: 15px;
   box-shadow: inset 20px -20px var(--ocean);
 }
 
