@@ -16,13 +16,14 @@ replaceDate = () => {
 
 replaceDate();
 
-thankYou = () => {
-    $('#myModal').modal('show');
 
-    document.getElementById("myButton").onclick = function () {
-        location.href = "https://m-dorio.github.io/webportfolio/"; 
-        //https://m-dorio.github.io/webportfolio/#contact 
-    };
-}
+// thankYou = () => {
+//     $('#myModal').modal('show');
 
-thankYou();
+//     document.getElementById("myButton").onclick = function () {
+//         location.href = "https://m-dorio.github.io/webportfolio/"; 
+//         //https://m-dorio.github.io/webportfolio/#contact 
+//     };
+// }
+
+// thankYou();
