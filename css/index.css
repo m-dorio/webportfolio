@@ -102,9 +102,8 @@
 transition: 1s ease-out;
 } 
 
-
 .theme-btn {
-  padding: 4px;
+  padding: 2px;
   width: 60px;
   background: var(--bg-secondary);
   border-radius: 100px;
@@ -125,7 +124,7 @@ transition: 1s ease-out;
 
 .theme-btn.active .icon {
   left: 15px;
-  box-shadow: inset 20px -20px var(--ocean);
+  box-shadow: inset  20px -20px var(--ocean);
 }
 
 body {
@@ -634,6 +633,9 @@ transition: 1s ease-out;
     transition: 1.5s ease-in-out;
 }
 
+.float{animation: floatImage 3s ease-in-out infinite;
+  transition: 1.5s ease;}
+
 @keyframes rotateImage{
     0% {
         transform: rotate(0);
@@ -641,6 +643,19 @@ transition: 1s ease-out;
       100% {
         transform: rotate(360deg);
       }
+}
+
+@keyframes floatImage{
+  0%{
+      transform: translateY(0);
+  }
+  50%{
+      transform: translateY(-1.5rem);
+      
+  }
+  100%{
+      transform: translateY(0);
+  }
 }
 
 /* The typing effect */
