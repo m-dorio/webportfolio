@@ -57,8 +57,7 @@
   linear-gradient(217deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 80.71%),
   linear-gradient(336deg, rgba(207, 207, 207, 0.5), rgba(0, 0, 0, 0) 80.71%),
   url(../images/about-image1-gray.png);
-  transition: 0.5s ease-in-out;
-  transition-delay: 0.25s;
+
 }
 
 .light_theme {
@@ -93,9 +92,16 @@
   linear-gradient(217deg, rgba(235, 192, 0, 0.5), rgba(40, 40, 40, 0) 80.71%),
   linear-gradient(336deg, rgba(0, 23, 233, 0.5), rgba(32, 32, 32, 0) 80.71%),
   url(../images/about-image5.jpg);
-  transition: 0.5s ease-in-out;
-  transition-delay: 0.25s;
+
 }
+
+.anim-ease-out{
+-webkit-transition: 1s ease-out;
+-moz-transition: 1s ease-out;
+-o-transition: 1s ease-out;
+transition: 1s ease-out;
+} 
+
 
 .theme-btn {
   padding: 4px;
@@ -122,7 +128,6 @@
   box-shadow: inset 20px -20px var(--ocean);
 }
 
-
 body {
     font-size: medium;
 	  background-repeat: no-repeat;
@@ -130,8 +135,8 @@ body {
     background-position: center center;
     background-attachment: fixed;
     overflow-x: hidden;
-}
 
+}
 
 header{
   height: 65px !important;
@@ -157,10 +162,10 @@ header{
 .custom-bg-3{
     background-color: var(--cp-3);
 }
-
-.c-display-color{
+/* .c-display-color{
   color:var(--cp-5);
-}
+} */
+
 .c-gold{
     color:var(--cp-8);
 }
@@ -180,6 +185,11 @@ header{
   align-self: center;
   white-space: wrap; 
   text-shadow: 0 0 10px rgb(0, 0, 0);
+  color:var(--cp-5);
+}
+.myname:hover{
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+  color:var(--cp-3);
 }
 
 .mytitle{
@@ -293,16 +303,16 @@ ul li :any-link:hover{
   width: 100%;
   height: 100%;
   position: relative;
+  /* transition: 0.5s ease-in-out; */
+  transition-delay: 0.25s;
   background:var(--gradient-bg);
   background-attachment: fixed !important;
   background-size: cover;
   background-position: center center;
 }
 
-
 #tools div img {width: 70px; margin: 15px 15px;}
 #tools div {margin: auto;}
-
 
 .description{
   line-height: 2.2rem;
@@ -559,6 +569,10 @@ max-width: 100vmax;
   border-radius: 14px;
   z-index: 1;
   cursor: crosshair;
+  -webkit-transition: 0.6s ease-out;
+  -moz-transition: 0.6s ease-out;
+  -o-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
 }
 
 .rotator{
