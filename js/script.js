@@ -25,9 +25,13 @@ for (i = 0; i < coll.length; i++) {
 window.addEventListener("scroll", function() {
   let buttony = document.getElementById("movingButton");
   if (window.pageYOffset > 480) { // Adjust the value (300 in this case) to control when the button appears.
-    buttony.style.display = "block";
+    // buttony.style.display = "block";
+    buttony.classList.add('d-block');
+    buttony.classList.remove('d-none');
   } else {
-    buttony.style.display = "none";
+    buttony.classList.add('d-none');
+    buttony.classList.remove('d-block');
+    // buttony.style.display = "none";
   }
 });
 
