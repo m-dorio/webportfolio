@@ -214,11 +214,11 @@ transition: 1s ease-out;
   font-family: var(--Montserratt);
   align-self: center;
   white-space: wrap; 
-  text-shadow: 0 0 10px rgb(0, 0, 0);
+  text-shadow: 0 0 5px var(--cp-3);
   color:var(--cp-5);
 }
 .myname:hover{
-  text-shadow: 0 0 10px rgb(0, 0, 0);
+  text-shadow: 0 0 5px var(--cp-4);
   color:var(--cp-6);
 }
 
@@ -226,7 +226,7 @@ transition: 1s ease-out;
   font-family: var(--Titillium);
   align-self: center;
   white-space: wrap; 
-  text-shadow: 0 0 10px rgb(0, 0, 0);
+  text-shadow: 0 0 5px var(--cp-3);
 }
 
 #home-image{
@@ -336,11 +336,12 @@ ul li :any-link:hover{
   /* background:var(--gradient-bg); */
   background:var(--gradient-bg);
   background-color: var(--bg-primary);
-  background-image:url(../images/about-image2.png);
+  background-image:url(../images/about-image1.png);
   background-repeat: no-repeat;
   background-attachment: fixed !important;
   background-position: top right !important;
   background-size: cover;
+  transition: var(--transition-1);
 }
 
 #experience, #about, #tools, #projects{
@@ -361,11 +362,12 @@ ul li :any-link:hover{
   /* background:var(--gradient-bg); */
   background:var(--gradient-bg);
   background-color: var(--bg-primary);
-  background-image: url(../images/about-image1.png);
+  background-image: url(../images/about-image2.png);
   background-repeat: no-repeat;
   background-attachment: fixed !important;
   background-position: top right !important;
   background-size: cover;
+  transition: var(--transition-1);
 }
 
 
