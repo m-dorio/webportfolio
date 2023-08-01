@@ -192,7 +192,7 @@ transition: 1s ease-out;
   color:var(--cp-5);
 } */
 
-label{ text-shadow: 0 0 5px var(--cp-2);font-weight: 800; color: var(--cp-3); background-color:  hsla(0, 0%, 0%, 0.3);}
+label{ text-shadow: 0 0 5px var(--cp-2);font-weight: 800; color: var(--cp-3); }
 
 .c-gold{
     color:var(--cp-8);
@@ -217,8 +217,8 @@ transition: 1s ease-out;
   font-family: var(--Montserratt);
   align-self: center;
   white-space: wrap; 
-  text-shadow: 0 0 5px var(--cp-3);
-  color:var(--cp-5);
+  text-shadow: 0 0 5px var(--cp-2);
+  color:var(--cp-3);
 }
 .myname:hover{
   text-shadow: 0 0 5px var(--cp-4);
@@ -339,7 +339,7 @@ ul li :any-link:hover{
   /* background:var(--gradient-bg); */
   background:var(--gradient-bg);
   background-color: var(--bg-primary);
-  background-image:url(../images/about-image1.png);
+  background-image:url(../images/about-image1blc.png);
   background-repeat: no-repeat;
   background-attachment: fixed !important;
   background-position: top right !important;
@@ -352,7 +352,7 @@ ul li :any-link:hover{
   height: 100%;
   background:var(--gradient-bg);
   background-color: var(--bg-primary);
-  background-image: url(../images/about-image5.jpg);
+  background-image: url(../images/about-image5b.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed !important;
   background-position: top right !important;
@@ -365,7 +365,7 @@ ul li :any-link:hover{
   /* background:var(--gradient-bg); */
   background:var(--gradient-bg);
   background-color: var(--bg-primary);
-  background-image: url(../images/about-image2.png);
+  background-image: url(../images/about-image2b.png);
   background-repeat: no-repeat;
   background-attachment: fixed !important;
   background-position: top left !important;
