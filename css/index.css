@@ -192,9 +192,12 @@ transition: 1s ease-out;
   color:var(--cp-5);
 } */
 
+label{ text-shadow: 0 0 5px var(--cp-2);font-weight: 800; color: var(--cp-3); background-color:  hsla(0, 0%, 0%, 0.3);}
+
 .c-gold{
     color:var(--cp-8);
     -webkit-transition: 1s ease-out;
+    text-shadow: 0 0 5px var(--cp-2);
 -moz-transition: 1s ease-out;
 -o-transition: 1s ease-out;
 transition: 1s ease-out;
@@ -365,7 +368,7 @@ ul li :any-link:hover{
   background-image: url(../images/about-image2.png);
   background-repeat: no-repeat;
   background-attachment: fixed !important;
-  background-position: top right !important;
+  background-position: top left !important;
   background-size: cover;
   transition: var(--transition-1);
 }
@@ -559,9 +562,9 @@ transition: 1s ease-out;
   linear-gradient(127deg, rgba(255, 196, 0,0.5), rgba(0, 0, 0, 0) 20.71%),
   linear-gradient(217deg, rgba(3, 0, 163, 0.5), rgba(0, 0, 0, 0) 50.71%),
   linear-gradient(336deg, rgba(0, 113, 233, 0.5), rgba(0, 0, 0, 0) 50.71%),
-  url(../images/about-image1-gray.png);
+  url(../images/about-image3.png);
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: bottom center;
   -webkit-transition: 1s ease-out;
   -moz-transition: 1s ease-out;
@@ -571,6 +574,10 @@ transition: 1s ease-out;
 
 .blur-content-dark {
   background: var(--cp-darker);
+  background-image: url(../images/about-image3.png);
+    background-size: contain;
+  background-repeat: repeat;
+  background-position: bottom center;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
