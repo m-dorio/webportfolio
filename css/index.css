@@ -214,6 +214,8 @@ transition: 1s ease-out;
 
 .myname{
   /* text-shadow: 0 0 10px #ffb41e; */
+  font-size: 6vw;
+  font-weight: 600;
   font-family: var(--Montserratt);
   align-self: center;
   white-space: wrap; 
@@ -226,10 +228,12 @@ transition: 1s ease-out;
 }
 
 .mytitle{
+  font-size: 6vw;
   font-family: var(--Titillium);
   align-self: center;
   white-space: wrap; 
   text-shadow: 0 0 5px var(--cp-3);
+  font-weight: 600;
 }
 
 #home-image{
@@ -397,7 +401,7 @@ ul li :any-link:hover{
   position: relative;
   margin: 0px 9px;
   padding: 15px 15px;
-  font-size: 1.2rem;
+  font-size: 1.4vh;
   color: var(--text-contrast);
   border: 0px solid var(--cp-4);
   box-shadow: 0 0 0px var(--box-shadow);
