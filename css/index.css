@@ -5,7 +5,7 @@
     --Roboto: 'Roboto', sans-serif;
     --Titillium: 'Titillium Web', sans-serif !important;
     --raw-seinna: hsl(24, 74%, 58%);
-    --ocean: hsl(204, 85%, 36%);
+    --ocean: hsl(204, 91%, 30%);
     --scarlet: hsl(13, 96%, 47%);
     --black: hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
@@ -60,7 +60,7 @@
 }
 
 .light_theme {
-  --cp-darkest:hsl(210, 100%, 20%);
+  --cp-darkest:var(--ocean);
   --cp-darker:rgba(149, 149, 149, 0.2);
   --cp-dark:hsl(211, 82%, 36%, 0.5);
   --cp-1:#000814;
@@ -113,20 +113,20 @@ transition: 1s ease-out;
 .header.active .theme-btn { background: var(--cp-darker); }
 
 .theme-btn .icon {
-  color: var(--cp-4);
+  color: transparent !important;
   position: relative;
   left: -15px;
   width: 20px;
   height: 20px;
   border-radius: 50px;
-  box-shadow: inset 9px -6px var(--color-primary);
+  box-shadow: inset 8px -8px var(--color-primary);
   transition: var(--transition-1);
 }
 
 .theme-btn.active .icon {
 
   left: 15px;
-  color: var(--cp-4);
+  color: transparent !important;
   box-shadow: inset  20px -20px var(--ocean);
 }
 
