@@ -1,5 +1,5 @@
 // Hide the contents until the burger menu finishes sliding in from the left
-let content = document.getElementsByTagName("main")[0];
+let content = document.getElementById("main")[0];
 content.style.visibility = "hidden";
 
 let sidebar = document.getElementsByClassName("sidebar")[0];
