@@ -1051,8 +1051,8 @@ transition: 1s ease-out;
 }
 
 .carousel-inner img{
-    width: 800px;
-    height: 320px;
+    min-width: 600px;
+    min-height: 640px;
     overflow: hidden;
 }
 
