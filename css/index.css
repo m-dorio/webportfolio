@@ -1042,7 +1042,6 @@ transition: 1s ease-out;
 
 .carousel-control-prev:hover, .carousel-control-next:hover{
   background-color:var(--cp-3);
-
 }
 
 .carousel-inner{
