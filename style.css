@@ -286,6 +286,7 @@ section.projects .grid .contents.custom-card .image {
     overflow: hidden;
     height: 100%;
     max-height: 380px;
+    min-height: 380px;
 }
 
 section.projects .grid .contents.custom-card .image img {
