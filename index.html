@@ -1,887 +1,704 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIKE</title>
 
-        <!-- BOOTSTRAP CSS v5 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- Google Font Added -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Roboto:wght@300;700;900&family=Titillium+Web:wght@600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../bootstrap.min.css" />
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
 
-        <!-- EXTERNAL CSS Added & Google API font family-->
-        <link rel="stylesheet" href="./css/toggle.css">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/index.css">
+    <!-- HEADER SECTION START -->
+    <header class="container-fluid d-flex bg-dark justify-content-between align-items-center fixed-top">
+      <div class="header-logo" data-aos="slide-right" data-aos-duration="1000" id="logo">
+        <a href="#">
+          <h4>mdorio</h4>
+        </a>
+      </div> 
 
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-        <title>Mike Dorio | Portfolio</title>
-    </head>
-
-    <body translate="no" class="dark_theme">
-        <!-- HEADER SECTION START -->
-        <header class="container-fluid d-flex custom-color-3 justify-content-between align-items-center fixed-top">
-            
-            <div data-aos="slide-right" data-aos-duration="1000" id="logo">
-                <h3 class="xlfont-xsmid">
-                    <a href="#">
-                    <span class="c-joker-blue">d°R</span>
-                    <span class="c-gold">i°m</span>
-                    </a>
-                </h3>
-            </div> 
+      <div class="wrapper d-xxl-none d-xl-none d-lg-none d-md-block d-sm-block d-block ps-5 order-1">
+          <div id="main">
+              <input type="checkbox" id="menuToggler" class="input-toggler" data-nav-toggle-btn>
+                  <label for="menuToggler" class="menu-toggler">
+                  <span class="menu-toggler__line"></span>
+                  <span class="menu-toggler__line"></span>
+                  <span class="menu-toggler__line"></span>
+                  </label>
+          
+              <aside class="sidebar leaf-radius">
+                  <ul id="menu-icon" class="menu text-center">
+                  <li class="menu__item"><a class="menu__link" href="#hero">HOME</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#about">ABOUT</a></li>     
+                  <li class="menu__item"><a class="menu__link" href="#tools">TOOLS</a></li>     
+                  <li class="menu__item"><a class="menu__link" href="#projects">PROJECTS</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#connect">CONNECT</a></li>
+                  </ul>
+              </aside>
+          </div>
+      </div>
       
-            <div class="wrapper d-xxl-none d-xl-none d-lg-none d-md-block d-sm-block d-block ps-5 order-1">
-                <div id="main">
-                    <input type="checkbox" id="menuToggler" class="input-toggler" data-nav-toggle-btn>
-                        <label for="menuToggler" class="menu-toggler">
-                        <span class="menu-toggler__line"></span>
-                        <span class="menu-toggler__line"></span>
-                        <span class="menu-toggler__line"></span>
-                        </label>
-                
-                    <aside class="sidebar leaf-radius">
-                        <ul id="menu-icon" class="menu text-center">
-                        <li class="menu__item"><a class="menu__link" href="#landing">HOME</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#about">&#916;BOUT</a></li>     
-                        <li class="menu__item"><a class="menu__link" href="#tools">SKILLS</a></li>     
-                        <li class="menu__item"><a class="menu__link" href="#experience">EXPERIENCE</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#projects">PROJECTS</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#contact">CONT&#916;CT</a></li>
+      <div class="ms-auto d-none d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none">
+          <div data-aos="slide-left" data-aos-duration="2000">
+              <nav class="my-navbar" data-navbar>
+                  <a href="#hero" class="buttonx px-md-2 px-lg-2 active">HOME</a>
+                  <a href="#about" class="buttonx px-md-2 px-lg-2 ">ABOUT</a> 
+                  <a href="#tools" class="buttonx px-md-2 px-lg-2 ">TOOLS/SKILLS</a>                          
+                  <a href="#projects" class="buttonx px-md-2 px-lg-2 ">PROJECTS</a>
+                  <a href="#connect" class="buttonx px-md-2 px-lg-2 ">CONNECT</a>
+              </nav> 
+          </div>
+      </div>  
+      <div class="align-content-center align-items-center">
+          <button class="order-0 theme-btn active" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+              <span class="icon fa-solid fa-circle fa-lg"></span>
+          </button>
+      </div>
+  </header>
+  <!-- HEADER SECTION ENDS -->
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-12">
+            <div class="backdrop content">
+               <div class="inner-content">
+                <div class="header">
+                  <h1>MIKE DORIO</h1>
+                  <p>Web Developer</p>
+                </div>
+                <h4><a class="cta-custom" href="#projects" >Check my projects</a></h4>
+                <div class="social">
+                  <a class="btn links" target="_blank" href="https://www.facebook.com/muteninjaturtle"><svg class="svg-inline--fa fa-facebook display-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"></path></svg></a>
+                  <a class="btn links" target="_blank" href="https://gitlab.com/michaelangelodorio"><svg class="svg-inline--fa fa-gitlab display-3 fa-beat-fade fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="gitlab" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M503.5 204.6L502.8 202.8L433.1 21.02C431.7 17.45 429.2 14.43 425.9 12.38C423.5 10.83 420.8 9.865 417.9 9.57C415 9.275 412.2 9.653 409.5 10.68C406.8 11.7 404.4 13.34 402.4 15.46C400.5 17.58 399.1 20.13 398.3 22.9L351.3 166.9H160.8L113.7 22.9C112.9 20.13 111.5 17.59 109.6 15.47C107.6 13.35 105.2 11.72 102.5 10.7C99.86 9.675 96.98 9.295 94.12 9.587C91.26 9.878 88.51 10.83 86.08 12.38C82.84 14.43 80.33 17.45 78.92 21.02L9.267 202.8L8.543 204.6C-1.484 230.8-2.72 259.6 5.023 286.6C12.77 313.5 29.07 337.3 51.47 354.2L51.74 354.4L52.33 354.8L158.3 434.3L210.9 474L242.9 498.2C246.6 500.1 251.2 502.5 255.9 502.5C260.6 502.5 265.2 500.1 268.9 498.2L300.9 474L353.5 434.3L460.2 354.4L460.5 354.1C482.9 337.2 499.2 313.5 506.1 286.6C514.7 259.6 513.5 230.8 503.5 204.6z"></path></svg></a>
+                  <a class="btn links" target="_blank" href="https://github.com/m-dorio/"><svg class="svg-inline--fa fa-github display-3 fa-bounce fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a>
+                  <a class="btn links" target="_blank" href="https://www.linkedin.com/in/michael-angelo-dorio-17510182/"><svg class="svg-inline--fa fa-linkedin-in display-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a> 
+                </div>
+
+               </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-6 col-md-12">
+            <div class="img-container _left">
+              <div class="wrap">
+                <div class="circle">
+                  <!-- <img src='./images/about-hero-sm.png' alt=''> -->
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="offset-xl-1 col-xl-4 col-lg-6 col-md-12 ">
+            <div class="img-container _right">
+              <img src='./images/about-image2b-sm.png' alt=''>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-12">
+            <div class=""></div>
+            <div class="content">
+              <div class="inner-content">
+                <h2>ABOUT</h2>
+                <p class="mb-20">I'm tech-savvy and enjoy gaming, web designing, and creating prototype games in my free time. I am always looking for new ways to learn, grow, and express myself. Humble with a good sense of humor, proactive, open-minded, and with the courage to challenge the existing and be innovative.</p>
+                <p class="mb-20">After graduating in Computer Science, I explored the tech industry, which allowed me to grow and gain more knowledge. I just can't let go of the coding part, so I continue to practice and learn about the latest technologies.</p>
+              </div>
+              <div class="inner-content">
+                <h3>WHAT ELSE I DO?</h3>
+                <p class="mb-20">I'm eager to embark on a new project using either my desktop or Raspberry Pi 4. I'm currently on the lookout for a D.I.Y stuff/projects that aligns with my interests, like creating a retro games console, setting up a Network Attached Storage (NAS), establishing a streaming server, or even hosting a game server. These are the kinds of ventures that captivate my attention and drive me to explore exciting new horizons.</p>
+                <p class="mb-0">I play games to get an idea of how the game was designed. To know how it works, to analyze the game mechanics, to build it with Unity3d, from scratch or to prototype it, to add a new feature or new trend, to debug, enhance it, and played it, many times. 
+                </p>
+              </div>
+              <div class="inner-content">
+                <h3>CHALLENGES</h3>
+                <p class="mb-20">I have to learn the animation part, doing it with sprites (2D), or with make 3D Models assets using Blender3D in the process. I know it's not easy to code, however, I am willing to learn and want to experience it professionally.</p>
+                <p class="mb-20">It became a passion...</p>
+                <p class="mb-20">It wasn't easy to learn the framework without properly understanding the fundamentals, so I took a boot camp from June to September, to learn Javascript Web Development and the MERN Stack (MongoDB, ExpressJS, ReactJs, NodeJs).</p>
+                <p class="mb-0">I'm a fan of YouTubers like Asbjørn Thirslund - Brackey's, Dani, CodeMonkey, and Sebastian Lague.</p>
+              </div>
+
+              <div class="header">
+                <div id="shout">
+                  <span class="typewriting-text"></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS SECTION -->
+    <section id="tools" class="tools">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="offset-xl-1 col-xl-4 col-lg-6 col-md-12">
+            <div class="header">
+              <h2 >REPOSITORY</h2>
+            </div>
+            <div class="content _right"> 
+              <ul class="links">
+                  <li><a class="link-yellow-text" href="https://myfuse.vercel.app/" target="_blank" rel="noopener noreferrer">Social Site with M.E.R.N</a></li>
+                  <li><a class="link-yellow-text" href="https://mdorio-capstone3.vercel.app/" target="_blank" rel="noopener noreferrer">E-Commerce M.E.R.N</a></li>
+                  <li><a class="link-yellow-text" href="https://m-dorio.github.io/foodstore/" target="_blank" rel="noopener noreferrer">Noodles Store</a></li>
+                  <li><a class="link-yellow-text" href="https://mdorio-capstone3.vercel.app/" target="_blank" rel="noopener noreferrer">ReactJs with M.E.R.N</a></li>
+                  <li><a class="link-yellow-text" href="https://m-dorio.github.io/portfolio_01/" target="_blank" rel="noopener noreferrer">Portfolio #1</a></li>
+                  <li><a class="link-yellow-text" href="https://m-dorio.github.io/pubrepo/" target="_blank" rel="noopener noreferrer">Portfolio #2</a></li>
+                  <li><a class="link-yellow-text" href="https://m-dorio.github.io/bootstrap-mdorio/" target="_blank" rel="noopener noreferrer">Portfolio #3 - Bootcamp activity</a></li>
+                  <li><a class="link-yellow-text" href="https://m-dorio.github.io/dreamshop/" target="_blank" rel="noopener noreferrer">Shopping store - "dreamshop"</a> </li>
+                  <li><a class="link-yellow-text" href="https://m-dorio.github.io/pillowshop/" target="_blank" rel="noopener noreferrer">Revised Shopping store - "pillowshop"</a></li>
+                  <li><a class="link-yellow-text" href="https://m-dorio.github.io/webportfolio/" target="_blank" rel="noopener noreferrer">Portfolio - Bootcamp capstone</a></li>
+                  <li><a class="link-yellow-text" href="https://m-dorio.github.io/nyorasfarm/" target="_blank" rel="noopener noreferrer">Nyora's Farm</a></li>
+                  <li><a class="link-yellow-text" href="https://m-dorio.github.io/figma-output/" target="_blank" rel="noopener noreferrer">Designed in Figma - Bootcamp activity</a></li>
+              </ul> 
+            </div>
+            <div class="repository">
+              <h3 class="text-white">Github:
+                <a class="link-yellow-text" href="https://github.com/m-dorio" target="_blank" rel="noopener noreferrer">github.com/m-dorio</a>
+              </h3>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12">
+            <div class="header">
+              <h2 class="text-white text-center">TOOLS:
+              </h2>
+            </div>
+            <div class="tools-kits">
+              <div class="image-container">
+                  <img class="icon" src="./images/tools/logo-html5.png" alt="html">
+              </div>
+              <div class="image-container">
+                <img class="icon" src="./images/tools/logo-css3.png" alt="css">
+              </div>
+              <div class="image-container">
+                <img class="icon" src="./images/tools/logo-javascript.png" alt="js">
+              </div>
+              <div class="image-container">
+                <img class="icon" src="./images/tools/logo-bootstrap.png" alt="Bootstrap">
+              </div>
+              <div class="image-container">
+                <img class="icon" src="./images/tools/logo-sublime-text-3.png" alt="sublime">
+              </div>
+              <div class="image-container">
+                <img class="icon" src="./images/tools/logo-vscode.png" alt="vscode">
+              </div>
+              <div class="image-container">
+                <img class="icon" src="./images/tools/logo-photoshop.png" alt="Photoshop">
+              </div>
+              <div class="image-container">
+                <img class="icon" src="./images/tools/logo-git.png" alt="Git">
+              </div>
+              <div class="image-container">
+                <img class="icon" src="./images/tools/logo-gitlab.png" alt="Gitlab">
+              </div>
+              <div class="image-container">
+                <img class="icon" src="./images/tools/logo-github.png" alt="Github">
+              </div>
+              <div class="image-container">
+                <img class="icon" src="./images/tools/logo-jira.png" alt="Jira">
+              </div>
+              <div class="image-container">
+                <img class="icon" src="./images/tools/logo-salesforce.png" alt="Salesforce">
+              </div>
+              <div class="image-container">
+                <img class="icon" src="./images/tools/reactjs.png" alt="ReactJs">
+              </div>
+              <div class="image-container">
+                <img class="icon" src="./images/tools/nodejs.png" alt="NodeJs">
+              </div>
+              <div class="image-container">
+                <img class="icon" src="./images/tools/expressJs.png" alt="ExpressJs">
+              </div>
+              <div class="image-container">
+                <img class="icon" src="./images/tools/mongodb.png" alt="MongoDBb">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+
+    <section id="projects" class="projects">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="offset-xl-1 col-xl-10 col-md-12">
+            <div class="header text-center">
+              <h2>PROJECTS</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="offset-xl-1 col-xl-10 col-md-12">
+            <!-- Project 9 -->
+            <div class="contents custom-card">
+              <div class="card mb-5">
+                <div class="card-body">
+                  <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item">
+                        <img src="./images/fuse/fuse-image-1.png" class="h-100 card-img-top p-3" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/fuse/fuse-image-2.png" class="h-100 card-img-top p-3" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/fuse/fuse-image-3.png" class="h-100 card-img-top p-3" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/fuse/fuse-image-4.png" class="h-100 card-img-top p-3" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/fuse/fuse-image-5.png" class="h-100 card-img-top p-3" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/fuse/fuse-image-6.png" class="h-100 card-img-top p-3" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/fuse/fuse-image-7.png" class="h-100 card-img-top p-3" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/fuse/fuse-image-8.png" class="h-100 card-img-top p-3" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/fuse/fuse-image-9.png" class="h-100 card-img-top p-3" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/fuse/fuse-image-10.png" class="h-100 card-img-top p-3" alt="...">
+                      </div>
+                      <div class="carousel-item active">
+                        <img src="./images/fuse/fuse-image-11.png" class="h-100 card-img-top p-3" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/fuse/fuse-image-12.png" class="h-100 card-img-top p-3" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/fuse/fuse-image-13.png" class="h-100 card-img-top p-3" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/fuse/fuse-image-14.png" class="h-100 card-img-top p-3" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="w-update">Dynamic date</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="offset-xl-1 col-xl-10 col-md-12">
+            <div class="header text-center">
+              <h3>OTHER PROJECTS</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="offset-xl-1 col-xl-10 col-md-12">
+            <div class="grid">
+              <!-- Project 1 -->
+              <div class="contents custom-card">
+                <div class="card">
+                  <div class="image">
+                    <a href="https://myfuse.vercel.app/" target="_blank" rel="noopener noreferrer">
+                      <img src="./images/screenshots/proj-9.png" class="card-img-top p-3" alt="...">
+                    </a> 
+                  </div>
+                    <div class="card-body">
+                        <h3 class="card-title">MY/FUSE</h3>
+                        <p class="card-text">
+                          A web application similar to "Friendster" were users can connect and customize their profile with CSS and media like YouTube.
+                        </p>
+                        <ul>
+                            <li>
+                                Front End Web Development: HTML5, CSS3, Bootstrap, Wireframes and Mockups, Git, Gitlab and GitHub
+                            </li>
+                            <li>
+                                Back End Development: JavaScript, Node.js, Express.js, MongoDB, Database Design, NoSQL, Postman, REST API
+                            </li>
+                            <li>
+                                Full Stack Development: React.js, JS DOM Manipulation, API Integration with Fetch, Render, and Vercel.
+                            </li>
                         </ul>
-                    </aside>
-                </div>
-            </div>
-            
-            <div class="ms-auto d-none d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none">
-                <div data-aos="slide-left" data-aos-duration="2000">
-                    <nav class="my-navbar" data-navbar>
-                        <a href="#landing" class="buttonx px-md-2 px-lg-2 active">HOME</a>
-                        <a href="#about" class="buttonx px-md-2 px-lg-2 ">&#916;BOUT</a> 
-                        <a href="#tools" class="buttonx px-md-2 px-lg-2 ">TOOLS/SKILLS</a>                          
-                        <a href="#experience" class="buttonx px-md-2 px-lg-2 ">EXPERIENCE</a>
-                        <a href="#projects" class="buttonx px-md-2 px-lg-2 ">PROJECTS</a>
-                        <a href="#contact" class="buttonx px-md-2 px-lg-2 ">CONT&#916;CT</a>
-                    </nav> 
-                </div>
-            </div>  
-            <div class="align-content-center align-items-center pe-5">
-                <button class="order-0 theme-btn active" aria-label="Change Theme" title="Change Theme" data-theme-btn>
-                    <span class="icon fa-solid fa-circle fa-lg"></span>
-                </button>
-            </div>
-        </header>
-        <!-- HEADER SECTION ENDS -->
-
-        <!-- HOME SECTION START -->
-        <section id="landing" class="section-content">
-            <div id="backdrop-A" class="container-fluid py-5">
-                <h1 class="d-none">&nbsp;</h1>
-                <div class="row py-5">
-                    <div data-aos="slide-right" data-aos-duration="1800" class="align-self-center offset-md-0 offset-lg-1 offset-sm-0 col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 pt-5 d-flex justify-content-sm-center justify-content-end order-lg-0 order-md-1 order-sm-1 order-0">
-                        <div id="fyi" data-aos="slide-up">
-                            <p class="mytitle xlfont-xsmid text-center d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block text-white mx-5">Hello there! <span class="c-gold xlfont-xsmid text-center">I'm </span></p>
-                            <p class="mytitle xlfont-xxsmid text-center d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none text-white mx-5">Hello there! <span class="c-gold xlfont-xsmid text-center">I'm </span></p>
-                            
-                            <p class="myname anim-ease-out d-none d-sm-none d-md-none d-lg-block text-uppercase text-center my-2">&#8592;Mich&#916;el Dorio&#8594;</p>
-                            <p class="myname anim-ease-out d-sm-block d-md-block d-lg-none text-uppercase text-center my-2">&#8592;Mich&#916;el Dorio&#8594;</p>
-                            
-                            <p class="mytitle xlfont-smid d-none d-sm-none d-sm-none d-lg-block  text-center my-2">Front-end Web Developer</p>
-                            <p class="mytitle xlfont-xsmid d-block d-sm-block d-sm-block d-lg-none text-center my-2">Front-end Web Developer</p>
-                        </div>
+                      
                     </div>
-
-                    <div class="align-self-center col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 pt-5 d-flex justify-content-center justify-content-sm-center justify-content-start order-lg-1 order-md-0 order-sm-0 order-1">
-                        <div id="home-image" data-aos="fade-down-left" data-aos-duration="1800">
-                            <div class="col-md-6"> 
-                                <p data-aos="slide-down" data-aos-duration="800" class="d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none text-center align-content-center">
-                                    <!-- <img width="320" class="float p-1 rounded-circle" src="./images/home-image-r.png" alt="none"> -->
-                                
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-1 col-xxl-1 p-5 order-lg-2 order-md-2 order-sm-2 order-2 align-self-center">
-                        <div data-aos="slide-left" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
-                        <p class="text-sm-center text-md-center text-center">
-
-                        <a class="text-glow btn" target="_blank" href="https://www.facebook.com/muteninjaturtle"><i class="display-3 fab fa-facebook fa-lg"></i></a>
-                        <a class="text-glow btn" target="_blank" href="https://gitlab.com/michaelangelodorio"><i class="display-3 fab fa-beat-fade fa-gitlab fa-lg"></i></a>
-                        <a class="text-glow btn" target="_blank" href="https://github.com/m-dorio/"><i class="display-3 fa-brands fa-github fa-bounce fa-lg"></i></a>
-                        <a class="text-glow btn" target="_blank" href="https://www.linkedin.com/in/michael-angelo-dorio-17510182/"><i class="display-3 fa-brands fa-linkedin-in fa-lg"></i></a> 
-                        </p>     
-                        </div>                  
+                    <div class="card-footer">
+                        <small class="w-update">Dynamic date</small>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="d-flex justify-content-center text-center d-none d-sm-none d-md-none d-lg-block">
-                            <a class="buttonx button-z" href="#projects"><span></span><span></span><span></span><span></span>My projects</a>
+              </div>
+
+              <div class="contents custom-card">
+                  <div class="card">
+                    <div class="image">
+                      <a href="https://mdorio-capstone3.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/screenshots/proj-8.png" class="card-img-top p-3" alt="...">
+                      </a> 
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- HOME SECTION START -->
+                      <div class="card-body">
+                          
+                          <h3 class="card-title">HOT/STRINGS</h3>
+                          <p class="card-text">
+                              An E-commerce single page application, based on my previous project, now with MERN.
+                              </p><ul>
+                                  <li>
+                                      Front End Web Development: HTML5, CSS3, Bootstrap, Git, Gitlab and GitHub
+                                  </li>
+                                  <li>
+                                      Back End Development: JavaScript, Node.js, Express.js, MongoDB, Database Design, NoSQL, Postman, REST API
+                                  </li>
+                                  <li>
+                                      Full Stack Development: React.js, JS DOM Manipulation, API Integration with Fetch, Render, and Vercel.
+                                  </li>
+                              </ul>
+                          <p></p>
+                      </div>
+                      <div class="card-footer">
+                          <small class="w-update">Dynamic date</small>
+                      </div>
+                  </div>
+              </div>
 
-        <!-- ABOUT SECTION START -->
-        <section id="about" class="section-content">
-            <div class="backdrop container-fluid pt-5">
-                <h1 class="d-none">&nbsp;</h1>
-                <div class="row justify-content-between align-content-center align-items-center pt-5">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
-                        <div data-aos="slide-right" data-aos-duration="500">
-                            <p class="content-header xlfont-xsmid text-white">&#916;BOUT</p>
-                        </div>
-                        <div class="container-fluid">
-                            <div class="row d-flex justify-content-center align-content-center align-items-center">
-                                <div class="col-11 col-sm-11 col-md-11 col-lg-10 col-xl-10 m-3 align-self-stretch">
-                                    <div class="p-4 blur-content-dark">    
-                                        <p class="text-white xlfont-min400 description">
-                                            <span class="c-gold xlfont-xxsmid text-center">I'm </span>tech-savvy and enjoy gaming, web designing, and creating prototype games in my free time. I am always looking for new ways to learn, grow, and express myself.
-                                        Humble with a good sense of humor, proactive, open-minded, and with the courage to challenge the existing and be innovative.
-                                    </p>
-                                    <p class="text-white xlfont-min400 description">
-                                        After graduating in Computer Science, I explored the tech industry, which allowed me to grow and gain more knowledge. I just can't let go of the coding part, so I continue to practice and learn about the latest technologies.
-
-                                      </p>
-                                      <div id="typewritter">
-                                        <span class="typewriting-text"></span>
-                                        </div>
-                                    </div>   
-                                </div>
-                                
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-11 col-xl-10 align-self-stretch">
-                                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">
-                                        
-                                        <div class="my-1" data-aos="flip-up" data-aos-duration="800">
-                                            <div class="card h-100 w-100 blur-content-half-bg-dark">
-
-                                                
-                                                <!-- <img width="auto" class="p-3" src="./images/about-hero.png" alt="..."> -->
-                                                <div class="card-body">
-                                                    <p class="c-gold xlfont-xxsmid text-center">What else I do?</p>
-
-                                                <p class="description text-white">I'm eager to embark on a new project using either my desktop or Raspberry Pi 4. I'm currently on the lookout for a D.I.Y stuff/projects that aligns with my interests, like creating a retro games console, setting up a Network Attached Storage (NAS), establishing a streaming server, or even hosting a game server. These are the kinds of ventures that captivate my attention and drive me to explore exciting new horizons.</p>
-                                            
-                                                <p class="description text-white">I play games to get an idea of how the game was designed. To know how it works, to analyze the game mechanics, to build it with Unity3d, from scratch or to prototype it, to add a new feature or new trend, to debug, enhance it, and played it, many times.</p>
-                                            
-                                                <p class="c-gold xlfont-xxsmid text-center py-1">It became a passion...</p>
-                                                <p class="description text-white">I have to learn the animation part, doing it with sprites, or with make 3d Models using Blender3d in the process. I know it's not easy to code, however, I am willing to learn and want to experience it professionally.
-                                                  I'm a fan of YouTubers like Brackey's, Dani, CodeMonkey, and Sebastian Lague.</p>
-                                                </div>
-                                                <div class="card-footer custom-bg-2">
-                                                    <small class="c-gold">Michael Angelo Dorio</small>
-                                                </div>
-                                                
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="my-1" data-aos="flip-up" data-aos-duration="800">
-                                            <div class="card h-100 w-100 blur-content-half-bg-dark">
-
-
-                                                <div class="card-body">
-                                                    <div id="carouselExampleCaptions" class="carousel slide">
-                                                   
-                                                        <div class="carousel-inner align-content-center text-center">
-
-                                                            <div class="carousel-item active">
-                                                                <iframe src="https://www.youtube.com/embed/m_BoeGwA5b8?si=lHGZjg-cpW-nPR9j" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                                                <div class="carousel-caption d-none d-md-block">
-                                                                </div>
-                                                              </div>
-
-                                                              <div class="carousel-item">
-                                                                <iframe src="https://www.youtube.com/embed/a725oxSYO9U?si=v61Per2lQF0mVUy1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                                                <div class="carousel-caption d-none d-md-block">
-                                                                </div>
-                                                              </div>
-
-                                                              
-                                                              <div class="carousel-item">
-                                                            <iframe src="https://www.youtube.com/embed/kN2a9E772-Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                                            <div class="carousel-caption d-none d-md-block">
-                                                            </div>
-                                                          </div>
-
-                                                          <div class="carousel-item">
-                                                            <iframe src="https://www.youtube.com/embed/BT4wXcsm41k" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                                            <div class="carousel-caption d-none d-md-block">
-                                                            </div>
-                                                          </div>
-
-                                                          <div class="carousel-item">
-                                                            <iframe src="https://www.youtube.com/embed/IHP2UAkGB3A" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                                            <div class="carousel-caption d-none d-md-block">
-                                                            </div>
-                                                          </div>
-
-                                                          <div class="carousel-item">
-                                                            <iframe src="https://www.youtube.com/embed/S5XD_RdtXOw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                                            <div class="carousel-caption d-none d-md-block">
-                                                            </div>
-                                                          </div>
-
-                                                          <div class="carousel-item">
-                                                            <iframe src="https://www.youtube.com/embed/ZrB7i8d3t4w" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                                            <div class="carousel-caption d-none d-md-block">
-                                                            </div>
-                                                          </div>
-
-                                                          <div class="carousel-item">
-                                                            <iframe src="https://www.youtube.com/embed/XcdF6_hDaGU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                                            <div class="carousel-caption d-none d-md-block">
-                                                            </div>
-                                                          </div>
-
-                                                          <div class="carousel-item">
-                                                            <iframe src="https://www.youtube.com/embed/vQfDiwFFHgg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                                            <div class="carousel-caption d-none d-md-block">
-                                                            </div>
-                                                          </div>
-
-                                                          <div class="carousel-item">
-                                                            <iframe src="https://www.youtube.com/embed/JcXsqVr61q4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                                            <div class="carousel-caption d-none d-md-block">
-                                                            </div>
-                                                          </div>
-
-                                                          <div class="carousel-item">
-                                                            <iframe src="https://www.youtube.com/embed/7Znfa8MZ2yk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                                            <div class="carousel-caption d-none d-md-block">
-                                                            </div>
-                                                          </div>
-
-                                                        </div>
-
-                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                          <span class="visually-hidden">Previous</span>
-                                                        </button>
-                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                          <span class="visually-hidden">Next</span>
-                                                        </button>
-                                                   
-                                                        <div class="mt-3">
-                                                            <div class="carouselx-indicators text-center">
-                                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
-                                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
-                                                            </div>
-                                                               </div>
-                                                    </div>
-                                                   
-                                                </div>
-                                                <div class="card-footer custom-bg-2">
-                                                    <small class="c-gold">A tower defense game in Unity3D</small>
-                                                </div>
-                                              
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+              <div class="contents custom-card">
+                  <div class="card">
+                    <div class="image">
+                      <a href="https://m-dorio.github.io/foodstore/" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/screenshots/proj-7.png" class="card-img-top p-3" alt="...">
+                      </a> 
                     </div>
-                </div>
+                      <div class="card-body">
+                          <h3 class="card-title">HOT/STRINGS</h3>
+                          <p class="card-text">
+                              </p><ul>
+                                  <li>
+                                      HTML5, CSS3, JavaScript, Bootstrap, Git, Gitlab and GitHub
+                                  </li>
+                              </ul>
+                          <p></p>
+                      </div>
+                      <div class="card-footer">
+                          <small class="w-update">Dynamic date</small>
+                      </div>
+                  </div>
+              </div>
 
-                <div class="row py-5">
-                    <div data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
-                        <div class="d-flex align-items-center justify-content-center text-center py-5">
-                           
-                            <div class="xarrows mx-2 align-self-center">
-                                <a href="#tools">
-                                    <p class="c-dblue xlfont-mid text-uppercase text-center">&#8595;</p>  
-                                </a>
-                            </div>     
-                           
-                        </div>                     
+              <div class="contents custom-card">
+                  <div class="card">
+                    <div class="image">
+                      <a href="https://m-dorio.github.io/nyorasfarm/" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/screenshots/proj-1.jpg" class="card-img-top p-3" alt="...">
+                      </a>
                     </div>
-                </div>
+                      <div class="card-body">
+                          <h3 class="card-title">Resort webpage</h3>
+                          <p class="card-text">
+                              </p><ul>
+                                  <li>
+                                      HTML5, CSS3, JavaScript, Bootstrap, Git, Gitlab and GitHub
+                                  </li>
+                              </ul>
 
-            </div>
-        </section>
-        <!-- ABOUT SECTION END -->
-
-        <!-- SKILLS SECTION START -->
-        <section class="section-content" id="tools">
-            <div class="backdrop container-fluid py-5">
-                <h1 class="d-none">&nbsp;</h1>
-                <div class="row justify-content-between align-content-center align-items-center py-5">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <div data-aos="slide-right" data-aos-duration="500">
-                            <p class="content-header xlfont-xsmid text-white">TOOLS & SKILLS</p>
-                        </div>
-                        <div class="container-fluid">
-                            <div class="row d-flex justify-content-center align-content-center align-items-center">
-                                <div class="container blur-content-dark col-11 col-sm-11 col-md-10 col-lg-10 col-xl-9 col-xxl-3 m-2 py-4 order-md-2 align-self-stretch p-3">                
-                                    <div data-aos="fade-up" data-aos-duration="600">
-                                        <p class="custom-bg-2 c-gold xlfont-xxsmid text-center">TOOLS</p>  
-                                        <div class="text-center">
-                                            <p>
-                                            <img class="icon-glow" src="./images/tools/logo-html5.png" alt="html">
-                                            <img class="icon-glow" src="./images/tools/logo-css3.png" alt="css">
-                                            <img class="icon-glow" src="./images/tools/logo-javascript.png" alt="js">
-                                            <img class="icon-glow" src="./images/tools/logo-bootstrap.png" alt="Bootstrap">
-
-                                            <img class="icon-glow" src="./images/tools/logo-sublime-text-3.png" alt="sublime">
-                                            <img class="icon-glow" src="./images/tools/logo-vscode.png" alt="vscode">
-                                            <img class="icon-glow" src="./images/tools/logo-photoshop.png" alt="Photoshop">
-
-                                            <img class="icon-glow" src="./images/tools/logo-git.png" alt="Git">
-                                            <img class="icon-glow" src="./images/tools/logo-gitlab.png" alt="Gitlab">
-                                            <img class="icon-glow" src="./images/tools/logo-github.png" alt="Github">
-                                          
-                                            <img class="icon-glow" src="./images/tools/logo-jira.png" alt="Jira">
-                                            <img class="icon-glow" src="./images/tools/logo-salesforce.png" alt="Salesforce">
-                                            <img class="icon-glow" src="./images/tools/reactjs.png" alt="ReactJs">
-                                            <img class="icon-glow" src="./images/tools/nodejs.png" alt="NodeJs">
-                                            <img class="icon-glow" src="./images/tools/expressJs.png" alt="ExpressJs">
-                                            <img class="icon-glow" src="./images/tools/mongodb.png" alt="MongoDBb">
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                           
-                                <div class="container blur-content-dark col-11 col-sm-11 col-md-5 col-lg-5 col-xl-5 col-xxl-4 m-2 py-4 order-md-0 align-self-stretch p-3"> 
-                                    <div data-aos="fade-up" data-aos-duration="1000">                        
-                                    <p class="custom-bg-2 c-gold xlfont-xxsmid text-center">REPOSITORY</p>
-                                    <p class="c-light description ">
-                                        <span class="c-gold">My Git: </span>
-                                        <a href="https://github.com/m-dorio" target="_blank" rel="noopener noreferrer">github.com/m-dorio</a>
-                                    </p>
-                                        <ul>
-                                            <li><a href="https://myfuse.vercel.app/" target="_blank" rel="noopener noreferrer">Social Site with M.E.R.N</a></li>
-                                            <li><a href="https://mdorio-capstone3.vercel.app/" target="_blank" rel="noopener noreferrer">E-Commerce M.E.R.N</a></li>
-                                            <li><a href="https://m-dorio.github.io/foodstore/" target="_blank" rel="noopener noreferrer">Noodles Store</a></li>
-                                            <li><a href="https://mdorio-capstone3.vercel.app/" target="_blank" rel="noopener noreferrer">ReactJs with M.E.R.N</a></li>
-                                            <li><a href="https://m-dorio.github.io/portfolio_01/" target="_blank" rel="noopener noreferrer">Portfolio #1</a></li>
-                                            <li><a href="https://m-dorio.github.io/pubrepo/" target="_blank" rel="noopener noreferrer">Portfolio #2</a></li>
-                                            <li><a href="https://m-dorio.github.io/bootstrap-mdorio/" target="_blank" rel="noopener noreferrer">Portfolio #3 - Bootcamp activity</a></li>
-                                            <li><a href="https://m-dorio.github.io/dreamshop/" target="_blank" rel="noopener noreferrer">Shopping store - "dreamshop"</a> </li>
-                                            <li><a href="https://m-dorio.github.io/pillowshop/" target="_blank" rel="noopener noreferrer">Revised Shopping store - "pillowshop"</a></li>
-                                            <li><a href="https://m-dorio.github.io/webportfolio/" target="_blank" rel="noopener noreferrer">Portfolio - Bootcamp capstone</a></li>
-                                            <li><a href="https://m-dorio.github.io/nyorasfarm/" target="_blank" rel="noopener noreferrer">Nyora's Farm</a></li>
-                                            <li><a href="https://m-dorio.github.io/figma-output/" target="_blank" rel="noopener noreferrer">Designed in Figma - Bootcamp activity</a></li>
-                                        </ul> 
-                                        <h1><a class="buttonx button-z" href="#projects" >Check my projects</a></h1>
-                                    </div>
-                                </div>
-                           
-                                <div class="container blur-content-dark col-11 col-sm-11 col-md-5 col-lg-5 col-xl-4 col-xxl-3 m-2 py-4 align-self-stretch order-md-1 p-3">              
-                                    <div data-aos="fade-up" data-aos-duration="600">
-                                        <p class="custom-bg-2 c-gold xlfont-xxsmid text-center">OTHER SKILLS</p>
-                                        <div data-aos="fade-up" data-aos-duration="800">
-                                            <ul class="description text-white">
-                                                <li>Troubleshooting skills</li>
-                                                <li>Customer Satisfaction </li>
-                                                <li>Communication skills</li>
-                                                <li>Technical proficiency</li>
-                                                <li>Documentation</li>
-                                                <li>Problem-solving skills</li>
-                                                <li>Customer service orientation</li>
-                                                <li>Time management</li>
-                                                <li>Organizational skills</li>
-                                                <li>Professionalism and Ethical Conduct</li>
-                                                <li>Critical Thinking</li>
-                                                <li>Creativity</li>
-                                                <li>Attention to detail.</li>
-                                                <li>Patience</li>
-                                            </ul> 
-                                        </div> 
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="row py-5">
-                    <div data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
-                    <div class="d-flex align-items-center justify-content-center text-center py-5">
-                        <div class="xarrows mx-2 align-self-center">
-                            <a href="#experience">
-                                <p class="c-dblue xlfont-mid text-uppercase text-center">&#8595;</p>  
-                            </a>
-                        </div>                         
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- TOOLS SECTION END -->
-
-        <!-- EXPERIENCE SECTION END -->
-        <section class="section-content" id="experience">
-            <div class="backdrop container-fluid py-5">
-                <h1 class="d-none">&nbsp;</h1>
-                <div class="row justify-content-between align-content-center align-items-center py-5">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <div data-aos="slide-right" data-aos-duration="500">
-                            <p class="content-header xlfont-xsmid text-white display-3">EXPERIENCE</p>
-                        </div>
-                        <div class="container-fluid">
-                            <div class="row d-flex justify-content-center align-content-center align-items-center">
-                                <div class="blur-content-dark col-12 col-sm-12 col-md-8 col-lg-5 col-xl-8 col-xxl-8 m-3 py-4 align-self-stretch p-2">
-                                    <div  class="px-5" data-aos="slide-up" data-aos-duration="800">
-                                        <p class="custom-bg-2 c-gold text-center xlfont-xxsmid py-3">Technical Support Engineer</p>
-                                        <p class="text-white text-center xlfont-min">RSA Security LLC</p>
-                                        <p class="text-white text-center h4">&#8594; December 2017 to March 2023</p>
-                                        <p class="description text-white">
-                                            Supporting Security information and event management (SIEM) RSA Netwitness XDR (Logs and Networks), with a Workflow Manager role.</p>
-                                        <p class="description text-white">
-                                            Experience in working with Developers, Content Teams from India. I took tickets related to programming or scripting, which sometimes requires research and testing before we recommend the tool.
-                                            </p>
-                                    </div>
-                                </div>
-
-                                <div class="blur-content-dark col-12 col-sm-12 col-md-8 col-lg-5 col-xl-8 col-xxl-8 m-3 py-4 align-self-stretch p-2">
-                                    <div class="px-5" data-aos="slide-up" data-aos-duration="800">
-                                        <p class="custom-bg-2 c-gold text-center xlfont-xxsmid py-3">Bid Desk Analyst</p>
-                                        <p class="text-white text-center xlfont-min">Strategic Networks Inc.</p>
-                                        <p class="text-white text-center h4">&#8594; December 2014 to December 2017</p>
-                                        <p class="text-white description">Working with Sales/Support/Managers and providing customer support for EMC and Dell in APJ.  Back-office roles, data entry, finalizing the document Basis of Estimate (BOE).</p> 
-                                            <p class="text-white description"> My manager gave me a task to work with the content team to do data entry, add the logic/conditions, to enhance our web-based request form.</p> 
-                                    </div> 
-                                </div>
-
-                                <div class="blur-content-dark col-12 col-sm-12 col-md-8 col-lg-6 col-xl-8 col-xxl-8 m-3 py-4 align-self-stretch p-2">
-                                    <div class="px-5" data-aos="slide-up" data-aos-duration="800">
-                                        <p class="custom-bg-2 c-gold text-center xlfont-xxsmid py-3">Business Process Associate</p>
-                                        <p class="text-white text-center xlfont-min">AMDATEX Las Piñas Services Inc.</p>
-                                        <p class="text-white text-center h4">&#8594; October 2010 to February 2013</p>
-                                        <p class="text-white description"> Data Entry / Encoding, Coding for the application, and processing.
-                                    Proofreading, examining documents (Mortgage/ Commercial/ Residential/ Non-Commercial Services), and being kept to detail before finalizing.</p> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row py-5">
-                    <div data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
-                        <div class="d-flex align-items-center justify-content-center text-center">
-                            <div class="xarrows mx-2 align-self-center">
-                                <a href="#projects">
-                                    <p class="c-dblue xlfont-mid text-uppercase text-center">&#8595;</p>  
-                                </a>
-                            </div>                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- EXPERIENCE SECTION END -->
-
-        <!-- WORKS SECTION START -->
-        <section class="section-content" id="projects">
-            <div class="backdrop container-fluid py-5">
-                <h1 class="d-none">&nbsp;</h1>
-                <div class="row d-flex justify-content-around align-content-center align-items-center py-5">
-                    <div data-aos="slide-right" data-aos-duration="500">
-                        <p class="content-header xlfont-xsmid text-white display-3">PROJECTS</p>
+                          <p></p>
+                      </div>
+                      <div class="card-footer">
+                          <small class="w-update">Dynamic date</small>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="contents custom-card">
+                  <div class="card">
+                    <div class="image">
+                      <a href="https://m-dorio.github.io/pillowshop/" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/screenshots/proj-4.jpg" class="card-img-top p-3" alt="...">
+                    </a>
                     </div>
                     
-                    <div class="row px-5">
-                        <div class="container-fluid">
-                            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">                                
-                                
-                                <div class="my-5">
-                                    <div class="card h-100 w-100 blur-content-dark">
-                                        <div class="card-body">
-                                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                                                <div class="carousel-inner">
-                                                  <div class="carousel-item active">
-                                                    <img src="./images/fuse/1.png" class="h-100 card-img-top p-3" alt="...">
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <img src="./images/fuse/2.png" class="h-100 card-img-top p-3" alt="...">
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <img src="./images/fuse/3.png" class="h-100 card-img-top p-3" alt="...">
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <img src="./images/fuse/4.png" class="h-100 card-img-top p-3" alt="...">
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <img src="./images/fuse/5.png" class="h-100 card-img-top p-3" alt="...">
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <img src="./images/fuse/6.png" class="h-100 card-img-top p-3" alt="...">
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <img src="./images/fuse/7.png" class="h-100 card-img-top p-3" alt="...">
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <img src="./images/fuse/8.png" class="h-100 card-img-top p-3" alt="...">
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <img src="./images/fuse/9.png" class="h-100 card-img-top p-3" alt="...">
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <img src="./images/fuse/10.png" class="h-100 card-img-top p-3" alt="...">
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <img src="./images/fuse/11.png" class="h-100 card-img-top p-3" alt="...">
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <img src="./images/fuse/12.png" class="h-100 card-img-top p-3" alt="...">
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <img src="./images/fuse/13.png" class="h-100 card-img-top p-3" alt="...">
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <img src="./images/fuse/14.png" class="h-100 card-img-top p-3" alt="...">
-                                                  </div>
-                                                </div>
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                  <span class="visually-hidden">Previous</span>
-                                                </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                  <span class="visually-hidden">Next</span>
-                                                </button>
-                                              </div>
-                        
-                                        </div>
-                                        <div class="card-footer custom-bg-2">
-                                            <small class="c-gold">MY|Fuse Project Preview</small>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
+                      <div class="card-body">
+                          <h3 class="card-title">Online Shop</h3>
+                          <p class="card-text">
+                              </p><ul>
+                                  <li>
+                                      HTML5, CSS3, JavaScript, Git, Gitlab and GitHub
+                                  </li>
+                              </ul>
 
-                                <div class="my-5">
-                                    <div class="card h-100 w-100 blur-content-dark">
-                                        <a href="https://myfuse.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="./images/screenshots/proj-9.png" class="card-img-top p-3" alt="..."></a> 
-                                        <div class="card-body">
-                                            <h5 class="card-title">MY/FUSE</h5>
-                                            <p class="card-text">
-                                              A web application similar to "Friendster" were users can connect and customize their profile with CSS and media like YouTube.
-                                            <ul>
-                                                <li>
-                                                    Front End Web Development: HTML5, CSS3, Bootstrap, Wireframes and Mockups, Git, Gitlab and GitHub
-                                                </li>
-                                                <li>
-                                                    Back End Development: JavaScript, Node.js, Express.js, MongoDB, Database Design, NoSQL, Postman, REST API
-                                                </li>
-                                                <li>
-                                                    Full Stack Development: React.js, JS DOM Manipulation, API Integration with Fetch, Render, and Vercel.
-                                                </li>
-                                            </ul>
-                                            </p>
-                                        </div>
-                                        <div class="card-footer custom-bg-2">
-                                            <small class="w-update c-gold">Dynamic date</small>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="my-5">
-                                    <div class="card h-100 w-100 blur-content-dark">
-                                        <a href="https://mdorio-capstone3.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="./images/screenshots/proj-8.png" class="card-img-top p-3" alt="..."></a> 
-                                        <div class="card-body">
-                                            
-                                            <h5 class="card-title">HOT/STRINGS</h5>
-                                            <p class="card-text">
-                                                An E-commerce single page application, based on my previous project, now with MERN.
-                                                <ul>
-                                                    <li>
-                                                        Front End Web Development: HTML5, CSS3, Bootstrap, Git, Gitlab and GitHub
-                                                    </li>
-                                                    <li>
-                                                        Back End Development: JavaScript, Node.js, Express.js, MongoDB, Database Design, NoSQL, Postman, REST API
-                                                    </li>
-                                                    <li>
-                                                        Full Stack Development: React.js, JS DOM Manipulation, API Integration with Fetch, Render, and Vercel.
-                                                    </li>
-                                                </ul>
-                                            </p>
-                                        </div>
-                                        <div class="card-footer custom-bg-2">
-                                            <small class="w-update c-gold">Dynamic date</small>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="my-5">
-                                    <div class="card h-100 w-100 blur-content-dark">
-                                        <a href="https://m-dorio.github.io/foodstore/" target="_blank" rel="noopener noreferrer"><img src="./images/screenshots/proj-7.png" class="card-img-top p-3" alt="..."></a> 
-                                        <div class="card-body">
-                                            <h5 class="card-title">HOT/STRINGS</h5>
-                                            <p class="card-text">
-                                                <ul>
-                                                    <li>
-                                                        HTML5, CSS3, JavaScript, Bootstrap, Git, Gitlab and GitHub
-                                                    </li>
-                                                </ul>
-                                            </p>
-                                        </div>
-                                        <div class="card-footer custom-bg-2">
-                                            <small class="w-update c-gold">Dynamic date</small>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="my-5">
-                                    <div class="card h-100 w-100 blur-content-dark">
-                                        <a href="https://m-dorio.github.io/nyorasfarm/" target="_blank" rel="noopener noreferrer"><img src="./images/screenshots/proj-1.jpg" class="card-img-top p-3" alt="..."></a>
-                                        
-                                        <div class="card-body">
-                                            <h5 class="card-title">Resort webpage</h5>
-                                            <p class="card-text">
-                                                <ul>
-                                                    <li>
-                                                        HTML5, CSS3, JavaScript, Bootstrap, Git, Gitlab and GitHub
-                                                    </li>
-                                                </ul>
-
-                                            </p>
-                                        </div>
-                                        <div class="card-footer custom-bg-2">
-                                            <small class="w-update c-gold">Dynamic date</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="my-5">
-                                    <div class="card h-100 w-100 blur-content-dark">
-                                        <a href="https://m-dorio.github.io/pillowshop/" target="_blank" rel="noopener noreferrer">
-                                            <img src="./images/screenshots/proj-4.jpg" class="card-img-top p-3" alt="...">
-                                        </a>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Online Shop</h5>
-                                            <p class="card-text">
-                                                <ul>
-                                                    <li>
-                                                        HTML5, CSS3, JavaScript, Git, Gitlab and GitHub
-                                                    </li>
-                                                </ul>
-
-                                            </p>
-                                        </div>
-                                        <div class="card-footer custom-bg-2">
-                                            <small class="w-update c-gold">Dynamic date</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                                <div class="my-5">
-                                    <div class="card h-100 w-100 blur-content-dark">
-                                        <a href="https://m-dorio.github.io/portfolio_01/" target="_blank" rel="noopener noreferrer"><img src="./images/screenshots/proj-3.jpg" class="card-img-top p-3" alt="..."></a>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Portfolio #1</h5>
-                                            <p class="card-text">Linear Background</p>
-                                            <p class="card-text">
-                                                <ul>
-                                                    <li>
-                                                        HTML5, CSS3, JavaScript, Git, Gitlab and GitHub
-                                                    </li>
-                                                </ul>
-
-                                            </p>
-                                        </div>
-                                        <div class="card-footer custom-bg-2">
-                                            <small class="w-update c-gold">Dynamic date</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                            
-                                <div class="my-5">
-                                    <div class="card h-100 w-100 blur-content-dark">
-                                        <a href="https://m-dorio.github.io/pubrepo/" target="_blank" rel="noopener noreferrer"><img src="./images/screenshots/proj-2.jpg" class="card-img-top p-3" alt="..."></a>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Portfolio #2 - Tron pallete Inspired</h5>
-                                            <p class="card-text">
-                                                <ul>
-                                                    <li>
-                                                        HTML5, CSS3, JavaScript, Git, Gitlab and GitHub
-                                                    </li>
-                                                </ul>
-                                            </p>
-                                        </div>
-                                        <div class="card-footer custom-bg-2">
-                                            <small class="w-update c-gold">Dynamic date</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                                <div class="my-5">
-                                    <div class="card h-100 w-100 blur-content-dark">
-                                        <a href="https://m-dorio.github.io/bootstrap-mdorio/" target="_blank" rel="noopener noreferrer"><img src="./images/screenshots/proj-6.jpg" class="card-img-top p-3" alt="..."></a>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Portfolio #3 - Capstone</h5>
-                                            <p class="card-text">
-                                                <ul>
-                                                    <li>
-                                                        HTML5, CSS3, JavaScript, Bootstrap, Git, Gitlab and GitHub
-                                                    </li>
-                                                </ul>
-                                            </p>
-                                        </div>
-                                        <div class="card-footer custom-bg-2">
-                                            <small class="w-update c-gold">Dynamic date</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                          <p></p>
+                      </div>
+                      <div class="card-footer">
+                          <small class="w-update">Dynamic date</small>
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="contents custom-card">
+                  <div class="card">
+                    <div class="image">
+                      <a href="https://m-dorio.github.io/portfolio_01/" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/screenshots/proj-3.jpg" class="card-img-top p-3" alt="...">
+                      </a>
                     </div>
-                </div>
-                <div class="row py-5">
-                    <div data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
-                        <div class="d-flex align-items-center justify-content-center text-center">
-                            <div class="xarrows mx-2 align-self-center">
-                                <a href="#contact">
-                                    <p class="c-dblue xlfont-mid text-uppercase text-center">&#8595;</p>  
-                                </a>
-                            </div>                        
-                        </div>
+                      <div class="card-body">
+                          <h3 class="card-title">Portfolio #1</h3>
+                          <p class="card-text">Linear Background</p>
+                          <p class="card-text">
+                              </p><ul>
+                                  <li>
+                                      HTML5, CSS3, JavaScript, Git, Gitlab and GitHub
+                                  </li>
+                              </ul>
+
+                          <p></p>
+                      </div>
+                      <div class="card-footer">
+                          <small class="w-update">Dynamic date</small>
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="contents custom-card">
+                  <div class="card">
+                    <div class="image">
+                      <a href="https://m-dorio.github.io/pubrepo/" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/screenshots/proj-2.jpg" class="card-img-top p-3" alt="...">
+                      </a>
                     </div>
-                </div>
+                      <div class="card-body">
+                          <h3 class="card-title">Portfolio #2 - Tron pallete Inspired</h3>
+                          <p class="card-text">
+                              </p><ul>
+                                  <li>
+                                      HTML5, CSS3, JavaScript, Git, Gitlab and GitHub
+                                  </li>
+                              </ul>
+                          <p></p>
+                      </div>
+                      <div class="card-footer">
+                          <small class="w-update">Dynamic date</small>
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="contents custom-card">
+                  <div class="card">
+                    <div class="image">
+                      <a href="https://m-dorio.github.io/bootstrap-mdorio/" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/screenshots/proj-6.jpg" class="card-img-top p-3" alt="...">
+                      </a>
+                    </div>
+                      <div class="card-body">
+                          <h3 class="card-title">Portfolio #3 - Capstone</h3>
+                          <p class="card-text">
+                              </p><ul>
+                                  <li>
+                                      HTML5, CSS3, JavaScript, Bootstrap, Git, Gitlab and GitHub
+                                  </li>
+                              </ul>
+                          <p></p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="w-update">Dynamic date</small>
+                      </div>
+                  </div>
+              </div>
+
+              
+
             </div>
-        </section>
-        <!-- WORKS SECTION END -->
+        </div>
+      </div>
+    </section>
 
-        <!-- CONTACT SECTION START -->
-        <section class="section-content" id="contact">
-            <div id="backdrop-B" class="container-fluid py-5">
-                <h1 class="d-none">&nbsp;</h1>
-                <div class="row justify-content-between align-content-center align-items-center py-5">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <div data-aos="slide-right" data-aos-duration="500">
-                            <p class="content-header xlfont-xsmid text-white display-3 pt-5">CONT&#916;CT</p>
-                        </div>
+    <!-- CONNECT SECTION -->
+    <section id="connect" class="connect">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="offset-xl-1 col-xl-6 col-lg-7 col-md-12">
+            <div class="inner-content _right">
+              <img id="thumbnail" width="100%" height="580px" src="./images/screenshots/youtube-thumbnail.png" alt="Youtube Thumbnail" class="mb-0">
+              <div id="video-container"></div>
+              
+              <div id="carouselExampleCaptions" class="carousel slide d-none">
+                <div class="carousel-inner align-content-center text-center">
+                  <div class="carousel-item active">
+                    <iframe src="https://www.youtube.com/embed/m_BoeGwA5b8?autoplay=1;si=lHGZjg-cpW-nPR9j" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                    <div class="carousel-caption d-none d-md-block">
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <div class="vh-750">
-                            <div class="container">
-                                <div class="row d-flex justify-content-center align-items-center">
-                                   
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 col-xxl-3 order-sm-1">                 
-                                        <div data-aos="slide-down" data-aos-duration="1000">
-                                            <p class="c-gold xlfont-xxsmid text-center pt-5">Let's work together!</p>
-                                            </div>
-                                        <div class="m-2 py-4 p-3">
-                                            <form id="form-col" action="https://formsubmit.co/670d3901f0cce250278dea3ca5f66b47" method="POST">
-                                                <div class="form-group text-black font-weight-bold mt-3 blur-content-half p-4">                 
-                                            
-                                                    <div class="form-group text-white font-weight-bold py-3">
-                                                        <p class="c-gold xlfont-min">Or you can Email me here:</p>
-                                                        <label>Full Name:</label>
-                                                        <input class="form-control" type="text" name="fullname" placeholder="Please enter your full name" required>
-                                                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/a725oxSYO9U?si=v61Per2lQF0mVUy1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/kN2a9E772-Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/BT4wXcsm41k" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/IHP2UAkGB3A" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/S5XD_RdtXOw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/ZrB7i8d3t4w" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/XcdF6_hDaGU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/vQfDiwFFHgg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/JcXsqVr61q4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/7Znfa8MZ2yk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
                 
-                                                    <div class="form-group text-white font-weight-bold py-3">
-                                                        <label>Email address:</label>
-                                                        <input class="form-control" type="email" name="email" placeholder="Email address" required>
-                                                    </div>
-                                                
-                                                    <div class="form-group text-white font-weight-bold py-3">
-                                                        <label>Contact Number: &nbsp;</label><span class="text-white">&nbsp;[optional]</span>
-                                                        <input type="number" class="form-control" id="contactNumber" placeholder="Mobile/Tel number">
-                                                    </div>
-                                                    <div class="form-group text-white font-weight-bold py-3">
-                                                        <input class="form-control"  type="hidden" name="_subject" value="You have a new email!">
-                                                        <input class="form-control" type="hidden" name="_template" value="table">
-                                                        <input class="form-control"  type="hidden" name="_next" value="https://m-dorio.github.io/webportfolio/thankyou.html">
-                                                    
-                                                        <label>Message:</label>
-                                                        <textarea class="form-control" name="message" id="message" rows="3" placeholder="Write your message here" required></textarea>
-                                                    </div>
-
-                                                    <div class="pt-3">
-                                                        <button class="btn btn-success mb-3 font-weight-bold" type="submit">Send</button>
-                                                        <button type="reset" class="btn btn-danger mb-3 font-weight-bold">Reset Form</button>
-                                                    </div>
-
-                                                </div>
-                                                
-                                            </form>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 py-4">
-                                     
-                                            <div class="h4 text-white text-center contact-icons-sm d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none order-sm-0">
-                                                <p class="c-joker-blue xlfont-min">Connect:</p>
-                                                <p class="text-sm-center text-md-center text-center">
-                                                    <a class="text-glow btn" target="_blank" href="https://www.facebook.com/muteninjaturtle"><i class="display-3 fab fa-facebook fa-lg"></i></a>
-                                                    <a class="text-glow btn" target="_blank" href="https://gitlab.com/michaelangelodorio"><i class="display-3 fab fa-beat-fade fa-gitlab fa-lg"></i></a>
-                                                    <a class="text-glow btn" target="_blank" href="https://github.com/m-dorio/"><i class="display-3 fa-brands fa-github fa-bounce fa-lg"></i></a>
-                                                    <a class="text-glow btn" target="_blank" href="https://www.linkedin.com/in/michael-angelo-dorio-17510182/"><i class="display-3 fa-brands fa-linkedin-in fa-lg"></i></a> 
-                                                </p>  
-                                            </div>
-                                        
-                                            <div class="h4 text-white text-center contact-icons-md d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block order-sm-0">
-                                            <p class="c-joker-blue xlfont-min">Connect:</p>
-                                            <p class="text-sm-center text-md-center text-center">
-                                                <a class="text-glow btn" target="_blank" href="https://www.facebook.com/muteninjaturtle"><i class="display-3 fab fa-facebook fa-lg"></i></a>
-                                                <a class="text-glow btn" target="_blank" href="https://gitlab.com/michaelangelodorio"><i class="display-3 fab fa-beat-fade fa-gitlab fa-lg"></i></a>
-                                                <a class="text-glow btn" target="_blank" href="https://github.com/m-dorio/"><i class="display-3 fa-brands fa-github fa-bounce fa-lg"></i></a>
-                                                <a class="text-glow btn" target="_blank" href="https://www.linkedin.com/in/michael-angelo-dorio-17510182/"><i class="display-3 fa-brands fa-linkedin-in fa-lg"></i></a> 
-                                            </p>  
-                                            </div>
-                                        </div>
-                              
-                                    
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-        <!-- CONTACT SECTION END -->
+          </div>
+          <div class="col-xl-4 col-lg-5 col-md-12">
+            <div class="content">
+              <div class="inner-content">
+                
+                <div class="blur-card">
+                  <div class="header">
+                    <h2>Let's work together!</h2>
+                  </div>
+                  <form id="form-col" action="https://formsubmit.co/670d3901f0cce250278dea3ca5f66b47" method="POST">
+                    <div class="form-group text-black font-weight-bold">                 
+                
+                        <div class="form-group text-white font-weight-bold py-2">
+                            <p class="c-gold xlfont-min">Complete our form with your name, email, phone number, and message.</p>
+                            <label>Full Name:</label>
+                            <input class="form-control" type="text" name="fullname" placeholder="Please enter your full name" required="">
+                        </div>
+        
+                        <div class="form-group text-white font-weight-bold py-2">
+                            <label>Email address:</label>
+                            <input class="form-control" type="email" name="email" placeholder="Email address" required="">
+                        </div>
+                    
+                        <div class="form-group text-white font-weight-bold py-2">
+                            <label>Contact Number: &nbsp;</label><span class="text-white">&nbsp;[optional]</span>
+                            <input type="number" class="form-control" id="contactNumber" placeholder="Mobile/Tel number">
+                        </div>
+                        <div class="form-group text-white font-weight-bold py-2">
+                            <input class="form-control" type="hidden" name="_subject" value="You have a new email!">
+                            <input class="form-control" type="hidden" name="_template" value="table">
+                            <input class="form-control" type="hidden" name="_next" value="https://m-dorio.github.io/webportfolio/thankyou.html">
+                        
+                            <label>Message:</label>
+                            <textarea class="form-control" name="message" id="message" rows="3" placeholder="Write your message here" required=""></textarea>
+                        </div>
+        
+                        <div class="pt-3">
+                            <button class="cta submit" type="submit">Send</button>
+                            <button type="reset" class="cta reset">Reset Form</button>
+                        </div>
+        
+                    </div>
+                    
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- FOOTER SECTION START -->
-        <footer class="d-flex align-items-center justify-content-center custom-color-3">
-            <div class="mx-2  text-white">
-                Copyright &copy; 2023 by mdorio. | All rights Reserved.
-            </div>     
-            <div id="movingButton" class="mx-2 align-self-center d-none">
-               
-                    <a href="#landing">
-                        <p class="c-dblue xlfont-smid text-uppercase text-center">&#8593;</p>
-                        <!-- <i class="bi bi-arrow-up-circle-fill"></i> -->
-                    </a>
-           
-            </div>     
-        </footer>
-        <!-- FOOTER SECTION ENDS -->
-    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
-        <!--FROM  https://michalsnik.github.io/aos/ -->
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://kit.fontawesome.com/6845f956f4.js" crossorigin="anonymous"></script>
-        <script src="./js/script.js"></script> <!-- Must be in the last line after the typed -->
-        <script src="./js/aos.js"></script>
-        <script src="./js/toggle.js"></script>
-        <script src="./js/skip.js"></script>
-        <script src="./js/style.js"></script>
-    </body>
+    <footer class="d-flex align-items-center justify-content-center bg-dark py-3">
+      <div class="text-white">
+        Copyright © <span id="dateToday"></span> by mdorio. | All rights Reserved.
+      </div>
+     
+      <a href="#hero"> 
+        <div id="pageButton" class="d-none">
+          <div>
+            <p class="xarrows">↑</p>
+          </div>
+        </div>
+      </a>     
+  </footer>
+
+  
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/6845f956f4.js" crossorigin="anonymous"></script>
+    <script src="./index.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./shout.js" crossorigin="anonymous"></script>
+  </body>
 </html>
