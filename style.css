@@ -74,6 +74,11 @@ section.hero .inner-content {
 
 section.hero .social {
     margin: 0;
+
+}
+
+.social a.links.btn svg {
+    transition: 0.3s ease-in-out;
 }
 
 section.hero .img-container {
@@ -230,7 +235,7 @@ section.tools ul.links {
 
 section.tools ul.links li {
     padding: 5px 20px;
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(33 33 33 / 40%);
 }
 
 section.tools ul.links li:hover {
@@ -259,10 +264,14 @@ section.projects {
     min-height: 300px;
 }
 
+section.projects .header.text-center {
+    margin-bottom: 50px;
+}
+
 section.projects .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
-    grid-gap: 50px 30px;
+    grid-gap: 30px 30px;
     align-items: stretch;
 }
 
@@ -304,6 +313,7 @@ section.projects .grid .contents.custom-card .image:hover img {
 
 section.projects .card {
     background-color: rgb(43, 43, 43);
+    border: none;
 }
 
 section.projects .grid .contents.custom-card .image img {
@@ -313,6 +323,14 @@ section.projects .grid .contents.custom-card .image img {
 section.projects .card-body {
     min-height: 340px;
     height: 100%;
+}
+
+section.projects .grid .contents.custom-card:nth-child(4) .card-body,
+section.projects .grid .contents.custom-card:nth-child(5) .card-body,
+section.projects .grid .contents.custom-card:nth-child(6) .card-body,
+section.projects .grid .contents.custom-card:nth-child(7) .card-body,
+section.projects .grid .contents.custom-card:nth-child(8) .card-body {
+    min-height: 180px;
 }
 
 section.projects .card .card-body h3.card-title {
@@ -374,73 +392,18 @@ section.connect .form-control {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-section.connect div#carouselExampleCaptions {
-    height: 100%;
-}
-
 section.connect .inner-content iframe {
     height: 60vh;
     max-height: 640px;
     width: 100%;
 }
 
-section.connect #carouselExampleCaptions .carouselx-indicators button {
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    margin: 0 10px;
-    border: none;
+@media (max-width:1899px) {
 
-}
-
-section.connect #carouselExampleCaptions .carouselx-indicators button:hover {
-    background-color: #ffd700;
-}
-
-section.connect .carousel-control-next,
-section.connect .carousel-control-prev {
-    width: 80px;
-    transition: 0.2s ease-in;
-}
-
-section.connect .carousel-control-next:focus,
-section.connect .carousel-control-next:hover,
-section.connect .carousel-control-prev:focus,
-section.connect .carousel-control-prev:hover {
-    background-color: rgb(47, 47, 47);
-    transition: 0.2s ease-in-out;
-    transition-delay: 0.5;
-}
-
-section.connect .carousel-control-next-icon,
-section.connect .carousel-control-prev-icon {
-    width: 40px;
-    height: 40px;
-
-}
-
-section.connect .carousel-control-next {
-    right: -5px;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.2;
-}
-
-section.connect .carousel-control-next:hover {
-    right: -5px;
-    background-color: #ffd700;
-    opacity: 0.8;
-}
-
-section.connect .carousel-control-prev {
-    left: -5px;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.2;
-}
-
-section.connect .carousel-control-prev:hover {
-    left: -5px;
-    background-color: #ffd700;
-    opacity: 0.8;
+    section.projects .grid .contents.custom-card:nth-child(3) .card-body,
+    section.projects .grid .contents.custom-card:nth-child(4) .card-body {
+        min-height: 140px;
+    }
 }
 
 @media (max-width:1299px) {
@@ -450,6 +413,10 @@ section.connect .carousel-control-prev:hover {
         max-width: 540px;
         min-height: 540px;
         max-height: 540px;
+    }
+
+    section.projects .grid .card-body {
+        min-height: auto;
     }
 
 }
@@ -477,7 +444,7 @@ section.connect .carousel-control-prev:hover {
 
     section.hero .content {
         padding: 30px 20px;
-        background-color: rgb(33, 33, 33);
+        background-color: rgb(33 33 33 / 75%);
         border-radius: 20px;
     }
 
@@ -506,7 +473,7 @@ section.connect .carousel-control-prev:hover {
 
     section.about .content {
         border-radius: 20px;
-        background-color: rgb(33, 33, 33);
+        background-color: rgb(33 33 33 / 90%);
     }
 
     section.about .img-container {
@@ -562,6 +529,7 @@ section.connect .carousel-control-prev:hover {
 
     section.hero .social a.links.btn svg {
         padding: 5px;
+
     }
 
     section.hero .circle {

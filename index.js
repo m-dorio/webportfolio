@@ -13,7 +13,6 @@ function swapImageWithVideo() {
 }
 document.getElementById('thumbnail').addEventListener('click', swapImageWithVideo);
 
-
 setdate = () => {
     // Get the current date
     const currentDate = new Date();

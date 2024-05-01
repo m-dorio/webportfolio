@@ -1,0 +1,62 @@
+div#carouselExampleCaptions {
+    height: 100%;
+}
+
+#carouselExampleCaptions .carouselx-indicators button {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    border: none;
+
+}
+
+#carouselExampleCaptions .carouselx-indicators button:hover {
+    background-color: hsla(51, 100%, 50%, 0.5);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 80px;
+    transition: 0.2s ease-in;
+}
+
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+    background-color: rgb(47, 47, 47);
+    transition: 0.2s ease-in-out;
+    transition-delay: 0.5;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 40px;
+    height: 40px;
+
+}
+
+.carousel-control-next {
+    right: -5px;
+    background-color: hsla(0, 0%, 63%, 0.8);
+    opacity: 0.2;
+}
+
+.carousel-control-next:hover {
+    right: -5px;
+    background-color: #ffd700;
+    opacity: 0.8;
+}
+
+.carousel-control-prev {
+    left: -5px;
+    background-color: hsla(0, 0%, 63%, 0.8);
+    opacity: 0.2;
+}
+
+.carousel-control-prev:hover {
+    left: -5px;
+    background-color: #ffd700;
+    opacity: 0.8;
+}
