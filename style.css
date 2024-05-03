@@ -62,7 +62,7 @@ section.hero .content h2 {
 section.hero .content p {
     color: #FFF;
     font-size: 40px;
-    line-height: 30px;
+    line-height: 50px;
 }
 
 section.hero .inner-content {
@@ -566,7 +566,7 @@ section.connect .inner-content iframe {
 
 @media (max-width:768px) {
     section.hero {
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     section.tools .content._right {
@@ -581,11 +581,19 @@ section.connect .inner-content iframe {
         grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
         grid-gap: 50px 30px;
     }
+
+
+    section.hero .social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
 
 @media (max-width:575px) {
     section.hero {
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     section.hero a.cta-custom {
@@ -621,4 +629,33 @@ section.connect .inner-content iframe {
     section.connect .inner-content iframe {
         height: auto;
     }
+}
+
+@media (max-width:499px) {
+    section.hero {
+        margin-top: 30px;
+    }
+
+    section.hero .content p {
+        color: #FFF;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    section.about .content {
+        padding: 20px;
+    }
+
+    section.about .header {
+        min-height: 280px;
+    }
+
+    section.tools .tools-kits {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        grid-gap: 50px 30px;
+        align-items: stretch;
+    }
+
+
 }
