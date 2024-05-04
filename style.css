@@ -19,7 +19,7 @@ section.hero .wrap {
 section.hero .circle {
     background: url('./images/about-hero-sm.png') rgb(216, 216, 216) no-repeat top center / cover;
     border-radius: 50%;
-    filter: grayscale(5%) contrast(100%) blur(0);
+    filter: grayscale(90%) contrast(90%) blur(0);
     width: 100%;
     min-width: 640px;
     max-width: 640px;
@@ -33,10 +33,11 @@ section.hero .circle {
 section.hero .circle:hover {
     background: url('./images/about-hero-sm.png') rgb(216, 216, 216) no-repeat top center / cover;
     border-radius: var(--fancybox-border-radius-2);
-    filter: grayscale(100%) contrast(100%) blur(1px);
+    filter: grayscale(100%) contrast(100%) blur(0.5px);
     animation: morph 6s linear infinite;
     transition: 0.3s ease-out;
     box-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 6px;
+    cursor: pointer;
 }
 
 section.hero .circle img {
