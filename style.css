@@ -78,10 +78,11 @@ section.hero .social {
 }
 
 .social a.links.btn svg {
-    moz-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+    width: auto !important;
 }
 
 section.hero .img-container {
@@ -489,6 +490,11 @@ section.connect .inner-content iframe {
 
 
 @media (max-width:1199px) {
+    section.hero .content {
+        padding: 30px 20px;
+        background-color: rgb(33 33 33 / 75%);
+        border-radius: 20px;
+    }
 
     section.hero .circle {
         min-width: 440px;
@@ -497,21 +503,12 @@ section.connect .inner-content iframe {
         max-height: 440px;
     }
 
-    section.hero .social {
-        flex-direction: row;
-    }
-}
-
-@media (max-width:991px) {
-
     section.hero .row {
         flex-direction: column;
     }
 
-    section.hero .content {
-        padding: 30px 20px;
-        background-color: rgb(33 33 33 / 75%);
-        border-radius: 20px;
+    section.hero .project-button {
+        margin: 30px 0;
     }
 
     section.hero .img-container._left {
@@ -532,6 +529,14 @@ section.connect .inner-content iframe {
         min-height: auto;
 
     }
+
+    section.hero .social {
+        flex-direction: row;
+    }
+}
+
+@media (max-width:991px) {
+
 
     section.about {
         background: url(./images/about-image2b-sm.png) no-repeat scroll top center / cover rgb(33, 33, 33);
@@ -632,6 +637,15 @@ section.connect .inner-content iframe {
 }
 
 @media (max-width:499px) {
+
+    section .header {
+        margin: 30px 0;
+    }
+
+    section .header h2 {
+        text-align: start !important;
+    }
+
     section.hero {
         margin-top: 30px;
     }
@@ -640,6 +654,7 @@ section.connect .inner-content iframe {
         color: #FFF;
         font-size: 30px;
         line-height: 40px;
+        margin-bottom: 0;
     }
 
     section.about .content {
@@ -650,11 +665,21 @@ section.connect .inner-content iframe {
         min-height: 280px;
     }
 
+    section.tools ul.links li {
+        padding: 5px 0;
+    }
+
     section.tools .tools-kits {
+
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
         grid-gap: 50px 30px;
         align-items: stretch;
+    }
+
+    section.hero a.cta-custom {
+        text-wrap: nowrap;
+        padding: 10px;
     }
 
 

@@ -1308,6 +1308,15 @@ Animation keyframes
 
 @media (max-width:499px) {
 
+  section {
+    padding: 50px 0 50px 0;
+  }
+
+  section p,
+  section li {
+    font-size: 10px;
+    line-height: 16px;
+  }
 
   div#pageButton {
     bottom: 50px;
