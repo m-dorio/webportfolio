@@ -17,7 +17,7 @@ div#carouselExampleCaptions {
 
 .carousel-control-next,
 .carousel-control-prev {
-    width: 80px;
+    width: 100px !important;
     transition: 0.2s ease-in;
 }
 
@@ -59,4 +59,13 @@ div#carouselExampleCaptions {
     left: -5px;
     background-color: #ffd700;
     opacity: 0.8;
+}
+
+@media (max-width:499px) {
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 30px !important;
+        transition: 0.2s ease-in;
+    }
 }

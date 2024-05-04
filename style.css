@@ -108,11 +108,17 @@ section.about {
 
 section.about .header {
     background-color: rgb(43, 43, 43);
-    padding: 20px 10px 20px 20px;
+    padding: 10px;
     min-height: 110px;
     border: 3px solid #838383;
     border-radius: 10px;
     border-bottom: 3px dashed transparent;
+}
+
+section.about .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section.about span.typed-cursor {
@@ -122,7 +128,7 @@ section.about span.typed-cursor {
 section.about span.typewriting-text {
     font-size: 20px;
     line-height: normal;
-    color: #cdcdcd;
+    color: gold;
 }
 
 section.about .content {
@@ -172,9 +178,14 @@ section.about p {
 
 /* TOOLS SECTION */
 section.tools {
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(27 30 33);
     min-height: 300px;
 }
+
+section.tools .header {
+    margin: 30px 0;
+}
+
 
 section.tools h2 {
     color: #ffd700;
@@ -343,6 +354,15 @@ section.projects .grid .contents.custom-card {
     align-self: stretch;
     gap: 20px 0;
 }
+
+section.projects .grid .contents.custom-card svg {
+    width: 18px;
+}
+
+section.projects .grid .contents.custom-card svg path {
+    fill: #ffb41e;
+}
+
 
 section.projects .grid .contents.custom-card .image {
     overflow: hidden;
@@ -608,7 +628,6 @@ section.connect .inner-content iframe {
 
     section.hero .social a.links.btn svg {
         padding: 5px;
-
     }
 
     section.hero .circle {
@@ -638,16 +657,16 @@ section.connect .inner-content iframe {
 
 @media (max-width:499px) {
 
-    section .header {
-        margin: 30px 0;
-    }
-
-    section .header h2 {
-        text-align: start !important;
-    }
-
     section.hero {
         margin-top: 30px;
+        background: url() no-repeat fixed top center / cover;
+        background-color: rgb(33, 33, 33);
+        min-height: 300px;
+    }
+
+    section.hero a.cta-custom {
+        text-wrap: nowrap;
+        padding: 10px;
     }
 
     section.hero .content p {
@@ -659,28 +678,72 @@ section.connect .inner-content iframe {
 
     section.about .content {
         padding: 20px;
+        gap: 0;
     }
 
     section.about .header {
-        min-height: 280px;
+        min-height: 215px;
+    }
+
+    section.about span.typewriting-text {
+        font-size: 14px;
+        line-height: normal;
+        color: gold;
+    }
+
+
+    section.tools .header {
+        margin: 30px 0;
+    }
+
+    section.tools .header h2 {
+        text-align: center !important;
+    }
+
+    section.tools .tools-container {
+        padding: 10px;
+    }
+
+    section.tools ul.links li a.btn-hover {
+        font-size: 10px;
     }
 
     section.tools ul.links li {
         padding: 5px 0;
+        margin-bottom: 5px;
     }
 
     section.tools .tools-kits {
-
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
         grid-gap: 50px 30px;
         align-items: stretch;
     }
 
-    section.hero a.cta-custom {
-        text-wrap: nowrap;
-        padding: 10px;
+    section.projects .grid .contents.custom-card svg {
+        width: 12px;
     }
 
+    section.projects .grid .card-body {
+        min-height: auto !important;
+    }
+
+    section.projects .grid .contents.custom-card .image {
+        min-height: auto;
+        height: auto;
+    }
+
+    section.projects .grid .contents.custom-card .image img {
+        object-fit: contain;
+    }
+
+    section.connect div.blur-card {
+        padding: 15px;
+        background: transparent;
+    }
+
+    img#thumbnail {
+        height: auto;
+    }
 
 }
