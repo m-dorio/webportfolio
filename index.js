@@ -1,18 +1,3 @@
-function swapImageWithVideo() {
-    let videoContainer = document.getElementById('video-container');
-    videoContainer.innerHTML = '';
-
-    const carouselHtml = document.getElementById('carouselExampleCaptions').outerHTML;
-    const innerContent = document.querySelector('.inner-content._right');
-    innerContent.innerHTML = carouselHtml;
-
-    // Change the class from d-none to d-block
-    const carousel = document.getElementById('carouselExampleCaptions');
-    carousel.classList.remove('d-none');
-    carousel.classList.add('d-block');
-}
-document.getElementById('thumbnail').addEventListener('click', swapImageWithVideo);
-
 setdate = () => {
     // Get the current date
     const currentDate = new Date();
