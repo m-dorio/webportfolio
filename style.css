@@ -27,7 +27,10 @@ section.hero .circle {
     min-height: 640px;
     max-height: 640px;
     overflow: hidden;
-    transition: 0.3s ease-in;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 section.hero .circle:hover {
@@ -38,6 +41,10 @@ section.hero .circle:hover {
     transition: 0.3s ease-out;
     box-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 6px;
     cursor: pointer;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 section.hero .circle img {
@@ -183,7 +190,7 @@ section.about p {
 
 /* PROJECTS SECTION */
 section.projects {
-    background: url(./images/about-image3.png) right top / cover repeat-x fixed rgb(33, 33, 33);
+    background: url(./images/about-image3.png) right top / cover repeat-x fixed rgb(00, 00, 00);
     min-height: 300px;
 }
 
@@ -193,8 +200,8 @@ section.projects .header.text-center {
 
 section.projects .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
-    grid-gap: 30px 30px;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    grid-gap: 50px 30px;
     align-items: stretch;
 }
 
@@ -247,34 +254,50 @@ section.projects .grid .contents.custom-card .image:hover img {
 }
 
 section.projects .card {
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(24 24 24);
     border-radius: 20px;
     border: 0;
-    padding: 10px;
+    /* padding: 15px; */
+    height: 100%;
+    min-height: 305px;
+    transition: ease 0.5s;
 }
 
 section.projects .card:hover {
     border-radius: 20px;
-    box-shadow: 0 4px 8px 0 #ffffff;
-    padding: 10px;
+    box-shadow: 0 4px 4px 4px #ececec;
+    /* padding: 15px; */
+    transition: ease 0.5s;
+}
+
+section.projects .card:hover .card-body {
+    background-color: rgb(34, 34, 34);
+    transition: ease 0.5s;
+}
+
+section.projects .card .card-body {
+    padding: 15px;
+    transition: ease 0.5s;
 }
 
 section.projects .grid .contents.custom-card .image img {
     padding: 0 !important;
 }
 
-section.projects .card-body {
-    min-height: 360px;
+/* section.projects .card-body {
+    min-height: 340px;
     height: 100%;
-}
+} */
 
-section.projects .grid .contents.custom-card:nth-child(4) .card-body,
-section.projects .grid .contents.custom-card:nth-child(5) .card-body,
-section.projects .grid .contents.custom-card:nth-child(6) .card-body,
+/* section.projects .grid .contents.custom-card:nth-child(1) .card-body,
+section.projects .grid .contents.custom-card:nth-child(2) .card-body,
+section.projects .grid .contents.custom-card:nth-child(3) .card-body,
 section.projects .grid .contents.custom-card:nth-child(7) .card-body,
-section.projects .grid .contents.custom-card:nth-child(8) .card-body {
-    min-height: 180px;
-}
+section.projects .grid .contents.custom-card:nth-child(8) .card-body,
+section.projects .grid .contents.custom-card:nth-child(9) .card-body {
+    min-height: 250px;
+} */
+
 
 section.projects .card .card-body h3.card-title {
     color: #ffd700;
@@ -539,10 +562,10 @@ section.connect .inner-content iframe {
 
 @media (max-width:1899px) {
 
-    section.projects .grid .contents.custom-card:nth-child(3) .card-body,
-    section.projects .grid .contents.custom-card:nth-child(4) .card-body {
-        min-height: 140px;
-    }
+    /* section.projects .grid .contents.custom-card:nth-child(3) .card-body,
+    section.projects .grid .contents.custom-card:nth-child(5) .card-body {
+        min-height: 300px;
+    } */
 
 
 }
