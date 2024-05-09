@@ -340,26 +340,26 @@ h6 {
 section h1 {
   font-size: 80px;
   font-weight: 700;
-  line-height: 75px;
+  line-height: normal;
 }
 
 section h2 {
   font-size: 40px;
   font-weight: 700;
-  line-height: 35px;
+  line-height: normal;
 }
 
 section h3 {
   font-weight: 300;
   font-size: 30px;
   font-weight: 300;
-  line-height: 25px;
+  line-height: normal;
 }
 
 section h4 {
   font-weight: 300;
   font-size: 20px;
-  line-height: 18px;
+  line-height: normal;
 }
 
 section h5 {
