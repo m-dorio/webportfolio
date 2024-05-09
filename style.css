@@ -440,7 +440,7 @@ section.projects .card-footer small.w-update {
 /* CONTACT SECTION */
 section.connect {
     background: url(./images/about-image2b-sm.png) bottom left / contain no-repeat fixed rgb(43, 43, 43);
-    min-height: 800px;
+    min-height: auto;
 }
 
 section.connect .header h2 {
@@ -580,7 +580,8 @@ section.connect .inner-content iframe {
     }
 
     section.connect .content {
-        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-bottom: 0;
     }
 }
 
