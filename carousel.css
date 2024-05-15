@@ -2,6 +2,17 @@ div#carouselExampleCaptions {
     height: 100%;
 }
 
+.contents.custom-card {
+    height: 100%;
+    width: 100%;
+}
+
+.full-width-iframe {
+    width: 100%;
+    min-height: 600px;
+    border: none;
+}
+
 #carouselExampleCaptions .carouselx-indicators button {
     border-radius: 50%;
     width: 20px;
