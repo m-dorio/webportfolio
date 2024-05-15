@@ -1172,34 +1172,18 @@ Animation keyframes
   }
 }
 
-@media (max-width:1900px) {}
-
-@media (max-width:1850px) {}
-
 @media (max-width:1700px) {
 
   .custom-container {
     padding: 0 5%;
   }
 
-
-}
-
-@media (max-width:1700px) {}
-
-
-@media (max-width:1200px) {
-
-  .custom-container {
-    padding: 0;
-  }
-
 }
 
 @media (max-width:1199px) {
-  /* .content div {
-    align-items: center;
-  } */
+  .custom-container {
+    padding: 0;
+  }
 
   section h1 {
     font-size: 50px;

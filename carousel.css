@@ -7,6 +7,11 @@ div#carouselExampleCaptions {
     width: 100%;
 }
 
+.carousel-inner.align-content-center.text-center {
+    width: 80%;
+    margin: auto;
+}
+
 .full-width-iframe {
     width: 100%;
     min-height: 600px;
@@ -55,7 +60,6 @@ div#carouselExampleCaptions {
 }
 
 .carousel-control-next:hover {
-    right: -5px;
     background-color: #ffd700;
     opacity: 0.8;
 }
@@ -67,12 +71,46 @@ div#carouselExampleCaptions {
 }
 
 .carousel-control-prev:hover {
-    left: -5px;
     background-color: #ffd700;
     opacity: 0.8;
 }
 
-@media (max-width:499px) {
+.carousel-inner.align-content-center.text-center {
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width:991px) {
+
+    .carousel-inner.align-content-center.text-center {
+        width: 80%;
+        margin: auto;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 60px !important;
+        transition: 0.2s ease-in;
+    }
+}
+
+@media (max-width:991px) {
+
+    .full-width-iframe {
+        width: 100%;
+        height: auto !important;
+        border: none;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 60px !important;
+        transition: 0.2s ease-in;
+    }
+}
+
+
+@media (max-width:575px) {
 
     .carousel-control-next,
     .carousel-control-prev {
