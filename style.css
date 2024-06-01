@@ -158,6 +158,7 @@ section.about .img-container {
     height: 100%;
     min-height: 200px;
     max-width: 100%;
+    filter: grayscale(90%) contrast(90%) blur(0);
 }
 
 section.about .img-container img {
@@ -201,7 +202,7 @@ section.projects .header.text-center {
 section.projects .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
-    grid-gap: 50px 30px;
+    grid-gap: 50px;
     align-items: stretch;
 }
 
@@ -257,7 +258,7 @@ section.projects .card {
     background-color: rgb(24 24 24);
     border-radius: 20px;
     border: 0;
-    /* padding: 15px; */
+    filter: grayscale(90%) contrast(90%) blur(0);
     height: 100%;
     min-height: 305px;
     transition: ease 0.5s;
@@ -266,7 +267,7 @@ section.projects .card {
 section.projects .card:hover {
     border-radius: 20px;
     box-shadow: 0 4px 4px 4px #ececec;
-    /* padding: 15px; */
+    filter: none;
     transition: ease 0.5s;
 }
 
@@ -283,20 +284,6 @@ section.projects .card .card-body {
 section.projects .grid .contents.custom-card .image img {
     padding: 0 !important;
 }
-
-/* section.projects .card-body {
-    min-height: 340px;
-    height: 100%;
-} */
-
-/* section.projects .grid .contents.custom-card:nth-child(1) .card-body,
-section.projects .grid .contents.custom-card:nth-child(2) .card-body,
-section.projects .grid .contents.custom-card:nth-child(3) .card-body,
-section.projects .grid .contents.custom-card:nth-child(7) .card-body,
-section.projects .grid .contents.custom-card:nth-child(8) .card-body,
-section.projects .grid .contents.custom-card:nth-child(9) .card-body {
-    min-height: 250px;
-} */
 
 
 section.projects .card .card-body h3.card-title {
@@ -329,9 +316,11 @@ section.projects .card-footer small.w-update {
     color: rgb(190, 190, 190);
 }
 
+
 /* TOOLS SECTION */
 section.tools {
-    background-color: rgb(33, 33, 33);
+    background: url(./images/about-image3.png) right top / cover repeat-x fixed rgb(33, 33, 33);
+    /* background-image: linear-gradient(to right, #434343, #4e4e4e, #181818, #424242); */
     min-height: 300px;
 }
 
@@ -469,7 +458,8 @@ section.tools .repository a.link-yellow-text {
 
 /* EXPERIENCE */
 section.experience {
-    background: url(./images/about-image2b-sm.png) bottom left / contain no-repeat fixed rgba(43, 43, 43);
+    /* background: url(./images/about-image2b-sm.png) bottom left / contain no-repeat fixed rgba(43, 43, 43); */
+    background-color: rgb(33, 33, 33);
     min-height: 300px;
 }
 
@@ -523,8 +513,10 @@ section.experience .card-container {
 
 /* CONTACT SECTION */
 section.connect {
-    background: url(./images/about-image2b-sm.png) bottom left / contain no-repeat fixed rgba(43, 43, 43);
-    min-height: auto;
+    /* background: url(./images/about-image2b-sm.png) bottom left / contain no-repeat fixed rgba(43, 43, 43); */
+    background: rgba(43, 43, 43);
+    background: url('./images/about-image5b.jpg') no-repeat fixed top center / cover;
+    min-height: 50vh;
 }
 
 section.connect .header h2 {
@@ -554,20 +546,10 @@ section.connect .form-control {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-section.connect .inner-content iframe {
+section.connect .content iframe {
     height: 60vh;
     max-height: 640px;
     width: 100%;
-}
-
-@media (max-width:1899px) {
-
-    /* section.projects .grid .contents.custom-card:nth-child(3) .card-body,
-    section.projects .grid .contents.custom-card:nth-child(5) .card-body {
-        min-height: 300px;
-    } */
-
-
 }
 
 @media (max-width:1499px) {
@@ -698,7 +680,7 @@ section.connect .inner-content iframe {
 
     section.projects .grid {
         grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-        grid-gap: 50px 30px;
+        grid-gap: 40px;
     }
 
 
@@ -741,7 +723,7 @@ section.connect .inner-content iframe {
 
     section.projects .grid {
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        grid-gap: 50px 30px;
+        grid-gap: 30px;
     }
 
     section.connect .inner-content iframe {
