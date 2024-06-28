@@ -1285,12 +1285,13 @@ Animation keyframes
     line-height: 5rem;
   }
 
-  section {
-    padding: 50px 0 50px 0;
+  section,
+  footer {
+    padding: 50px 5px;
   }
 
   section .header h2 {
-    text-align: start !important;
+    text-align: center !important;
   }
 
   section p,

@@ -97,6 +97,7 @@ div#carouselExampleCaptions {
 @media (max-width:991px) {
 
     .full-width-iframe {
+        min-height: 320px;
         width: 100%;
         height: auto !important;
         border: none;
@@ -109,12 +110,26 @@ div#carouselExampleCaptions {
     }
 }
 
+@media (max-width:767px) {
+    .full-width-iframe {
+        min-height: 320px;
+    }
+}
 
 @media (max-width:575px) {
+    .full-width-iframe {
+        min-height: 220px;
+    }
 
     .carousel-control-next,
     .carousel-control-prev {
         width: 30px !important;
         transition: 0.2s ease-in;
+    }
+}
+
+@media (max-width:425px) {
+    .full-width-iframe {
+        min-height: 200px;
     }
 }
